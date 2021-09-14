@@ -69,7 +69,7 @@
                 </ul>
 
                 <form class="search">
-                    <input class="search__input" type="text" placeholder="Поиск по сайту">
+                    <input class="search__input btn_white" type="text" placeholder="Поиск по сайту">
                     <button class="search__submit-btn" type="submit"></button>
                 </form>
 

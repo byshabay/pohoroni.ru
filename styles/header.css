@@ -1,3 +1,9 @@
+
+.header{
+    position: fixed;
+    width: 100%;
+}
+
 /* 1.TOP NAVIGATION START */
 
 .header__tagline {
@@ -90,31 +96,28 @@ a.header__phone {
     color: #fff;
 }
 
-.search__input{
+.search .search__input {
     width: 208px;
     padding: 10px 50px 10px 20px;
 
-    font-family: var(--regular);
     font-size: var(--text-14);
-    border-radius: 48px;
-    border: 0px solid transparent;
+    text-align: start;
 
     color: var(--deepTaupe);
-
 }
 
-.search{
+.search {
     position: relative;
 }
 
-.search__input::placeholder{
+.search__input::placeholder {
     font-family: var(--regular);
     font-size: var(--text-14);
 
     color: var(--deepTaupe);
 }
 
-.search__submit-btn{
+.search__submit-btn {
     position: absolute;
     right: 20px;
     top: 10px;
