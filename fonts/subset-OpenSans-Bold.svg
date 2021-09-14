@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<metadata>
+Created by FontForge 20170731 at Sun Apr 30 20:18:13 2017
+ By Aleksey,,,
+Digitized data copyright (c) 2010-2011, Google Corporation.
+</metadata>
+<defs>
+<font id="OpenSans-Bold" horiz-adv-x="1229" >
+  <font-face 
+    font-family="Open Sans"
+    font-weight="700"
+    font-stretch="normal"
+    units-per-em="2048"
+    panose-1="2 11 8 6 3 5 4 2 2 4"
+    ascent="1638"
+    descent="-410"
+    bbox="193 0 1034 1462"
+    underline-thickness="102"
+    underline-position="-409"
+    unicode-range="U+0020-0020"
+  />
+<missing-glyph 
+d="M193 1462h841v-1462h-841v1462zM297 104h633v1254h-633v-1254z" />
+    <glyph glyph-name=".notdef" 
+d="M193 1462h841v-1462h-841v1462zM297 104h633v1254h-633v-1254z" />
+    <glyph glyph-name=".null" horiz-adv-x="0" 
+ />
+    <glyph glyph-name="nonmarkingreturn" horiz-adv-x="1044" 
+ />
+    <glyph glyph-name="space" unicode=" " horiz-adv-x="532" 
+ />
+  </font>
+</defs></svg>
