@@ -1,0 +1,181 @@
+/*
+--------------------------------------------------------------
+COMMON STYLES START
+--------------------------------------------------------------
+*/
+
+/* 1.HEADER START */
+
+@import url('header.css');
+
+/* 1.HEADER END */
+
+:root{
+    /*  Arial, Helvetica, sans-serif; */
+    --regular: 'OpenSans';
+    --light: 'OpenSansLight';
+    --bold: 'OpenSansBold';
+    --semiBold: 'OpenSansSemiBold';
+    --max-width: 1140px;
+    --text-48: calc( (100vw - 300px)/(1140 - 300) * (48 - 40) + 40px);
+    --text-20: calc( (100vw - 300px)/(1140 - 300) * (20 - 18) + 18px);
+    --text-15: calc( (100vw - 300px)/(1140 - 300) * (15 - 13) + 13px);
+    --text-14: calc( (100vw - 300px)/(1140 - 300) * (14 - 12) + 12px);
+    --text-12: calc( (100vw - 300px)/(1140 - 300) * (12 - 10) + 10px);
+    --peach: #A8544A;
+    --rosyBrown: #C8928C;
+    --gray: #BEBEBE;
+    --lightGray: #929292;
+    --pastelGray: #D2C4C2;
+    --dirtyWhite: #EFEFEF;
+    --middleLightGray: #BEB4B3;
+    --deepTaupe: #816B68;
+    --NewYorkPink: #CD8A82;
+    --horses: #603631;
+}
+
+/* 2.FOOTER START */
+
+/* 2.FOOTER END */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    outline: none;
+}
+
+.container{
+    width: 90%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.border-button{
+    padding: 15px 25px;
+
+    font-size: var(--text-15);
+    font-family: var(--regular);
+
+    border: 1px solid var(--peach);
+    background-color: transparent;
+    color: var(--peach);
+    border-radius: 45px;
+}
+
+/* 3.COMMON MEDIA START */
+
+/* > 1140px */
+@media(min-width: 1140px){
+
+    :root{
+        --text-48: 48px;
+        --text-20: 20px;
+        --text-15: 15px;
+        --text-14: 14px;
+        --text-12: 12px;
+    }
+
+}
+
+/* 3.COMMON MEDIA END */
+
+
+/* 
+--------------------------------------------------------------
+COMMON STYLES END 
+--------------------------------------------------------------
+*/
+
+/* 
+--------------------------------------------------------------
+MAIN PAGE START
+--------------------------------------------------------------
+*/
+
+/* 
+--------------------------------------------------------------
+MAIN PAGE END
+--------------------------------------------------------------
+*/
+
+/* 
+--------------------------------------------------------------
+FONTS START 
+--------------------------------------------------------------
+*/
+
+/* 1.OPEN SANS REGULAR START */
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans-Regular.eot');
+    src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+        url('../fonts/OpenSans-Regular.woff') format('woff'),
+        url('../fonts/OpenSans-Regular.ttf') format('truetype'),
+        url('../fonts/OpenSans-Regular.svg#OpenSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+/* 1.OPEN SANS REGULAR END */
+
+/* 2.OPEN SANS LIGHT START */
+
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('../fonts/OpenSans-Light.eot');
+    src: url('../fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans-Light.woff2') format('woff2'),
+        url('../fonts/OpenSans-Light.woff') format('woff'),
+        url('../fonts/OpenSans-Light.ttf') format('truetype'),
+        url('../fonts/OpenSans-Light.svg#OpenSans-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* 2.OPEN SANS LIGHT END */
+
+/* 3.OPEN SANS BOLD START */
+
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('../fonts/OpenSans-Bold.eot');
+    src: url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+        url('../fonts/OpenSans-Bold.woff') format('woff'),
+        url('../fonts/OpenSans-Bold.ttf') format('truetype'),
+        url('../fonts/OenSans-Bold.svg#OpenSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* 3.OPEN SANS BOLD END */
+
+/* 4.OPEN SANS SEMI BOLD START */
+
+@font-face {
+    font-family: 'OpenSansSemiBold';
+    src: url('../fonts/OpenSans-SemiBold.eot');
+    src: url('../fonts/OpenSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans-SemiBold.woff2') format('woff2'),
+        url('../fonts/OpenSans-SemiBold.woff') format('woff'),
+        url('../fonts/OpenSans-SemiBold.ttf') format('truetype'),
+        url('../fonts/OpenSans-SemiBold.svg#OpenSans-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+/* 4.OPEN SANS SEMI BOLD END */
+
+/*
+--------------------------------------------------------------
+FONTS END 
+--------------------------------------------------------------
+*/
