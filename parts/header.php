@@ -24,6 +24,9 @@
     <!-- SELF-WRITTEN STYLES -->
     <link rel="stylesheet" href="styles/style.css">
 
+    <!-- JQUERY  -->
+    <script src="scripts/jquery.js"></script>
+
     <!-- SELF-WRITTEN SCRIPTS -->
     <script src="scripts/script.js"></script>
 
@@ -49,7 +52,7 @@
 
                 <a class="header__phone" href="tel:+74951520545">8 (495) 152-05-45</a>
 
-                <button class="border-button header__button">
+                <button class="common-border-button header__button">
                     Заказать звонок
                 </button>
             </div>
@@ -69,7 +72,7 @@
                 </ul>
 
                 <form class="search">
-                    <input class="search__input btn_white" type="text" placeholder="Поиск по сайту">
+                    <input class="search__input common-btn_white" type="text" placeholder="Поиск по сайту">
                     <button class="search__submit-btn" type="submit"></button>
                 </form>
 

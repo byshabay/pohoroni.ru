@@ -18,7 +18,9 @@ COMMON STYLES START
     --semiBold: 'OpenSansSemiBold';
     --max-width: 1140px;
     --text-48: calc( (100vw - 300px)/(1140 - 300) * (48 - 40) + 40px);
+    --text-36: calc( (100vw - 300px)/(1140 - 300) * (36 - 30) + 30px);
     --text-20: calc( (100vw - 300px)/(1140 - 300) * (20 - 18) + 18px);
+    --text-18: calc( (100vw - 300px)/(1140 - 300) * (18 - 15) + 15px);
     --text-15: calc( (100vw - 300px)/(1140 - 300) * (15 - 13) + 13px);
     --text-14: calc( (100vw - 300px)/(1140 - 300) * (14 - 12) + 12px);
     --text-12: calc( (100vw - 300px)/(1140 - 300) * (12 - 10) + 10px);
@@ -28,6 +30,7 @@ COMMON STYLES START
     --lightGray: #929292;
     --pastelGray: #D2C4C2;
     --dirtyWhite: #EFEFEF;
+    --middleDirtyWhite: #F2EFEE;
     --middleLightGray: #BEB4B3;
     --deepTaupe: #816B68;
     --NewYorkPink: #CD8A82;
@@ -49,13 +52,17 @@ button {
     cursor: pointer;
 }
 
+li {
+    list-style: none;
+}
+
 .container {
     width: 90%;
     max-width: var(--max-width);
     margin: 0 auto;
 }
 
-.border-button {
+.common-border-button {
     padding: 15px 25px;
 
     font-size: var(--text-15);
@@ -67,11 +74,15 @@ button {
     border-radius: 45px;
 }
 
+a.common-border-button:visited {
+    color: var(--peach);
+}
+
 .page {
     padding: 160px 0;
 }
 
-.btn_white {
+.common-btn_white {
     display: block;
     padding: 10px;
 
@@ -85,6 +96,34 @@ button {
     text-decoration: none;
 }
 
+a.common-btn_white:visited {
+    color: var(--peach);
+}
+
+.common-h2 {
+    font-family: var(--bold);
+    font-size: var(--text-36);
+    line-height: 40px;
+
+    color: var(--horses);
+}
+
+.common-h3{
+    font-family: var(--bold);
+    font-size: var(--text-18);
+    line-height: 24px;
+
+    color: var(--peach);
+}
+
+.common-p {
+    font-family: var(--regular);
+    font-size: var(--text-15);
+    line-height: 23px;
+
+    color: var(--deepTaupe);
+}
+
 /* 3.COMMON MEDIA START */
 
 /* > 1140px */
@@ -92,7 +131,9 @@ button {
 
     :root{
         --text-48: 48px;
+        --text-36: 36px;
         --text-20: 20px;
+        --text-18: 18px;
         --text-15: 15px;
         --text-14: 14px;
         --text-12: 12px;
@@ -160,6 +201,73 @@ MAIN PAGE START
 }
 
 /* 4.MAIN BANNER END */
+
+/* 5.HOW WE WORK START */
+.how-we-work {
+    margin: 100px auto;
+}
+
+.how-we-work__h2 {
+    margin: 0 0 65px;
+
+    text-align: center;
+}
+
+.how-we-work__info-box {
+    display: flex;
+    align-items: center;
+}
+
+.how-we-work__text-box {
+    width: 50%;
+    margin: 0 100px 0 0;
+}
+
+.how-we-work__text-box p {
+    margin: 25px 10px 0 0px
+}
+
+/* 5.HOW WE WORK END */
+
+/* 6.WHY BLOCK START */
+
+.why-block {
+    padding: 52px 0;
+    background-color: var(--middleDirtyWhite);
+    text-align: center;
+}
+
+.why-block__items {
+    display: flex;
+    justify-content: space-between;
+    margin: 49px 0 0 0;
+}
+
+.why-block__item {
+    width: 23%;
+    padding: 33px 13px 50px;
+
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+.why-block__item:hover {
+    background-color: #fff;
+    border-bottom: 9px solid var(--peach);
+
+    transition: 0.3s;
+}
+
+.why-block__item img {
+    width: 45px;
+    height: 45px;
+}
+
+.why-block__h3 {
+    margin: 20px 0;
+}
+
+/* 6.WHY BLOCK END */
 
 
 /* 
