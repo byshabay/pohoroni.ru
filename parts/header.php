@@ -27,6 +27,10 @@
     <!-- JQUERY  -->
     <script src="scripts/jquery.js"></script>
 
+    <!-- SLICK -->
+    <script src="scripts/slick.min.js"></script>
+    <script src="scripts/slider.js"></script>
+
     <!-- SELF-WRITTEN SCRIPTS -->
     <script src="scripts/script.js"></script>
 

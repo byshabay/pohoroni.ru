@@ -19,6 +19,7 @@ COMMON STYLES START
     --max-width: 1140px;
     --text-48: calc( (100vw - 300px)/(1140 - 300) * (48 - 40) + 40px);
     --text-36: calc( (100vw - 300px)/(1140 - 300) * (36 - 30) + 30px);
+    --text-24: calc( (100vw - 300px)/(1140 - 300) * (24 - 21) + 21px);
     --text-20: calc( (100vw - 300px)/(1140 - 300) * (20 - 18) + 18px);
     --text-18: calc( (100vw - 300px)/(1140 - 300) * (18 - 15) + 15px);
     --text-15: calc( (100vw - 300px)/(1140 - 300) * (15 - 13) + 13px);
@@ -45,6 +46,7 @@ COMMON STYLES START
     margin: 0;
     padding: 0;
 
+    font-family: var(--regular);
     outline: none;
 }
 
@@ -66,7 +68,6 @@ li {
     padding: 15px 25px;
 
     font-size: var(--text-15);
-    font-family: var(--regular);
 
     border: 1px solid var(--peach);
     background-color: transparent;
@@ -86,7 +87,6 @@ a.common-border-button:visited {
     display: block;
     padding: 10px;
 
-    font-family: var(--regular);
     border-radius: 48px;
     border: 0px solid transparent;
 
@@ -117,7 +117,6 @@ a.common-btn_white:visited {
 }
 
 .common-p {
-    font-family: var(--regular);
     font-size: var(--text-15);
     line-height: 23px;
 
@@ -133,6 +132,7 @@ a.common-btn_white:visited {
         --text-48: 48px;
         --text-36: 36px;
         --text-20: 20px;
+        --text-24: 24px;
         --text-18: 18px;
         --text-15: 15px;
         --text-14: 14px;
@@ -249,6 +249,7 @@ MAIN PAGE START
 
     transition: 0.3s;
     box-sizing: border-box;
+    border-bottom: 9px solid transparent;
 }
 
 .why-block__item:hover {
@@ -269,6 +270,167 @@ MAIN PAGE START
 
 /* 6.WHY BLOCK END */
 
+/* 7.PROCEDURE START */
+
+.procedure.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 90px auto;
+}
+
+.procedure__info-box {
+    width: 40%;
+}
+
+.procedure__h2 {
+    margin: 0 0 30px;
+}
+
+.procedure__p {
+    margin: 16px 0 0;
+}
+
+/* 7.1.SLIDER START */
+
+.slider__wrapper {
+    width: 40%;
+}
+
+.slider {
+    position: relative;
+}
+
+.slick-track {
+    display: flex;
+}
+
+.slider__item {
+    position: relative;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slider__tab {
+    display: flex;
+    align-items: center;
+
+}
+
+.slider__tabs {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.slider__tabs hr {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    z-index: 0;
+
+
+    border: 0px solid transparent;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23A8544AFF' stroke-width='3' stroke-dasharray='3%2c 16' stroke-dashoffset='30' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+
+.slider__tab a{
+    position: relative;
+    display: block;
+    width: 45px;
+    height: 45px;
+    padding: 7px;
+    z-index: 1;
+
+    font-family: var(--bold);
+    font-size: var(--text-24) ;
+
+    background-color: var(--NewYorkPink);
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+    cursor: default ;
+}
+
+a.slider_active-tab {
+    display: flex;
+    align-items: center;
+
+
+    background-color: var(--peach);
+    transform: scale(1.7);
+    transition: 0.3s;
+}
+
+.slider__h1 {
+    margin: 40px 0 5px;
+    font-family: var(--bold);
+    font-size: var(--text-24);
+
+    color: var(--horses);
+}
+
+.slider__item p{
+    margin: 20px 0 30px;
+}
+
+.slick-next {
+    position: absolute;
+    top: 100%; 
+    left: 45px;
+
+    background: url("../images/next-active-arrow.png") center no-repeat;
+    background-size: 30%;
+}
+
+.slick-prev {
+    position: absolute;
+    top: 100%;
+
+    background: url("../images/prev-active-arrow.png") center no-repeat;
+    background-size: 30%;
+}
+
+.slick-prev.slick-disabled{
+    background: url("../images/prev-arrow.png") center no-repeat;
+    background-size: 30%;
+    background-color: var(--middleDirtyWhite);
+}
+
+.slick-next.slick-disabled{
+    background: url("../images/next-arrow.png") center no-repeat;
+    background-size: 30%;
+    background-color: var(--middleDirtyWhite);
+}
+
+.slick-arrow {
+    width: 40px;
+    height: 40px;
+
+    font-size: 0px;
+
+    border: 0px solid transparent;
+    background-color: var(--middleDirtyWhite);
+}
+
+.slick-arrow:hover {
+   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.slick-arrow.slick-disabled:hover {
+    box-shadow: 0 0 0 0 ;
+}
+
+
+
+/* 7.1.SLIDER END */
+
+/* 7.PROCEDURE END */
 
 /* 
 --------------------------------------------------------------
