@@ -4,6 +4,9 @@ COMMON STYLES START
 --------------------------------------------------------------
 */
 
+/* NORMALIZE CSS START */
+@import url('normalize.css');
+
 /* 1.HEADER START */
 
 @import url('header.css');
@@ -642,6 +645,7 @@ hr.prices__active-tab {
 
 .partners__h2 {
     margin: 107px 0 67px;
+
     text-align: center;
 }
 
@@ -661,8 +665,30 @@ hr.prices__active-tab {
     width: 15%;
 }
 
-
 /* 10.PARTNERS END */
+
+/* 11.LICENSES START */
+.licenses__h2 {
+    margin: 107px 0 67px;
+
+    text-align: center;
+}
+
+.licenses__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.licenses__item {
+    width: 20%;
+}
+
+.licenses__item img {
+    width: 100%;
+}
+
+/* 11.LICENSES END */
 
 /* 
 --------------------------------------------------------------

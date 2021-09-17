@@ -24,12 +24,22 @@
     <!-- SELF-WRITTEN STYLES -->
     <link rel="stylesheet" href="styles/style.css">
 
+    <!-- FANCYBOX -->
+    <!-- эти стили подлючаются к главной -->
+    <link rel="stylesheet" href="styles/fancybox.css">
+
+
     <!-- JQUERY  -->
     <script src="scripts/jquery.js"></script>
 
     <!-- SLICK -->
+    <!-- эти скрипты подлючаются к главной -->
     <script src="scripts/slick.min.js"></script>
     <script src="scripts/slider.js"></script>
+
+    <!-- FANCY BOX -->
+    <!-- эти скрипты подлючаются к главной -->
+    <script src="scripts/fancybox.umd.js"></script>
 
     <!-- SELF-WRITTEN SCRIPTS -->
     <script src="scripts/script.js"></script>

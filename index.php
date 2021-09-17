@@ -491,22 +491,22 @@
         <div class="common-h2 partners__h2">Наши партнеры</div>
         <ul class="partners__items ">
             <li class="partners__item">
-                <a href="https://www.vsk.ru/">
+                <a target="_blank" href="https://www.vsk.ru/">
                     <img src="images/vsk.png">
                 </a>
             </li>
             <li class="partners__item partners__item-mini">
-                <a href="https://www.sogaz.ru/">
+                <a target="_blank" href="https://www.sogaz.ru/">
                     <img src="images/sogaz.png">
                 </a>
             </li>
             <li class="partners__item ">
-                <a href="https://www.rgs.ru/">
+                <a target="_blank" href="https://www.rgs.ru/">
                     <img src="images/rgs.png">
                 </a>
             </li>
             <li class="partners__item">
-                <a href="https://pfr.gov.ru/">
+                <a target="_blank" href="https://pfr.gov.ru/">
                     <img src="images/pfr.png">
                 </a>
             </li>
@@ -514,6 +514,37 @@
     </section>
 
     <!-- 5.PARTNERS END -->
+
+    <!-- 6.LICENSES START -->
+
+    <section class="licenses container">
+        <div class="common-h2 licenses__h2">Наши лицензии и сертификаты</div>
+        <ul class="licenses__items">
+            <li class="licenses__item">
+                <a class="licenses__item-img" data-fancybox="gallery" href="images/certificate1.jpeg">
+                    <img src="images/certificate1.jpeg">
+                </a>
+
+            </li>
+            <li class="licenses__item">
+                <a class="licenses__item-img" data-fancybox="gallery" href="images/certificate2.jpeg">
+                    <img src="images/certificate2.jpeg">
+                </a>
+            </li>
+            <li class="licenses__item">
+                <a class="licenses__item-img" data-fancybox="gallery" href="images/certificate3.png">
+                    <img src="images/certificate3.png">
+                </a>
+            </li>
+            <li class="licenses__item">
+                <a class="licenses__item-img" data-fancybox="gallery" href="images/certificate4.png">
+                    <img src="images/certificate4.png">
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- 6.LICENSES END -->
 </main>
 
 <!-- 2.MAIN END -->
