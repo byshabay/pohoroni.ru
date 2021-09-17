@@ -484,6 +484,36 @@
     </section>
 
     <!-- 4.SERVICES END -->
+
+    <!-- 5.PARTNERS START -->
+
+    <section class="partners container">
+        <div class="common-h2 partners__h2">Наши партнеры</div>
+        <ul class="partners__items ">
+            <li class="partners__item">
+                <a href="https://www.vsk.ru/">
+                    <img src="images/vsk.png">
+                </a>
+            </li>
+            <li class="partners__item partners__item-mini">
+                <a href="https://www.sogaz.ru/">
+                    <img src="images/sogaz.png">
+                </a>
+            </li>
+            <li class="partners__item ">
+                <a href="https://www.rgs.ru/">
+                    <img src="images/rgs.png">
+                </a>
+            </li>
+            <li class="partners__item">
+                <a href="https://pfr.gov.ru/">
+                    <img src="images/pfr.png">
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- 5.PARTNERS END -->
 </main>
 
 <!-- 2.MAIN END -->

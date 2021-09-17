@@ -636,9 +636,33 @@ hr.prices__active-tab {
     transition: 0.3s;
 }
 
-
-
 /* 9.SERVICES END */
+
+/* 10.PARTNERS START */
+
+.partners__h2 {
+    margin: 107px 0 67px;
+    text-align: center;
+}
+
+.partners__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.partners__item {
+    width: 20%;
+}
+
+.partners__item img {
+    width: 100%;
+}
+.partners__item-mini {
+    width: 15%;
+}
+
+
+/* 10.PARTNERS END */
 
 /* 
 --------------------------------------------------------------
