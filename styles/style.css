@@ -714,7 +714,7 @@ hr.prices__active-tab {
 
 .reviews__slider-item {
     position: relative;
-    margin: 0 32px 40px 0;
+    margin: 40px 32px 40px 0;
     padding: 20px 70px 118px 40px;
     
     background-color: #fff;
@@ -762,6 +762,71 @@ hr.prices__active-tab {
 /* 12.1.REVIEWS SLIDER END */
 
 /* 12.REVIEWS END */
+
+/* 11.CONTANCT START */
+
+.ymaps-2-1-79-map {
+	filter: grayscale(1);
+	-ms-filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+	-moz-filter: grayscale(1);
+	-o-filter: grayscale(1);
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts__map {
+    width: 50%;
+}
+
+.contacts__h2 {
+    margin: 0 0 20px;
+}
+
+.contacts__wrapper {
+    width: 40%;
+}
+
+.contacts__item {
+    display: flex;
+    align-items: center;
+    margin: 29px 0 0;
+
+    color: var(--deepTaupe);
+    font-size: var(--text-18);
+    line-height: 24px;
+    text-decoration: none;
+}
+
+.contacts__item img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px 0 0;
+    padding: 5px;
+
+    background-color: var(--middleDirtyWhite) ;
+    transition: 0.3s;
+}
+
+.contacts__item:hover img{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: 0.3s;
+}
+
+.contacts__p {
+    margin: 130px 0 0;
+}
+
+.contacts__btn {
+    width: 40%;
+    margin: 40px 0 0;
+    padding: 15px 10px;
+}
+
+/* 11.CONTACTS END */
 
 /* 
 --------------------------------------------------------------
