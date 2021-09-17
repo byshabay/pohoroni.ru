@@ -127,7 +127,7 @@
 
             </ul>
 
-            <div class="slider slider slider-nav">
+            <div class="slider common-sm-slider slider-nav">
 
                 <!-- 1 SLIDE -->
 
@@ -193,7 +193,7 @@
 
     <!-- 2.4.PROCEDURE END -->
 
-    <!-- 3.PRICES START -->
+    <!-- 2.5.PRICES START -->
 
     <section class="prices container">
 
@@ -201,7 +201,7 @@
             ЦЕНЫ НА РИТУАЛЬНЫЕ УСЛУГИ
         </div>
 
-        <!-- 3.1.TABS OF PRICES START -->
+        <!-- 2.5.1.TABS OF PRICES START -->
 
         <ul class="prices__tabs">
             <li class="prices__tab">
@@ -214,9 +214,9 @@
             </li>
         </ul>
 
-        <!-- 3.1.TABS OF PRICES END -->
+        <!-- 2.5.1.TABS OF PRICES END -->
 
-        <!-- 3.2.PRICES TARIFFS START -->
+        <!-- 2.5.2.PRICES TARIFFS START -->
 
         <!-- BURIAL -->
         <div id="price-1" class="prices__tariffs active-tariff">
@@ -367,14 +367,14 @@
                 <a class="prices__more-btn" href="#">Узнать подробнее</a>
             </div>
         </div>
-        <!-- 3.2.PRICES TARIFFS END -->
+        <!-- 2.5.2.PRICES TARIFFS END -->
 
 
     </section>
 
-    <!-- 3.PRICES END -->
+    <!-- 2.5.PRICES END -->
 
-    <!-- 4.SERVICES START -->
+    <!-- 2.6.SERVICES START -->
 
     <section class="services container">
         <div class="common-h2 services__h2">
@@ -483,9 +483,9 @@
         </ul>
     </section>
 
-    <!-- 4.SERVICES END -->
+    <!-- 2.6.SERVICES END -->
 
-    <!-- 5.PARTNERS START -->
+    <!-- 2.7.PARTNERS START -->
 
     <section class="partners container">
         <div class="common-h2 partners__h2">Наши партнеры</div>
@@ -513,9 +513,9 @@
         </ul>
     </section>
 
-    <!-- 5.PARTNERS END -->
+    <!-- 2.7.PARTNERS END -->
 
-    <!-- 6.LICENSES START -->
+    <!-- 2.8.LICENSES START -->
 
     <section class="licenses container">
         <div class="common-h2 licenses__h2">Наши лицензии и сертификаты</div>
@@ -544,7 +544,81 @@
         </ul>
     </section>
 
-    <!-- 6.LICENSES END -->
+    <!-- 2.8.LICENSES END -->
+
+    <!-- 2.9.REVIEWS START -->
+    <section class="reviews">
+        <div class="container">
+            <div class="common-h2 reviews__h2">Отзывы наших клиентов</div>
+
+            <!-- 2.9.1.SLIDER START -->
+
+            <div class="slider common-lg-slider reviews__slider">
+                <!-- 1 SLIDE -->
+                <div class="slider__item reviews__slider-item">
+                    <div class="reviews__quote common-p">
+                        Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: сплочённость команды профессионалов влечет за собой процесс внедрения и модернизации глубокомысленных рассуждений.
+                    </div>
+                    <div class="reviews__person">
+                        <img src="images/man.png">
+                        <div class="reviews__meta-info">
+                            <div class="reviews__full-name">
+                                Иван Авдеев
+                            </div>
+                            <div class="reviews__date">
+                                07.03.2020
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 1 SLIDE -->
+
+                <div class="slider__item reviews__slider-item">
+                    <div class="reviews__quote common-p">
+                        Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: сплочённость команды профессионалов.
+                    </div>
+                    <div class="reviews__person">
+                        <img src="images/man.png">
+                        <div class="reviews__meta-info">
+                            <div class="reviews__full-name">
+                                Иван Авдеев
+                            </div>
+                            <div class="reviews__date">
+                                08.03.2020
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2 SLIDE -->
+
+                <div class="slider__item reviews__slider-item">
+                    <div class="reviews__quote common-p">
+                        Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: сплочённость команды профессионалов влечет за собой процесс внедрения.
+                    </div>
+                    <div class="reviews__person">
+                        <img src="images/man.png">
+                        <div class="reviews__meta-info">
+                            <div class="reviews__full-name">
+                                Иван Авдеев
+                            </div>
+                            <div class="reviews__date">
+                                09.03.2020
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 2.9.1.SLIDER END -->
+
+        </div>
+    </section>
+
+
+    <!-- 2.9.REVIEWS END -->
 </main>
 
 <!-- 2.MAIN END -->

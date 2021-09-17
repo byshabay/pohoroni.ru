@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    // 1.INITIALIZATION START
+    // 1.INITIALIZATION PROCEDURE SLIDER START
 
     $('.slider-for').slick({
         slidesToShow: 4,
@@ -26,16 +26,16 @@ $(document).ready(function () {
 
     $('.slider-for').slick('unslick');
 
-    // 1.INITIALIZATION END
+    // 1.INITIALIZATION PROCEDURE SLIDER END
 
-    // 2.SLIDER NUMBER START
+    // 2.PROCEDURE SLIDER NUMBER START
 
-    $(".slick-arrow").click(function () {
-        $(".slider__item").each(function (i, elem) {
+    $(".common-sm-slider .slick-arrow").click(function () {
+        $(".common-sm-slider .slider__item").each(function (i, elem) {
             if (
                 $(this).hasClass('slick-current')
             ) {
-                $('.slider_current').removeClass('slider_current');
+                $('.common-sm-slider .slider_current').removeClass('slider_current');
                 $(this).addClass("slider_current");
                 $('.slider_active-tab').removeClass('slider_active-tab');
                 $('a[href = "#' + $(".slider_current").attr("id") + '"]').addClass("slider_active-tab");
@@ -47,6 +47,18 @@ $(document).ready(function () {
         return false;
     });
 
-    // 2.SLIDER NUMBER END
+    // 2.PROCEDURE SLIDER NUMBER END
+
+    // 3.COMMON LARGE SLIDER INITIALIZATION START
+
+    $(".common-lg-slider").slick({
+        slidesToShow: 2.8,
+        slidesToScroll: 1,
+        infinite: false,
+        cssEase: false,
+        useCSS: false,
+    });
+
+    // 3.COMMON LARGE SLIDER INITIALIZATION END
 
 });
