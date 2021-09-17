@@ -660,8 +660,5 @@
 <!-- 2.MAIN END -->
 
 <!-- 3.FOOTER START -->
-
+<?php include('parts/footer.php') ?>
 <!-- 3.FOOTER END -->
-</body>
-
-</html>
