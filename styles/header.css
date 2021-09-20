@@ -294,6 +294,7 @@ a.header__phone {
     }
     header.mobile-header_active .menu-wrapper.submenu-mobile-active {
         padding: 0;
+        height: 100vh;
     }
 
     header.mobile-header_active .menu {
@@ -381,6 +382,41 @@ a.header__phone {
     .header__gost {
         display: none;
     }
+
+    .header__top-nav .header__tagline {
+        display: none;
+    }
+
+    .blackout {
+        top: 85px;
+    }
 }
+
+/* 676px */
+
+@media(max-width: 676px) {
+    .header__top-nav .header__phone-box {
+        display: none;
+    }
+
+    .menu-wrapper .header__phone-box {
+        display: flex;
+        margin: 20px 0 0
+    }
+
+    .header__top-nav .container {
+        justify-content: flex-start;
+    }
+
+    .common-border-button {
+        position: absolute;
+        right: 15px;
+    }
+
+    .logo {
+        margin: 0 0 0 15px;
+    }
+}
+
 
 /* 4.HEADER MEDIA END */

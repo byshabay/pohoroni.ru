@@ -113,8 +113,6 @@
                             <li class="menu__sub-menu-item">
                                 <a href="#">Подпункт 3</a>
                             </li>
-
-
                         </ul>
 
                         <!-- 2.1.SUBMENU END  -->
@@ -148,10 +146,6 @@
                     <input class="search__input common-btn_white" type="text" placeholder="Поиск по сайту">
                     <button class="search__submit-btn" type="submit"></button>
                 </form>
-
-                <div class="header__tagline">Более 1200 людей в год доверяют нам самый сложный день</div>
-
-
             </nav>
         </section>
         <!-- 2.MAIN MENU END -->
