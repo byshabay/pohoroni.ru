@@ -33,6 +33,35 @@ $(document).ready(function () {
 
     // 2.TARIFFS TABS END
 
+    // 3.BURGER START
+
+
+    $('.burger').click(function () {
+        $(this).toggleClass('mobile-header_active');
+        $('.header, .main, .blackout').toggleClass('mobile-header_active');
+        if (
+            $(this).hasClass('submenu-mobile-active')
+        ) {
+            $('.submenu-mobile-active').removeClass('submenu-mobile-active');
+            $('.header, .main, .blackout').toggleClass('mobile-header_active');
+            $(this).toggleClass('mobile-header_active');
+        }
+    });
+
+    // 3.BURGER END
+
+    // 4.SUBMENU MOBILE START
+
+    $('.menu__item_parent').click(function (event) {
+        console.log(event);
+        $(this).addClass('submenu-mobile-active');
+        $(this).children('.menu__sub-menu').addClass("submenu-mobile-active");
+        $(".burger").addClass("submenu-mobile-active");
+        $(".menu-wrapper").addClass("submenu-mobile-active");
+    });
+
+    // 4.SUBMENU MOBILE END
+
 
 
 });

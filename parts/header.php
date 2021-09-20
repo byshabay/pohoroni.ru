@@ -51,9 +51,16 @@
         <!-- 1.TOP NAVIGATION START -->
         <div class="header__top-nav">
             <div class="container">
+
+                <!-- 1.1.BURGER START -->
+                <div class="burger burger-view">
+                    <span></span>
+                </div>
+
+                <!-- 1.2.BURGER END -->
                 <img class="logo" src="images/logo.png" alt="Логотип pohoroni.ru">
                 <div class="header__tagline">Более 1200 людей в год доверяют нам самый сложный день</div>
-                <img src="images/gost.png" alt="Сертификат соответсвия ГОСТ Р">
+                <img class="header__gost" src="images/gost.png" alt="Сертификат соответсвия ГОСТ Р">
                 <div class="header__phone-box">
                     <span class="header__phone-top-text">
                         круглосуточная линия
@@ -64,22 +71,74 @@
                     </span>
                 </div>
 
-                <a class="header__phone" href="tel:+74951520545">8 (495) 152-05-45</a>
+                <a class="header__phone header__phone_second" href=" tel:+74951520545">8 (495) 152-05-45</a>
 
                 <button class="common-border-button header__button">
                     Заказать звонок
                 </button>
-            </div>
 
+
+
+            </div>
         </div>
         <!-- 1.TOP NAVIGATION END -->
 
         <!-- 2.MAIN MENU START -->
         <section class="menu-wrapper">
             <nav class="container">
+                <div class="header__phone-box">
+                    <span class="header__phone-top-text">
+                        круглосуточная линия
+                    </span>
+                    <a class="header__phone header__phone_first" href="tel:+78007759982">8 (800) 775-99-82</a>
+                    <span class="header__phone-bottom-text">
+                        бесплатный звонок по РФ
+                    </span>
+                </div>
+
+                <a class="header__phone header__phone_second" href="tel:+74951520545">8 (495) 152-05-45</a>
                 <ul class="menu">
-                    <li class="menu__item"><a href="#">О компании</a></li>
-                    <li class="menu__item"><a href="#">Услуги</a></li>
+                    <li class="menu__item menu__item_parent">
+                        <a href="#">О компании</a>
+
+                        <!-- 2.1.SUBMENU START -->
+
+                        <ul class="menu__sub-menu">
+                            <li class="menu__sub-menu-item">
+                                <a href="#">Подпункт 1</a>
+                            </li>
+                            <li class="menu__sub-menu-item">
+                                <a href="#">Подпункт 2</a>
+                            </li>
+                            <li class="menu__sub-menu-item">
+                                <a href="#">Подпункт 3</a>
+                            </li>
+
+
+                        </ul>
+
+                        <!-- 2.1.SUBMENU END  -->
+
+                    </li>
+                    <li class="menu__item menu__item_parent">
+                        <a href="#">Услуги</a>
+
+                        <!-- 2.1.SUBMENU START -->
+
+                        <ul class="menu__sub-menu">
+                            <li class="menu__sub-menu-item">
+                                <a href="#">Подпункт 1</a>
+                            </li>
+                            <li class="menu__sub-menu-item">
+                                <a href="#">Подпункт 2</a>
+                            </li>
+                            <li class="menu__sub-menu-item">
+                                <a href="#">Подпункт 3</a>
+                            </li>
+                        </ul>
+
+                        <!-- 2.1.SUBMENU END  -->
+                    </li>
                     <li class="menu__item"><a href="#">Ритуальные товары</a></li>
                     <li class="menu__item"><a href="#">Стоимость похорон</a></li>
                     <li class="menu__item"><a href="#">Контакты</a></li>
@@ -90,7 +149,16 @@
                     <button class="search__submit-btn" type="submit"></button>
                 </form>
 
+                <div class="header__tagline">Более 1200 людей в год доверяют нам самый сложный день</div>
+
+
             </nav>
         </section>
         <!-- 2.MAIN MENU END -->
     </header>
+    <!-- 3.BLACKOUT START -->
+    <div class="blackout">
+
+    </div>
+
+    <!-- 3.BLACKOUT END -->
