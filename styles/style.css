@@ -930,13 +930,22 @@ hr.prices__active-tab {
     }
     
     .contacts {
-        flex-direction: column;
+        flex-direction: column-reverse;
+        align-items: center;
     }
 
-    .contacts__map {
-        /* width: 50%; */
+    .contacts__map{
+        width: 70%;
     }
 
+    .contacts__wrapper {
+        width: 70%; 
+        margin: 0 auto 70px;
+    }
+
+    .contacts__p {
+        margin: 70px 0 0;
+    }
 }
 
 /* 927px */
