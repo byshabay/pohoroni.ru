@@ -18,7 +18,6 @@ COMMON STYLES START
 @import url('footer.css');
 
 /* 2.FOOTER END */
-
 :root  {
     /*  Arial, Helvetica, sans-serif; */
     --regular: 'OpenSans';
@@ -139,6 +138,17 @@ a.common-btn_white:visited {
     color: var(--deepTaupe);
 }
 
+.fancybox__container  .fancybox__backdrop {
+    background: rgba(45, 33, 32, 0.7);
+}
+
+.fancybox__content>button.carousel__button.is-close {
+    top: 15px;
+    right: 15px;
+    
+    color: var(--horses);
+}
+
 /* 3.COMMON MEDIA START */
 
 /* > 1140px */
@@ -159,6 +169,22 @@ a.common-btn_white:visited {
         height: 2px;
     }
 
+}
+
+/* 453px */
+
+@media(max-width: 453px){
+    .page {
+        padding: 120px 0;
+    }
+
+    .common-h2 {
+        font-size: var(--text-24);
+    }
+
+    .common-border-button {
+        font-size: var(--text-14);
+    }
 }
 
 /* 3.COMMON MEDIA END */
@@ -245,6 +271,11 @@ MAIN PAGE START
 
 .how-we-work__text-box p {
     margin: 25px 10px 0 0px
+}
+
+.how-we-work__video {
+    width: 555px;
+    height: 332px;
 }
 
 /* 5.HOW WE WORK END */
@@ -853,7 +884,7 @@ hr.prices__active-tab {
         margin: 0 auto;
     }
     
-    .how-we-work__info-box iframe {
+    .how-we-work__video {
         width: 90%;
         height: 400px;
         margin: 65px auto 0
@@ -995,6 +1026,104 @@ hr.prices__active-tab {
 @media(max-width: 673px) {
     .banner__box {
         width: 90%;
+    }
+
+    .procedure__order-btn {
+        width: 100%;
+    }
+
+    .prices__tariff-h2 {
+        padding: 20px 0 102px;
+    }
+}
+
+/* 453px */
+@media(max-width: 453px) {
+    .banner__h1 {
+        width: 100%;
+
+        font-size: var(--text-36);
+
+        line-height: 1.5;
+    }
+
+    .banner__box {
+        padding: 30px;
+        width: 100%;
+    }
+    
+    .banner__p {
+        width: 100%;
+    }
+
+    .banner__calc {
+        width: 70%;
+        margin: 60px auto 0;
+    }
+
+    .how-we-work__video {
+        height: 250px;
+    }
+
+    .slider__tab a {
+        width: 25px;
+        height: 25px;
+        padding: 4px;
+
+        font-size: var(--text-18);
+    }
+
+    .prices__tab a {
+        font-size: var(--text-15);
+    }
+
+    .prices__tariff-h2 {
+        padding: 13px 0 40px;
+    }
+
+    .prices__p {
+        padding: 10px 5px;
+    }
+
+    .prices__order-btn {
+        width: 88%;
+        left: 6%;
+    }
+
+    .prices__tariffs {
+        margin: 68px 0 0;
+    }
+
+    .partners__item {
+        width: 20%;
+    }
+
+    .licenses__item {
+        width: 50%;
+    }
+
+    .reviews {
+        margin: 40px 0;
+    }
+
+    .contacts__wrapper {
+        width: 90%;
+    }
+
+    .contacts__btn {
+        width: 100%;
+    }
+    
+    .contacts__map {
+        width: 100%;
+    }
+}
+
+/* 340px */
+
+@media(max-width: 340px) {
+    .prices__tariff-h2 {
+        background-size: 76%;
     }
 }
 

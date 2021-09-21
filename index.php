@@ -42,8 +42,10 @@
                     В работе мы ориентируемся на следующие законы: «О погребении и похоронном деле», а также «О погребении и похоронном деле в городе Москве». Все услуги соответствуют установленным стандартам.
                 </p>
             </div>
+            <div class="how-we-work__video">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Pk0bFsPzMzo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
 
-            <iframe width="555px" height="332px" src="https://www.youtube.com/embed/Pk0bFsPzMzo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </section>
 

@@ -11,6 +11,7 @@
 
 .burger-view {
     position: relative;
+    display: none;
     width: 30px;
     height: 20px;
 
@@ -222,18 +223,7 @@ a.header__phone {
 /* 3.BLACKOUT START */
 
 .blackout {
-/*
---------------------------------------------------------------
-УДАЛИТЬ DISPLAY: NONE
---------------------------------------------------------------
-*/
     display: none;
-/*
---------------------------------------------------------------
-УДАЛИТЬ DISPLAY: NONE
---------------------------------------------------------------
-*/
-    opacity: 0;
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -241,13 +231,87 @@ a.header__phone {
     left: 0;
     z-index: 3;
 
-    background-color: rgba(0,0,0,.5);
+    background: rgba(45, 33, 32, 0.7);
     transition: 0.3s;
 }
 
 /* 3.BLACKOUT END */
 
-/* 4.HEADER MEDIA START */
+/* 4.ORDER CALL POPUP START */
+.order-call-popup {
+    display: none;
+}
+
+.common-popup-form.fancybox__content {
+    position: relative;
+    width: 80%;
+    max-width: var(--max-width);
+    padding: 60px 10%;
+
+    background: #fff;
+    text-align: center;
+}
+
+.common-popup-p {
+    font-size: var(--text-18);
+
+    color: var(--deepTaupe);
+    line-height: 24px;
+}
+
+.order-popup-p {
+    margin: 30px 0 70px;
+}
+
+.order-popup {
+    cursor: pointer;
+}
+
+.common-popup-inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 20px;
+}
+
+.common-popup-mini-text {
+    width: 80%;
+    margin: 50px auto 0;
+    font-size: var(--text-12);
+
+    color: var(--deepTaupe);
+    line-height: 18px;
+}
+
+.common-popup-input {
+    padding: 11px 20px;
+
+    font-size: var(--text-15) ;
+
+    color: var(--horses);
+    border-radius: 0px;
+    border: 1px solid var(--pastelGray)
+}
+
+.common-popup-input:focus { 
+    border: 1px solid var(--peach); 
+}
+
+.common-popup-input::placeholder {
+    color: var(--deepTaupe);
+}
+
+button.popup-btn {
+    padding: 15px;
+}
+
+.popup-active {
+    display: flex;
+}
+/* 4.ORDER CALL POPUP END */
+
+/* 5.HEADER MEDIA START */
 
 /* 1140px */
 
@@ -272,6 +336,10 @@ a.header__phone {
     .burger-view.mobile-header_active span {
         transform: scale(0);
         transition: .3s;
+    }
+
+    .burger-view {
+        display: block;
     }
 
     .menu-wrapper {
@@ -316,7 +384,7 @@ a.header__phone {
     }
     
     .blackout.mobile-header_active {
-        opacity: 1;
+        display: block;
 
         transition: 0.3s;
     }
@@ -425,9 +493,30 @@ a.header__phone {
     }
 
     .logo {
+        width: 30%;
         margin: 0 0 0 15px;
+    }
+
+    button.header__button {
+        padding: 10px;
+    }
+
+    .common-popup-inputs {
+        display: flex;
+        flex-direction: column;
     }
 }
 
+/* 570px */
 
-/* 4.HEADER MEDIA END */
+@media(max-width: 570px) {
+    .header__top-nav .container{
+        height: 84px;
+    }
+
+    .menu__sub-menu.submenu-mobile-active {
+        height: 100vh;
+    }
+}
+
+/* 5.HEADER MEDIA END */

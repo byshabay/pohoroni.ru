@@ -48,6 +48,11 @@ $(document).ready(function () {
         }
     });
 
+    $(".blackout").click(function () {
+        $('.mobile-header_active').removeClass('mobile-header_active');
+        $('.submenu-mobile-active').removeClass('submenu-mobile-active');
+    })
+
     // 3.BURGER END
 
     // 4.SUBMENU MOBILE START
@@ -61,7 +66,4 @@ $(document).ready(function () {
     });
 
     // 4.SUBMENU MOBILE END
-
-
-
 });

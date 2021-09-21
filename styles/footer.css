@@ -110,6 +110,10 @@ a.footer__order-btn {
     .footer__column {
         width: 90%;
     }
+
+    .footer__contacts-item a {
+        justify-content: flex-start;
+    }
 }
 
 

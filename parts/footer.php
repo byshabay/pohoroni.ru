@@ -18,7 +18,7 @@
                 </a>
             </li>
             <li class="footer__contacts-item">
-                <a href="#" class="common-btn_white footer__order-btn">
+                <a data-fancybox data-src="#order-call" href="#" class="common-btn_white footer__order-btn order-popup">
                     Заказать звонок
                 </a>
             </li>

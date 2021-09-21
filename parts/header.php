@@ -73,9 +73,9 @@
 
                 <a class="header__phone header__phone_second" href=" tel:+74951520545">8 (495) 152-05-45</a>
 
-                <button class="common-border-button header__button">
+                <a data-fancybox data-src="#order-call" class="common-border-button header__button order-popup">
                     Заказать звонок
-                </button>
+                </a>
 
 
 
@@ -154,5 +154,24 @@
     <div class="blackout">
 
     </div>
-
     <!-- 3.BLACKOUT END -->
+
+    <!-- 4.ORDER CALL POPUP START-->
+    <form id="order-call" class="common-popup-form">
+        <div class="common-h2">
+            Вызов ретуального агента
+        </div>
+        <p class="common-popup-p order-popup-p">
+            С помощью данного сервиса после заполнения всех полей к Вам на указанный адрес приедет ритуальный наш агент.
+        </p>
+        <div class="common-popup-inputs">
+            <input class="common-popup-input" type="text" name="popup-name" id="popup-name" placeholder="Ваше имя">
+            <input class="common-popup-input" type="text" name="popup-phone" id="popup-phone" placeholder="Ваш номер телефона">
+            <input class="common-popup-input" type="text" name="popup-address" id="popup-address" placeholder="Ваш адрес">
+            <button class="common-btn_peach popup-btn" type="submit">Отправить</button>
+        </div>
+        <p class="common-popup-mini-text">
+            Нажимая на кнопку "Отправить", Вы соглашаетесь с правилами обработки персональных данных.
+        </p>
+    </form>
+    <!-- 4.ORDER CALL POPUP END-->
