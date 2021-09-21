@@ -929,6 +929,13 @@ hr.prices__active-tab {
         padding: 20px 20px 118px;
     }
     
+    .contacts {
+        flex-direction: column;
+    }
+
+    .contacts__map {
+        /* width: 50%; */
+    }
 
 }
 
@@ -961,7 +968,15 @@ hr.prices__active-tab {
         background-size: 57%;
     }
 
-     .services__item {
+    .services__item {
+        width: 70%;
+    }
+
+    .reviews .container {
+        width: 80%;
+    }
+
+    .reviews__h2 {
         width: 70%;
     }
 

@@ -623,7 +623,7 @@
     <!-- 2.10.CONTACTS START -->
     <section class="contacts container">
         <div class="contacts__map">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A91c02b928902c24807d8a070dc0c10cc80f6ba9e8ed237dee2659f2f8c728a74&amp;width=550&amp;height=550&amp;lang=ru_RU&amp;scroll=true"></script>
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A91c02b928902c24807d8a070dc0c10cc80f6ba9e8ed237dee2659f2f8c728a74&amp;width=100%&amp;height=550&amp;lang=ru_RU&amp;scroll=true"></script>
         </div>
         <div class="contacts__wrapper">
             <div class="contacts__h2 common-h2">

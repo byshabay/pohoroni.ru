@@ -60,6 +60,16 @@ $(document).ready(function () {
             cssEase: false,
             useCSS: false,
         });
+    } else if (
+        $(document).width() < 815
+    ) {
+        $(".common-lg-slider").slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: false,
+            cssEase: false,
+            useCSS: false,
+        });
     } else {
         $(".common-lg-slider").slick({
             slidesToShow: 2,
