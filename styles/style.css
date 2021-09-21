@@ -155,6 +155,10 @@ a.common-btn_white:visited {
         --text-12: 12px;
     }
 
+    .slider__tabs hr {
+        height: 2px;
+    }
+
 }
 
 /* 3.COMMON MEDIA END */
@@ -351,7 +355,7 @@ MAIN PAGE START
 .slider__tabs hr {
     position: absolute;
     width: 100%;
-    height: 1px;
+    height: 2px;
     z-index: 0;
 
 
@@ -830,6 +834,148 @@ hr.prices__active-tab {
 }
 
 /* 11.CONTACTS END */
+
+/* 12.MAIN PAGE MEDIA START */
+
+/* 1140px */
+
+@media(max-width: 1140px) {
+    .banner__box {
+        background-size: cover;
+    }
+    
+    .how-we-work__info-box {
+        flex-direction: column;
+    }
+
+    .how-we-work__text-box {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .how-we-work__info-box iframe {
+        width: 90%;
+        height: 400px;
+        margin: 65px auto 0
+    }
+    
+    .procedure.container {
+        flex-direction: column;
+    }
+
+    .procedure__info-box {
+        width: 70%;
+    }
+
+    .slider__wrapper {
+        width: 70%;
+        margin: 65px auto 0;
+    }
+
+    .prices__tariffs {
+        flex-direction: column;
+    }
+
+    .prices__tariff {
+        width: 70%;
+        margin: 0 auto 70px;
+    }
+
+    .prices__tariff-h2 {
+        padding: 50px 0 72px;
+
+        background-size: 40%;
+    }
+
+    .prices__order-btn {
+        width: 52%;
+        left: 24%;
+    }
+
+    .services__items {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .services__item {
+        width: 50%;
+        margin: 0 auto 30px;
+    }
+
+    .partners__items {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .partners__item {
+        width: 15%;
+    }
+
+    .licenses__items {
+        flex-direction: column;
+    }
+
+    .licenses__item {
+        width: 30%;
+        margin: 0 0 35px;
+    }
+
+    .reviews .container {
+        width: 90%;
+        margin: 0 0 0 10%;
+    }
+
+    .reviews__slider-item {
+        padding: 20px 20px 118px;
+    }
+    
+
+}
+
+/* 927px */
+@media(max-width: 927px) {
+    .banner__box {
+        margin: 0;
+    }
+
+    .banner__calc {
+        width: 50%;
+    }
+
+    .why-block__items {
+        flex-direction: column;
+    }
+
+    .why-block__item {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .slider__wrapper {
+        margin: 110px auto 75px;
+    }
+
+    .prices__tariff-h2 {
+        padding: 50px 0 102px;
+
+        background-size: 57%;
+    }
+
+     .services__item {
+        width: 70%;
+    }
+
+}
+
+/* 673px */
+@media(max-width: 673px) {
+    .banner__box {
+        width: 90%;
+    }
+}
+
+
+/* 12.MAIN PAGE MEDIA END */
 
 /* 
 --------------------------------------------------------------

@@ -50,14 +50,25 @@ $(document).ready(function () {
     // 2.PROCEDURE SLIDER NUMBER END
 
     // 3.COMMON LARGE SLIDER INITIALIZATION START
-
-    $(".common-lg-slider").slick({
-        slidesToShow: 2.8,
-        slidesToScroll: 1,
-        infinite: false,
-        cssEase: false,
-        useCSS: false,
-    });
+    if (
+        $(document).width() > 1140
+    ) {
+        $(".common-lg-slider").slick({
+            slidesToShow: 2.8,
+            slidesToScroll: 1,
+            infinite: false,
+            cssEase: false,
+            useCSS: false,
+        });
+    } else {
+        $(".common-lg-slider").slick({
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: false,
+            cssEase: false,
+            useCSS: false,
+        });
+    }
 
     // 3.COMMON LARGE SLIDER INITIALIZATION END
 
