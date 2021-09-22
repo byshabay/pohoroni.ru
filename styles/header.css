@@ -105,6 +105,28 @@ a.header__phone {
     padding: 5px 0;
 }
 
+.menu__item_parent>a::after {
+    display: block;
+    content: ' ';
+    width: 10px;
+    height: 10px;
+    margin: 0 0 0 10px;
+
+    background: url("../images/arrow-down.png") center no-repeat;
+    background-size: 80%;
+    transition: .3s;
+}
+.menu__item.menu__item_parent>a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__item:hover>a::after {
+    transform: rotate(-90deg);
+    transition: .3s;
+}
+
 /* 1.TOP NAVIGATION END */
 
 /* 2.MAIN MENU START */
@@ -189,15 +211,18 @@ a.header__phone {
 
 .menu__item:hover .menu__sub-menu {
     opacity: 1;
+    visibility: visible;
     transition: 0.3s;
 }
 
 .menu__sub-menu {
-    opacity: 0;
     position: absolute;
     top: 40px;
+    left: -30px;
     padding: 30px;
 
+    opacity: 0;
+    visibility: hidden;
     background-color: #fff;
     border-radius: 5px;
     transition: 0.3s;
@@ -215,6 +240,53 @@ a.header__phone {
 
     color: var(--peach);
 }
+
+/* 2.1.1.SUB-SUBMENU START */
+
+.menu__sub-menu-parent>a::after {
+    display: block;
+    width: 10px;
+    height: 10px;
+    content: ' ';
+
+    background: url("../images/arrow-down-peach.png") center no-repeat;
+    background-size: 80%;
+}
+
+.menu__sub-menu-parent:hover>a::after {
+    transform: rotate(-90deg);
+    transition: .3s;
+}
+
+.menu__sub-menu-parent:hover .menu__sub-sub-menu {
+    opacity: 1;
+    visibility: visible;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+    transition: .3s;
+}
+
+.menu__item .menu__sub-menu-parent>a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__sub-sub-menu {
+    position: absolute;
+    width: 100%;
+    right: -97%;
+    top: 10px;
+    padding: 30px;
+
+    opacity: 0;
+    visibility: hidden; 
+    background-color: #fff;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* 2.1.1.SUB-SUBMENU END */
 
 /* 2.1.SUBMENU END */
 
@@ -238,10 +310,9 @@ a.header__phone {
 /* 3.BLACKOUT END */
 
 /* 4.ORDER CALL POPUP START */
-.order-call-popup {
+#order-call {
     display: none;
 }
-
 .common-popup-form.fancybox__content {
     position: relative;
     width: 80%;
@@ -367,6 +438,9 @@ button.popup-btn {
         width: 100%;
         left: -100%;
     }
+    .menu__sub-sub-menu {
+        left: -100%;
+    }
 
     header.mobile-header_active .menu-wrapper .container {
         flex-direction: column-reverse;
@@ -417,6 +491,15 @@ button.popup-btn {
         opacity: 1;
     }
 
+    .submenu-mobile-active .sub-submenu-mobile-active {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        padding: 60px 30px 15px 15px;
+        min-height: calc(100vh - 84px);
+        z-index: 6;
+    }
+
     .menu__sub-menu.submenu-mobile-active {
         padding: 60px 15px 0 30px;
     } 
@@ -439,7 +522,7 @@ button.popup-btn {
         transform: scale(0.8);
     }
      
-    .menu__item.submenu-mobile-active>a{
+    .menu__item.submenu-mobile-active>a {
         position: absolute;
         top: 0;
         left: 15px;
@@ -451,6 +534,24 @@ button.popup-btn {
         color: var(--horses);
         text-transform: uppercase;
         transition: 0.3s;
+    }
+
+    .menu__item .sub-submenu-mobile-active>a {
+        position: absolute;
+        top: 19px;
+        left: 15px;
+        z-index: 7;
+
+        font-family: var(--bold);
+        font-size: var(--text-20);
+
+        color: var(--horses);
+        text-transform: uppercase;
+        transition: 0.3s;
+    }
+
+    .menu__item .sub-submenu-mobile-active>a::after {
+        display: none;
     }
 
 }

@@ -104,8 +104,17 @@
                         <!-- 2.1.SUBMENU START -->
 
                         <ul class="menu__sub-menu">
-                            <li class="menu__sub-menu-item">
+                            <li class="menu__sub-menu-item menu__sub-menu-parent">
                                 <a href="#">Подпункт 1</a>
+                                <!-- 2.1.1.SUB-SUB-MENU START -->
+                                <ul class="menu__sub-sub-menu">
+                                    <li class="menu__sub-sub-menu-item"><a href="#">Подподпункт 1</a></li>
+                                    <li class="menu__sub-sub-menu-item"><a href="#">Подподпункт 2</a></li>
+                                    <li class="menu__sub-sub-menu-item"><a href="#">Подподпункт 3</a></li>
+                                    <li class="menu__sub-sub-menu-item"><a href="#">Подподпункт 4</a></li>
+                                    <li class="menu__sub-sub-menu-item"><a href="#">Подподпункт 5</a></li>
+                                </ul>
+                                <!-- 2.1.1.SUB-SUB-MENU START -->
                             </li>
                             <li class="menu__sub-menu-item">
                                 <a href="#">Подпункт 2</a>

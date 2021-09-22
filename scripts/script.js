@@ -43,6 +43,7 @@ $(document).ready(function () {
             $(this).hasClass('submenu-mobile-active')
         ) {
             $('.submenu-mobile-active').removeClass('submenu-mobile-active');
+            $('.sub-submenu-mobile-active').removeClass('sub-submenu-mobile-active');
             $('.header, .main, .blackout').toggleClass('mobile-header_active');
             $(this).toggleClass('mobile-header_active');
         }
@@ -57,8 +58,7 @@ $(document).ready(function () {
 
     // 4.SUBMENU MOBILE START
 
-    $('.menu__item_parent').click(function (event) {
-        console.log(event);
+    $('.menu__item_parent').click(function () {
         $(this).addClass('submenu-mobile-active');
         $(this).children('.menu__sub-menu').addClass("submenu-mobile-active");
         $(".burger").addClass("submenu-mobile-active");
@@ -66,4 +66,12 @@ $(document).ready(function () {
     });
 
     // 4.SUBMENU MOBILE END
+
+    // 5.SUB-SUBMENU MOBILE START
+    $('.menu__sub-menu-parent').click(function(){
+        $(this).addClass('sub-submenu-mobile-active');
+        $(this).parent().addClass('sub-submenu-mobile-active');
+        $(this).children('.menu__sub-sub-menu').addClass("sub-submenu-mobile-active");
+    })
+    // 5.SUB-SUBMENU MOBILE END
 });

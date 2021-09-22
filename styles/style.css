@@ -471,10 +471,12 @@ a.slider_active-tab {
 
     border: 0px solid transparent;
     background-color: var(--middleDirtyWhite);
+    transition: .3s;
 }
 
 .slick-arrow:hover {
    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+   transition: .3s;
 }
 
 .slick-arrow.slick-disabled:hover {
