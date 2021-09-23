@@ -158,14 +158,7 @@
             </nav>
         </section>
         <!-- 2.MAIN MENU END -->
-    </header>
-    <!-- 3.BLACKOUT START -->
-    <div class="blackout">
-
-    </div>
-    <!-- 3.BLACKOUT END -->
-
-    <!-- 4.ORDER CALL POPUP START-->
+            <!-- 4.ORDER CALL POPUP START-->
     <form id="order-call" class="common-popup-form">
         <div class="common-h2">
             Вызов ретуального агента
@@ -184,3 +177,10 @@
         </p>
     </form>
     <!-- 4.ORDER CALL POPUP END-->
+    </header>
+    <!-- 3.BLACKOUT START -->
+    <div class="blackout">
+
+    </div>
+    <!-- 3.BLACKOUT END -->
+

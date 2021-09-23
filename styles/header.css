@@ -127,6 +127,10 @@ a.header__phone {
     transition: .3s;
 }
 
+.compensate-for-scrollbar .header{
+    padding-right: 17px;
+} 
+
 /* 1.TOP NAVIGATION END */
 
 /* 2.MAIN MENU START */
@@ -380,6 +384,7 @@ button.popup-btn {
 .popup-active {
     display: flex;
 }
+
 /* 4.ORDER CALL POPUP END */
 
 /* 5.HEADER MEDIA START */
@@ -414,7 +419,9 @@ button.popup-btn {
     }
 
     .menu-wrapper {
-        display: none;
+        opacity: 0;
+        visibility: hidden;
+        left: -100%;
     }
 
     .menu-wrapper .header__phone {
@@ -424,12 +431,14 @@ button.popup-btn {
 
     header.mobile-header_active .menu-wrapper {
         position: absolute;
-        display: block;
         min-width: 250px;
         height:  calc(100vh - 84px);
+        left: 0;
         z-index: 4;
         padding: 30px 0;
 
+        opacity: 1;
+        visibility: visible;
         transition: 0.3s;
         overflow-x: auto;
     }
