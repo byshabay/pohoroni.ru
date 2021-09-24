@@ -58,7 +58,11 @@
                 </div>
 
                 <!-- 1.2.BURGER END -->
-                <img class="logo" src="images/logo.png" alt="Логотип pohoroni.ru">
+                <a class="logo" href="#">
+                    <img src="images/logo.png" alt="Логотип pohoroni.ru">
+                    <div>Ритуальные <br> Услуги <br> Москвы</div>
+                </a>
+
                 <div class="header__tagline">Более 1200 людей в год доверяют нам самый сложный день</div>
                 <img class="header__gost" src="images/gost.png" alt="Сертификат соответсвия ГОСТ Р">
                 <div class="header__phone-box">
@@ -86,6 +90,9 @@
         <!-- 2.MAIN MENU START -->
         <section class="menu-wrapper">
             <nav class="container">
+                <a data-fancybox data-src="#order-call" class="common-btn_white header__button order-popup">
+                    Заказать звонок
+                </a>
                 <div class="header__phone-box">
                     <span class="header__phone-top-text">
                         круглосуточная линия
@@ -158,29 +165,33 @@
             </nav>
         </section>
         <!-- 2.MAIN MENU END -->
+
+        <!-- 3.ORDER CALL POPUP START-->
+        <form id="order-call" class="common-popup-form">
+            <div class="common-h2">
+                Вызов ретуального агента
+            </div>
+            <p class="common-popup-p order-popup-p">
+                С помощью данного сервиса после заполнения всех полей к Вам на указанный адрес приедет ритуальный наш агент.
+            </p>
+            <div class="common-popup-error">
+                Введите корректные данные
+            </div>
+            <div class="common-popup-inputs">
+                <input class="common-popup-input" type="text" name="popup-name" id="popup-name" placeholder="Ваше имя">
+                <input class="common-popup-input" type="tel" name="popup-phone" id="popup-phone" placeholder="Ваш номер телефона">
+                <input class="common-popup-input" type="text" name="popup-address" id="popup-address" placeholder="Ваш адрес">
+                <button class="common-btn_peach popup-btn" type="submit">Отправить</button>
+            </div>
+            <p class="common-popup-mini-text">
+                Нажимая на кнопку "Отправить", Вы соглашаетесь с правилами обработки <a href="#"> персональных данных</a>.
+            </p>
+        </form>
+        <!-- 3.ORDER CALL POPUP END-->
+
     </header>
-    <!-- 3.BLACKOUT START -->
+    <!-- 4.BLACKOUT START -->
     <div class="blackout">
 
     </div>
-    <!-- 3.BLACKOUT END -->
-
-    <!-- 4.ORDER CALL POPUP START-->
-    <form id="order-call" class="common-popup-form">
-        <div class="common-h2">
-            Вызов ретуального агента
-        </div>
-        <p class="common-popup-p order-popup-p">
-            С помощью данного сервиса после заполнения всех полей к Вам на указанный адрес приедет ритуальный наш агент.
-        </p>
-        <div class="common-popup-inputs">
-            <input class="common-popup-input" type="text" name="popup-name" id="popup-name" placeholder="Ваше имя">
-            <input class="common-popup-input" type="text" name="popup-phone" id="popup-phone" placeholder="Ваш номер телефона">
-            <input class="common-popup-input" type="text" name="popup-address" id="popup-address" placeholder="Ваш адрес">
-            <button class="common-btn_peach popup-btn" type="submit">Отправить</button>
-        </div>
-        <p class="common-popup-mini-text">
-            Нажимая на кнопку "Отправить", Вы соглашаетесь с правилами обработки персональных данных.
-        </p>
-    </form>
-    <!-- 4.ORDER CALL POPUP END-->
+    <!-- 4.BLACKOUT END -->

@@ -56,6 +56,7 @@ COMMON STYLES START
     outline: none;
 }
 
+
 button {
     cursor: pointer;
 }
@@ -543,13 +544,19 @@ hr.prices__active-tab {
 /* 8.2.PRICES TARIFFS START */
 
 .prices__tariffs {
-    display: none;
+    position: absolute;
+    min-width: 0;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
     justify-content: space-between;
     margin: 68px 0 100px 0;
 }
 
-.active-tariff {
-    display: flex;
+.prices__tariffs.active-tariff {
+    position: relative;
+    opacity: 1;
+    visibility: visible;
 }
 
 .prices__tariff {
@@ -906,12 +913,11 @@ hr.prices__active-tab {
     }
 
     .prices__tariffs {
-        flex-direction: column;
-    }
-
-    .prices__tariff {
         width: 70%;
-        margin: 0 auto 70px;
+        margin: 68px auto 70px;
+    } 
+    .prices__tariff {
+        margin: 0 auto 30px;
     }
 
     .prices__tariff-h2 {
@@ -1037,6 +1043,9 @@ hr.prices__active-tab {
     .prices__tariff-h2 {
         padding: 20px 0 102px;
     }
+    .prices__tariffs {
+        width: 90%;
+    }
 }
 
 /* 453px */
@@ -1080,7 +1089,7 @@ hr.prices__active-tab {
     }
 
     .prices__tariff-h2 {
-        padding: 13px 0 40px;
+        padding: 13px 0 49px;
     }
 
     .prices__p {
@@ -1090,10 +1099,6 @@ hr.prices__active-tab {
     .prices__order-btn {
         width: 88%;
         left: 6%;
-    }
-
-    .prices__tariffs {
-        margin: 68px 0 0;
     }
 
     .partners__item {

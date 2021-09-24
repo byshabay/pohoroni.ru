@@ -68,10 +68,41 @@ $(document).ready(function () {
     // 4.SUBMENU MOBILE END
 
     // 5.SUB-SUBMENU MOBILE START
-    $('.menu__sub-menu-parent').click(function(){
+    $('.menu__sub-menu-parent').click(function () {
         $(this).addClass('sub-submenu-mobile-active');
         $(this).parent().addClass('sub-submenu-mobile-active');
         $(this).children('.menu__sub-sub-menu').addClass("sub-submenu-mobile-active");
     })
     // 5.SUB-SUBMENU MOBILE END
+
+
+    // 6.FORM VALIDATION START
+
+    $('#order-call').submit(function (e) {
+
+        if (validationForm()) {
+            e.preventDefault();
+        }
+    })
+
+    function validationForm() {
+
+        let name = $('#popup-name');
+        let phone = $('#popup-phone');
+        let address = $('#popup-address');
+        let regExp = /^\d{6}?/;
+        if (
+            name.val().length < 4 ||
+            address.val().length < 4 ||
+            !regExp.test(phone.val())
+
+        ) {
+            var error = true;
+        }
+
+        $('#order-call').toggleClass('form-error', error);
+        return error;
+    }
+
+    // 6.FORM VALIDATION END
 });
