@@ -4,16 +4,16 @@
         <!-- 1.CONTACT COLUMN -->
 
         <ul class="footer__contacts footer__column">
-            <li class="footer__contacts-item"><img class="footer__logo" src="images/logo-footer.png"></li>
+            <li class="footer__contacts-item"><img class="footer__logo" src="<?= $root_url ?>images/logo-footer.png"></li>
             <li class="footer__contacts-item">
                 <a href="tel:+74957953080">
-                    <img src="images/tel-light.png">
+                    <img src="<?= $root_url ?>images/tel-light.png">
                     +7 495 795 30-80
                 </a>
             </li>
             <li class="footer__contacts-item">
                 <a href="mailto:info@mfc-ritual.ru">
-                    <img src="images/email-light.png">
+                    <img src="<?= $root_url ?>images/email-light.png">
                     info@mfc-ritual.ru
                 </a>
             </li>

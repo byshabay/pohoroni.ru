@@ -56,6 +56,7 @@ COMMON STYLES START
     outline: none;
 }
 
+
 button {
     cursor: pointer;
 }
@@ -115,7 +116,20 @@ a.common-btn_white:visited {
     color: var(--peach);
 }
 
+.common-h1 {
+    margin: 0;
+    padding: 52px 0;
+
+    font-family: var(--bold);
+    font-size: var(--text-48);
+    line-height: 57px;
+
+    color: var(--horses)
+}
+
 .common-h2 {
+    padding: 52px 0;
+
     font-family: var(--bold);
     font-size: var(--text-36);
     line-height: 40px;
@@ -138,6 +152,11 @@ a.common-btn_white:visited {
     color: var(--deepTaupe);
 }
 
+.common-mini-banner {
+    background: url('../images/common-mini-banner.png') center no-repeat;
+    background-size: cover;
+}
+
 .fancybox__container  .fancybox__backdrop {
     background: rgba(45, 33, 32, 0.7);
 }
@@ -147,6 +166,32 @@ a.common-btn_white:visited {
     right: 15px;
     
     color: var(--horses);
+}
+
+.bread-crumbs {
+    display: flex;
+
+    margin: 61px auto 0;
+}
+
+.bread-crumbs__item a {
+    font-size: var(--text-15);
+
+    color: var(--NewYorkPink);
+    text-decoration: none;
+}
+
+.bread-crumbs__item a::after {
+    content: ' / ';
+    margin: 0 5px 0 0;
+}
+
+.bread-crumbs__item.bread-crumbs__item_active a {
+    color: var(--horses);
+}
+
+.bread-crumbs__item.bread-crumbs__item_active a::after {
+    display: none;
 }
 
 /* 3.COMMON MEDIA START */
@@ -249,13 +294,8 @@ MAIN PAGE START
 /* 4.MAIN BANNER END */
 
 /* 5.HOW WE WORK START */
-.how-we-work {
-    margin: 100px auto;
-}
 
 .how-we-work__h2 {
-    margin: 0 0 65px;
-
     text-align: center;
 }
 
@@ -283,7 +323,7 @@ MAIN PAGE START
 /* 6.WHY BLOCK START */
 
 .why-block {
-    padding: 52px 0;
+    margin: 52px auto 0;
     background-color: var(--middleDirtyWhite);
     text-align: center;
 }
@@ -291,7 +331,6 @@ MAIN PAGE START
 .why-block__items {
     display: flex;
     justify-content: space-between;
-    margin: 49px 0 0 0;
 }
 
 .why-block__item {
@@ -327,15 +366,10 @@ MAIN PAGE START
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 90px auto;
 }
 
 .procedure__info-box {
     width: 40%;
-}
-
-.procedure__h2 {
-    margin: 0 0 30px;
 }
 
 .procedure__p {
@@ -498,7 +532,6 @@ a.slider_active-tab {
 .prices__tabs {
     display: flex;
     width: 100%;
-    margin: 20px 0 0;
 }
 
 .prices__tab {
@@ -543,13 +576,19 @@ hr.prices__active-tab {
 /* 8.2.PRICES TARIFFS START */
 
 .prices__tariffs {
-    display: none;
+    position: absolute;
+    min-width: 0;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
     justify-content: space-between;
-    margin: 68px 0 100px 0;
+    margin: 52px 0 0;
 }
 
-.active-tariff {
-    display: flex;
+.prices__tariffs.active-tariff {
+    position: relative;
+    opacity: 1;
+    visibility: visible;
 }
 
 .prices__tariff {
@@ -632,7 +671,6 @@ hr.prices__active-tab {
 /* 9.SERVICES START */
 
 .services__h2 {
-    margin: 0 0 73px;
     text-align: center;
 }
 
@@ -685,8 +723,6 @@ hr.prices__active-tab {
 /* 10.PARTNERS START */
 
 .partners__h2 {
-    margin: 107px 0 67px;
-
     text-align: center;
 }
 
@@ -710,8 +746,6 @@ hr.prices__active-tab {
 
 /* 11.LICENSES START */
 .licenses__h2 {
-    margin: 107px 0 67px;
-
     text-align: center;
 }
 
@@ -734,8 +768,8 @@ hr.prices__active-tab {
 /* 12.REVIEWS START */
 
 .reviews {
-    margin: 100px 0;
-    padding: 70px 0 63px;
+    margin: 52px 0 0;
+    padding: 0px 0 63px;
     
     background: url('../images/reviews-bkg.png') center no-repeat;
     background-size: cover;
@@ -816,14 +850,11 @@ hr.prices__active-tab {
 .contacts {
     display: flex;
     justify-content: space-between;
+    margin: 52px auto 0;
 }
 
 .contacts__map {
     width: 50%;
-}
-
-.contacts__h2 {
-    margin: 0 0 20px;
 }
 
 .contacts__wrapper {
@@ -894,6 +925,7 @@ hr.prices__active-tab {
     
     .procedure.container {
         flex-direction: column;
+        padding: 0 0 52px;
     }
 
     .procedure__info-box {
@@ -906,12 +938,11 @@ hr.prices__active-tab {
     }
 
     .prices__tariffs {
-        flex-direction: column;
-    }
-
-    .prices__tariff {
         width: 70%;
-        margin: 0 auto 70px;
+        margin: 52px auto;
+    } 
+    .prices__tariff {
+        margin: 0 auto 30px;
     }
 
     .prices__tariff-h2 {
@@ -933,6 +964,9 @@ hr.prices__active-tab {
     .services__item {
         width: 50%;
         margin: 0 auto 30px;
+    }
+    .services__item:last-child {
+        margin: 0 auto;
     }
 
     .partners__items {
@@ -1037,6 +1071,9 @@ hr.prices__active-tab {
     .prices__tariff-h2 {
         padding: 20px 0 102px;
     }
+    .prices__tariffs {
+        width: 90%;
+    }
 }
 
 /* 453px */
@@ -1080,7 +1117,7 @@ hr.prices__active-tab {
     }
 
     .prices__tariff-h2 {
-        padding: 13px 0 40px;
+        padding: 13px 0 49px;
     }
 
     .prices__p {
@@ -1090,10 +1127,6 @@ hr.prices__active-tab {
     .prices__order-btn {
         width: 88%;
         left: 6%;
-    }
-
-    .prices__tariffs {
-        margin: 68px 0 0;
     }
 
     .partners__item {
@@ -1135,6 +1168,102 @@ hr.prices__active-tab {
 /* 
 --------------------------------------------------------------
 MAIN PAGE END
+--------------------------------------------------------------
+*/
+
+/* 
+--------------------------------------------------------------
+ABOUT PAGE START
+--------------------------------------------------------------
+*/
+
+/* 1.ABOUT COMAPNY START */
+
+.about-company h1 {
+    text-align: center;
+}
+
+.about-company__info-box {
+    display: flex;
+}
+
+.about-company__info-box img {
+    width: 50%;
+}
+
+.about-company__text-box {
+    width: 50%;
+    padding: 0 54px 0 0;
+}
+
+/* 1.ABOUT COMPANY END */
+
+/* 2.WHY OUR COMPANY START */
+
+.why-our-company {
+    margin: 52px 0 0;
+}
+
+.why-our-company .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.why-our-company__h2 {
+    width: 40%;
+
+    color: #fff;
+} 
+
+.why-our-company__p {
+    width: 50%;
+
+    color: #fff;
+}
+
+/* 2.WHY OUR COMPANY END */
+
+/* 3.BENEFITS START */
+
+.benefits__h2 {
+    text-align: center;
+}
+
+.benefits__items {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.benefits__item {
+    width: 31%;
+    padding: 20px 31px;
+
+    background-color: var(--middleDirtyWhite);
+}
+
+.benefits__item img {
+    width: 55px;
+    height: 55px;
+}
+
+.benefits__h3 {
+    margin: 24px 0 13px;
+
+    color: var(--horses);
+}
+
+.benefits__p {
+    font-size: var(--text-14);
+}
+
+
+/* 3.BENEFITS END */
+
+/* 
+--------------------------------------------------------------
+ABOUT PAGE END
 --------------------------------------------------------------
 */
 

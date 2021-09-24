@@ -82,4 +82,26 @@ $(document).ready(function () {
 
     // 3.COMMON LARGE SLIDER INITIALIZATION END
 
+    // 4.TARIFFS SLIDER ON MOBILE START
+    if (
+        $(document).width() < 1140
+    ) {
+        $('#price-1').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            infinite: false,
+        });
+
+        $('#price-2').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            infinite: false,
+        });
+    }
+
+
+    // 4.TARIFFS SLIDER ON MOBILE END
+
 });

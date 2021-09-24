@@ -2,6 +2,7 @@
 .header{
     position: fixed;
     width: 100%;
+    top: 0;
     z-index: 4;
 }
 
@@ -127,6 +128,29 @@ a.header__phone {
     transition: .3s;
 }
 
+.compensate-for-scrollbar .header{
+    padding-right: 17px;
+} 
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 15px;
+}
+
+.logo img {
+    width: 30%;
+}
+
+.logo div {
+    margin: 0 0 0 15px;
+
+    text-transform: uppercase;
+    font-family: var(--bold);
+    font-size:var(--text-14);
+    line-height: 21px;
+}
+
 /* 1.TOP NAVIGATION END */
 
 /* 2.MAIN MENU START */
@@ -205,6 +229,10 @@ a.header__phone {
     border: 0px solid transparent;
     background: url('../images/search.png') center no-repeat;
     background-size: 100%;
+}
+
+.menu-wrapper .header__button {
+    display: none;
 }
 
 /* 2.1.SUBMENU START */
@@ -331,7 +359,25 @@ a.header__phone {
 }
 
 .order-popup-p {
-    margin: 30px 0 70px;
+    margin: 30px 0 0;
+}
+
+.common-popup-error {
+    opacity: 0;
+    width: 80%;
+    padding: 15px;
+    margin: 20px auto;
+
+    border: 1px solid var(--peach);
+    border-radius: 7px;
+    background-color: var(--dirtyRosyBrown);
+    color: #fff;
+    transition: .3s;
+}
+
+.form-error .common-popup-error {
+    opacity: 1;
+    transition: .3s;
 }
 
 .order-popup {
@@ -380,6 +426,11 @@ button.popup-btn {
 .popup-active {
     display: flex;
 }
+
+.common-popup-mini-text a{
+    color: var(--peach);
+}
+
 /* 4.ORDER CALL POPUP END */
 
 /* 5.HEADER MEDIA START */
@@ -414,7 +465,17 @@ button.popup-btn {
     }
 
     .menu-wrapper {
+        opacity: 0;
+        visibility: hidden;
+        left: -100%;
+    }
+    .header__top-nav .header__button {
         display: none;
+    }
+
+    .menu-wrapper .header__button {
+        display: block;
+        margin: 20px auto 0;
     }
 
     .menu-wrapper .header__phone {
@@ -424,12 +485,14 @@ button.popup-btn {
 
     header.mobile-header_active .menu-wrapper {
         position: absolute;
-        display: block;
         min-width: 250px;
         height:  calc(100vh - 84px);
+        left: 0;
         z-index: 4;
         padding: 30px 0;
 
+        opacity: 1;
+        visibility: visible;
         transition: 0.3s;
         overflow-x: auto;
     }
@@ -570,11 +633,7 @@ button.popup-btn {
     .blackout {
         top: 85px;
     }
-}
 
-/* 676px */
-
-@media(max-width: 676px) {
     .header__top-nav .header__phone-box {
         display: none;
     }
@@ -585,17 +644,32 @@ button.popup-btn {
     }
 
     .header__top-nav .container {
-        justify-content: flex-start;
-    }
-
-    .common-border-button {
-        position: absolute;
-        right: 15px;
+        justify-content: space-between;
     }
 
     .logo {
+        flex-direction: row-reverse;
+    }
+    
+    .logo div {
+        position: absolute;
         width: 30%;
-        margin: 0 0 0 15px;
+        left: 30%;
+        text-align: center;
+    }
+
+    .logo img {
+        width: 40%;
+    }
+}
+
+/* 676px */
+
+@media(max-width: 676px) {
+    
+    .common-border-button {
+        position: absolute;
+        right: 15px;
     }
 
     button.header__button {
@@ -605,6 +679,10 @@ button.popup-btn {
     .common-popup-inputs {
         display: flex;
         flex-direction: column;
+    }
+
+    .common-popup-error {
+        width: 100%;
     }
 }
 
@@ -618,6 +696,7 @@ button.popup-btn {
     .menu__sub-menu.submenu-mobile-active {
         height: 100vh;
     }
+    
 }
 
 /* 5.HEADER MEDIA END */

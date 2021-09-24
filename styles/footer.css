@@ -62,6 +62,8 @@ a.footer__order-btn {
     margin: 34px 0 0;
 
     font-size: var(--text-15);
+    
+    color: var(--peach);
 }
 
 /* MEDIA START */
@@ -89,18 +91,6 @@ a.footer__order-btn {
 
     .footer__contacts-item a {
         justify-content: center;
-
-        font-size: var(--text-20);
-        font-family: var(--bold);
-    }
-
-    .footer__column li {
-        padding: 0 0 40px;
-    }
-
-    .footer__contacts-item a img {
-        width: 40px;
-        height: 40px;
     }
 }
 

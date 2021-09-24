@@ -7,46 +7,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
 
+    <?php $root_url = 'http://study.ivit.pro/pohoroni.ru/'; ?>
     <!-- FAVICON START -->
 
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="images/favicon/site.webmanifest">
-    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?= $root_url ?>images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?= $root_url ?>images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= $root_url ?>images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="<?= $root_url ?>images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="<?= $root_url ?>images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="<?= $root_url ?>images/favicon/favicon.ico">
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+    <meta name="msapplication-config" content="<?= $root_url ?>images/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+
 
     <!-- FAVICON END -->
 
     <!-- SELF-WRITTEN STYLES -->
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="<?= $root_url ?>styles/style.css">
 
     <!-- FANCYBOX -->
     <!-- эти стили подлючаются к главной -->
-    <link rel="stylesheet" href="styles/fancybox.css">
+    <link rel="stylesheet" href="<?= $root_url ?>styles/fancybox.css">
 
 
     <!-- JQUERY  -->
-    <script src="scripts/jquery.js"></script>
+    <script src="<?= $root_url ?>scripts/jquery.js"></script>
 
     <!-- SLICK -->
     <!-- эти скрипты подлючаются к главной -->
-    <script src="scripts/slick.min.js"></script>
-    <script src="scripts/slider.js"></script>
+    <script src="<?= $root_url ?>scripts/slick.min.js"></script>
+    <script src="<?= $root_url ?>scripts/slider.js"></script>
 
     <!-- FANCY BOX -->
     <!-- эти скрипты подлючаются к главной -->
-    <script src="scripts/fancybox.umd.js"></script>
+    <script src="<?= $root_url ?>scripts/fancybox.umd.js"></script>
 
     <!-- SELF-WRITTEN SCRIPTS -->
-    <script src="scripts/script.js"></script>
+    <script src="<?= $root_url ?>scripts/script.js"></script>
 
 </head>
 
 <body>
+
     <header class="header">
         <!-- 1.TOP NAVIGATION START -->
         <div class="header__top-nav">
@@ -58,9 +61,13 @@
                 </div>
 
                 <!-- 1.2.BURGER END -->
-                <img class="logo" src="images/logo.png" alt="Логотип pohoroni.ru">
+                <a class="logo" href="<?= $root_url ?>">
+                    <img src="<?= $root_url ?>images/logo.png" alt="Логотип pohoroni.ru">
+                    <div>Ритуальные <br> Услуги <br> Москвы</div>
+                </a>
+
                 <div class="header__tagline">Более 1200 людей в год доверяют нам самый сложный день</div>
-                <img class="header__gost" src="images/gost.png" alt="Сертификат соответсвия ГОСТ Р">
+                <img class="header__gost" src="<?= $root_url ?>images/gost.png" alt="Сертификат соответсвия ГОСТ Р">
                 <div class="header__phone-box">
                     <span class="header__phone-top-text">
                         круглосуточная линия
@@ -86,6 +93,9 @@
         <!-- 2.MAIN MENU START -->
         <section class="menu-wrapper">
             <nav class="container">
+                <a data-fancybox data-src="#order-call" class="common-btn_white header__button order-popup">
+                    Заказать звонок
+                </a>
                 <div class="header__phone-box">
                     <span class="header__phone-top-text">
                         круглосуточная линия
@@ -99,7 +109,7 @@
                 <a class="header__phone header__phone_second" href="tel:+74951520545">8 (495) 152-05-45</a>
                 <ul class="menu">
                     <li class="menu__item menu__item_parent">
-                        <a href="#">О компании</a>
+                        <a href="<?= $root_url ?>pages/about.php">О компании</a>
 
                         <!-- 2.1.SUBMENU START -->
 
@@ -158,29 +168,32 @@
             </nav>
         </section>
         <!-- 2.MAIN MENU END -->
+        <!-- 3.ORDER CALL POPUP START-->
+        <form id="order-call" class="common-popup-form">
+            <div class="common-h2">
+                Вызов ретуального агента
+            </div>
+            <p class="common-popup-p order-popup-p">
+                С помощью данного сервиса после заполнения всех полей к Вам на указанный адрес приедет ритуальный наш агент.
+            </p>
+            <div class="common-popup-error">
+                Введите корректные данные
+            </div>
+            <div class="common-popup-inputs">
+                <input class="common-popup-input" type="text" name="popup-name" id="popup-name" placeholder="Ваше имя">
+                <input class="common-popup-input" type="tel" name="popup-phone" id="popup-phone" placeholder="Ваш номер телефона">
+                <input class="common-popup-input" type="text" name="popup-address" id="popup-address" placeholder="Ваш адрес">
+                <button class="common-btn_peach popup-btn" type="submit">Отправить</button>
+            </div>
+            <p class="common-popup-mini-text">
+                Нажимая на кнопку "Отправить", Вы соглашаетесь с правилами обработки <a href="#"> персональных данных</a>.
+            </p>
+        </form>
+        <!-- 3.ORDER CALL POPUP END-->
+
     </header>
-    <!-- 3.BLACKOUT START -->
+    <!-- 4.BLACKOUT START -->
     <div class="blackout">
 
     </div>
-    <!-- 3.BLACKOUT END -->
-
-    <!-- 4.ORDER CALL POPUP START-->
-    <form id="order-call" class="common-popup-form">
-        <div class="common-h2">
-            Вызов ретуального агента
-        </div>
-        <p class="common-popup-p order-popup-p">
-            С помощью данного сервиса после заполнения всех полей к Вам на указанный адрес приедет ритуальный наш агент.
-        </p>
-        <div class="common-popup-inputs">
-            <input class="common-popup-input" type="text" name="popup-name" id="popup-name" placeholder="Ваше имя">
-            <input class="common-popup-input" type="text" name="popup-phone" id="popup-phone" placeholder="Ваш номер телефона">
-            <input class="common-popup-input" type="text" name="popup-address" id="popup-address" placeholder="Ваш адрес">
-            <button class="common-btn_peach popup-btn" type="submit">Отправить</button>
-        </div>
-        <p class="common-popup-mini-text">
-            Нажимая на кнопку "Отправить", Вы соглашаетесь с правилами обработки персональных данных.
-        </p>
-    </form>
-    <!-- 4.ORDER CALL POPUP END-->
+    <!-- 4.BLACKOUT END -->
