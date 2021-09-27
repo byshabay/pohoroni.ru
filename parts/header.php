@@ -144,7 +144,7 @@
 
                         <ul class="menu__sub-menu">
                             <li class="menu__sub-menu-item">
-                                <a href="#">Подпункт 1</a>
+                                <a href="<?= $root_url ?>pages/simple-service.php">Оформление документов</a>
                             </li>
                             <li class="menu__sub-menu-item">
                                 <a href="#">Подпункт 2</a>

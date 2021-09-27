@@ -120,7 +120,7 @@ a.common-border-button:visited {
 .common-btn_white,
 .common-btn_peach {
     display: block;
-    padding: 10px;
+    padding: 15px;
 
     border-radius: 48px;
     border: 0px solid transparent;
@@ -219,6 +219,30 @@ a.common-btn_white:visited {
 
 .bread-crumbs__item.bread-crumbs__item_active a::after {
     display: none;
+}
+
+.common-ol li {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    counter-increment: custom;
+
+    font-family: var(--bold);
+    font-size: var(--text-15);
+
+    color: var(--horses);
+}
+
+.common-ol li::before {  
+    content: counter(custom, decimal-leading-zero);  
+    margin: 0 10px 0 0;
+    padding: 5px;
+
+    font-family: var(--bold);
+    font-size: var(--text-15);
+
+    background-color: var(--peach);
+    color: #fff;
 }
 
 /* 2.COMMON MEDIA START */
@@ -1291,6 +1315,88 @@ ABOUT PAGE START
 /* 
 --------------------------------------------------------------
 ABOUT PAGE END
+--------------------------------------------------------------
+*/
+
+/* 
+--------------------------------------------------------------
+SIMPLE-SERVICE PAGE START
+--------------------------------------------------------------
+*/
+
+/* 1.SHORT INFO START */
+
+.short-info.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 52px auto 0;
+}
+
+.short-info img {
+    width: 40%;
+}
+
+.short-info__info-box {
+    width: 50%;
+}
+
+.short-info__h2.common-h2{
+    margin: 0;
+    padding: 0 0 52px;
+}
+
+.short-info__items {
+    margin: 0 0 30px;
+}
+
+.short-info__items td.short-info__item-name {
+    padding: 20px 0 0;
+
+    font-family: var(--bold);
+    font-size: var(--text-15);
+
+    color: var(--horses);
+}
+
+.short-info__items td.short-info__item-value {
+    padding: 20px 0 0 40px;
+
+    font-size: var(--text-15);
+
+    color: var(--peach);
+}
+
+.short-info__btn {
+    width: 40%;
+}
+
+/* 1.SHORT INFO END */
+
+/* 2.FULL INFO START */
+
+.full-info__h2 {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.full-info__info-boxes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.full-info__info-box {
+    width: 48%;
+}
+
+.full-info__p {
+    margin: 0 0 20px;
+}
+
+/* 2.FULL INFO END */
+
+/* 
+--------------------------------------------------------------
+SIMPLE-SERVICE PAGE END
 --------------------------------------------------------------
 */
 
