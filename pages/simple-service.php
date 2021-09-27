@@ -90,6 +90,12 @@
 
     <!-- 2.3.FULL INFO END -->
 
+    <!-- 2.4.HAVE A QUESTION START -->
+
+    <?php include('../parts/have-a-question.php') ?>
+
+    <!-- 2.4.HAVE A QUESTION END -->
+
 </main>
 
 <!-- 2.MAIN END -->

@@ -42,6 +42,12 @@ COMMON STYLES START
 
 /* 1.6.CONTACTS-BLOCK END */
 
+/* 1.7.HAVE A QUESTION BLOCK START */
+
+@import url('have-a-question.css');
+
+/* 1.7.HAVE A QUESTION BLOCK END */
+
 /* 1.IMPORTS END */
 
 :root  {
@@ -1184,36 +1190,6 @@ ABOUT PAGE START
 
 /* 4.OUR EMPLOYEES END */
 
-/* 5.HAVE A QUESTION START */
-
-.have-a-question {
-    margin: 52px 0 0;
-}
-
-.have-a-question .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.have-a-question__h2 {
-    width: 34%;
-
-    color: #fff;
-}
-
-.have-a-question__p {
-    width: 30%;
-
-    color: #fff;
-}
-
-.have-a-question__btn {
-    padding: 15px 25px;
-
-}
-
-/* 5.HAVE A QUESTION END */
 
 /* 6.ABOUT PAGE MEDIA START */
 
@@ -1279,21 +1255,6 @@ ABOUT PAGE START
 
     .employees__text-box :last-child {
         margin: 0 0 52px;
-    }
-
-    .have-a-question .container {
-        flex-direction: column;
-    }
-
-    .have-a-question__h2, 
-    .have-a-question__p {
-        width: 90%;
-
-        text-align: center;
-    }
-
-    .have-a-question__btn {
-        margin: 52px 0 ;
     }
 }
 
