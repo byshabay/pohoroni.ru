@@ -66,6 +66,12 @@ COMMON STYLES START
 
 /* 1.10.TARIFFS BLOCK END */
 
+/* 1.11.REVIEWS BLOCK START */
+
+@import url('reviews.css');
+
+/* 1.11.REVIEWS BLOCK END */
+
 /* 1.IMPORTS END */
 
 :root  {
@@ -490,81 +496,6 @@ MAIN PAGE START
 /* 8.PARTNERS END */
 
 
-
-/* 9.REVIEWS START */
-
-.reviews {
-    margin: 52px 0 0;
-    padding: 0px 0 63px;
-    
-    background: url('../images/reviews-bkg.png') center no-repeat;
-    background-size: cover;
-}
-
-.reviews__h2 {
-    color: #fff;
-}
-.reviews .container {
-    max-width: calc(100% - (100% - 1140px)/2);
-    padding: 0;
-    margin-left: calc((100% - 1140px)/2);
-}
-
-/* 9.1.REVIEWS SLIDER START */
-
-.reviews__slider-item {
-    position: relative;
-    margin: 40px 32px 40px 0;
-    padding: 20px 70px 118px 40px;
-    
-    background-color: #fff;
-}
-
-.reviews__quote::before {
-    display: block;
-    width: 30px;
-    height: 30px;
-    margin: 0 0 25px;
-
-    content: ' ';
-    background: url('../images/left-quotes-sign.png') center no-repeat;
-    background-size: 100%; 
-}
-
-.reviews__person {
-    position: absolute;
-    display: flex;
-    align-items: stretch;
-    bottom: 30px;
-}
-
-.reviews__person img {
-    width: 57px;
-    height: 57px;
-    margin: 0 18px 0 0 ;
-}
-
-.reviews__full-name {
-    margin: 8px 0 10px;
-    font-family: var(--bold);
-    font-size: var(--text-15);
-
-    color: var(--peach);
-}
-
-.reviews__date {
-    font-size: var(--text-15);
-
-    color: var(--pastelGray);
-}
-
-
-/* 9.1.REVIEWS SLIDER END */
-
-/* 9.REVIEWS END */
-
-
-
 /* 11.MAIN PAGE MEDIA START */
 
 /* 1140px */
@@ -606,16 +537,7 @@ MAIN PAGE START
     .partners__item {
         width: 15%;
     }
-
-    .reviews .container {
-        width: 90%;
-        margin: 0 0 0 10%;
-    }
-
-    .reviews__slider-item {
-        padding: 20px 20px 118px;
-    }
-    
+   
     
 }
 
@@ -636,14 +558,6 @@ MAIN PAGE START
     .why-block__item {
         width: 70%;
         margin: 0 auto;
-    }
-
-    .reviews .container {
-        width: 80%;
-    }
-
-    .reviews__h2 {
-        width: 70%;
     }
 
 }
@@ -691,9 +605,6 @@ MAIN PAGE START
         width: 20%;
     }
 
-    .reviews {
-        margin: 40px 0;
-    }
 }
 
 /* 11.MAIN PAGE MEDIA END */

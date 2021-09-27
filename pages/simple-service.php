@@ -142,6 +142,12 @@
 
     <!-- 2.8.PRICES END -->
 
+    <!-- 2.9.REVIEWS START -->
+
+    <?php include('../parts/reviews.php') ?>
+
+    <!-- 2.9.REVIEWS END -->
+
 </main>
 
 <!-- 2.MAIN END -->
