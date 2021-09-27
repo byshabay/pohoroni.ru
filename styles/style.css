@@ -124,6 +124,7 @@ a.common-border-button:visited {
 
     border-radius: 48px;
     border: 0px solid transparent;
+    font-size: var(--text-15);
 
     text-align: center;
     text-decoration: none;
@@ -255,6 +256,10 @@ a.common-btn_white:visited {
 
     .common-border-button {
         font-size: var(--text-14);
+    }
+
+    .common-h1 {
+        font-size: var(--text-36);
     }
 }
 
@@ -1201,7 +1206,83 @@ ABOUT PAGE START
 
     .about-company__info-box img {
         width: 50%;
+        margin: 0 0 0 23%;
+    }
+
+    .why-our-company .container {
+        flex-direction: column;
+    }
+
+    .why-our-company__h2 {
+        width: 90%;
         margin: 0 auto;
+
+        text-align: center;
+    }
+
+    .why-our-company__p {
+        width: 90%;
+        margin: 0 auto 52px;
+
+        text-align: center;
+    }
+
+    .benefits__items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .benefits__item {
+        width: 70%;
+        margin: 0 auto 30px;
+    }
+
+    .benefits__items :last-child {
+        margin: 0 auto;
+    }
+
+    .employees__info-box {
+        flex-direction: column;
+    }
+
+    .employees__text-box {
+        width: 90%;
+    }
+
+    .employees__order-box {
+        width: 90%;
+    }
+
+    .employees__text-box :last-child {
+        margin: 0 0 52px;
+    }
+
+    .have-a-question .container {
+        flex-direction: column;
+    }
+
+    .have-a-question__h2, 
+    .have-a-question__p {
+        width: 90%;
+
+        text-align: center;
+    }
+
+    .have-a-question__btn {
+        margin: 52px 0 ;
+    }
+}
+
+/* 625px */
+
+@media(max-width: 625px) {
+    .about-company__info-box img {
+        width: 70%;
+        margin: 0 0 0 11%;
+    }
+
+    .employees__btn {
+        width: 100%;
     }
 }
 

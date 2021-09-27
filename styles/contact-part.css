@@ -86,6 +86,10 @@
     .contacts__p {
         margin: 70px 0 0;
     }
+
+    .contacts__h2.common-h2 {
+        text-align: center;
+    }
 }
 
 /* 453px */
@@ -94,7 +98,7 @@
         width: 90%;
     }
 
-    .contacts__btn {
+    .contacts__btn.common-btn_peach  {
         width: 100%;
     }
     
