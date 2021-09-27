@@ -54,6 +54,12 @@ COMMON STYLES START
 
 /* 1.8.SMALL SLIDER BLOCK END */
 
+/* 1.9.BENEFITS BLOCK START */
+
+@import url('benefits.css');
+
+/* 1.9.BENEFITS BLOCK END */
+
 /* 1.IMPORTS END */
 
 :root  {
@@ -954,42 +960,6 @@ ABOUT PAGE START
 
 /* 2.WHY OUR COMPANY END */
 
-/* 3.BENEFITS START */
-
-.benefits__h2 {
-    text-align: center;
-}
-
-.benefits__items {
-    display: flex;
-    align-items: stretch;
-    justify-content: space-between;
-}
-
-.benefits__item {
-    width: 31%;
-    padding: 20px 31px;
-
-    background-color: var(--middleDirtyWhite);
-}
-
-.benefits__item img {
-    width: 55px;
-    height: 55px;
-}
-
-.benefits__h3 {
-    margin: 24px 0 13px;
-
-    color: var(--horses);
-}
-
-.benefits__p {
-    font-size: var(--text-14);
-}
-
-
-/* 3.BENEFITS END */
 
 /* 4.OUR EMPLOYEES START */
 
@@ -1081,20 +1051,6 @@ ABOUT PAGE START
         margin: 0 auto 52px;
 
         text-align: center;
-    }
-
-    .benefits__items {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .benefits__item {
-        width: 70%;
-        margin: 0 auto 30px;
-    }
-
-    .benefits__items :last-child {
-        margin: 0 auto;
     }
 
     .employees__info-box {

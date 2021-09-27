@@ -51,42 +51,7 @@
 
     <!-- 2.4.BENEFITS START -->
 
-    <section class="benefits container">
-        <div class="common-h2 benefits__h2">
-            Наши преимущества
-        </div>
-        <ul class="benefits__items">
-            <li class="benefits__item">
-                <img src="../images/case.png">
-                <div class="common-h3 benefits__h3">
-                    Большой опыт
-                </div>
-                <p class="common-p  benefits__p">
-                    Мы защитим вас от любых схем обмана при взаимодействии с сотрудниками служб экстренного вызова, моргов, кладбищ и колумбариев
-                </p>
-            </li>
-            <li class="benefits__item ">
-                <img src="../images/clock.png">
-                <div class="common-h3 benefits__h3">
-                    Пунктуальность
-                </div>
-                <p class="common-p benefits__p">
-                    У нас не бывает сбоев — инфраструктура предприятия позволяет нам проводить 20 траурных церемоний в день строго по графику
-                </p>
-            </li>
-            <li class="benefits__item">
-                <img src="../images/reliability.png">
-                <div class="common-h3 benefits__h3">
-                    Надежность
-                </div>
-                <p class="common-p benefits__p">
-                    Высокий уровень квалификации персонала в оказании ритуальных услуг и органзиации всех нюансов.
-                </p>
-            </li>
-
-        </ul>
-
-    </section>
+    <?php include('../parts/benefits.php') ?>
 
     <!-- 2.4.BENEFITS END -->
 

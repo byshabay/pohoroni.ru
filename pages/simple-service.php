@@ -108,14 +108,20 @@
             </p>
         </div>
 
-        <!-- 2.4.1.SLIDER START -->
+        <!-- 2.5.1.SLIDER START -->
 
         <?php include('../parts/small-slider.php') ?>
 
-        <!-- 2.4.1.SLIDER END -->
+        <!-- 2.5.1.SLIDER END -->
     </section>
 
-    <!-- 2.6.HOW OUR COMPANY WORK END-->
+    <!-- 2.5.HOW OUR COMPANY WORK END-->
+
+    <!-- 2.6.BENEFITS START -->
+
+    <?php include('../parts/benefits.php') ?>
+
+    <!-- 2.6.BENEFITS END -->
 
 </main>
 
