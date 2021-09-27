@@ -227,6 +227,7 @@ a.common-btn_white:visited {
 
 .bread-crumbs {
     display: flex;
+    flex-wrap: wrap;
 
     margin: 61px auto 0;
 }
@@ -301,7 +302,7 @@ a.common-btn_white:visited {
 
 @media(max-width: 453px){
     .page {
-        padding: 120px 0 0;
+        padding: 52px 0 0;
     }
 
     .common-h2 {
@@ -604,6 +605,10 @@ MAIN PAGE START
     .partners__item {
         width: 20%;
     }
+    
+    .home .page {
+        padding: 120px 0 0;
+    }
 
 }
 
@@ -894,6 +899,93 @@ SIMPLE-SERVICE PAGE START
 }
 
 /* 3.MINI HELP BANNER END */
+
+/* 4.SIMPLE-SERVICE PAGE MEDIA START */
+
+/* 1140px */
+@media(max-width: 1140px) {
+
+    .short-info.container {
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 0 0;
+    }
+
+    .short-info__h2.common-h2 {
+        position: absolute;
+        width: 90%;
+        top: 0;
+        left: 5%;
+
+        text-align: center;        
+    }
+
+    .short-info__info-box {
+        width: 70%;
+        margin: 52px 0 0;
+    }
+
+    .full-info__info-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .full-info__info-box {
+        width: 70%;
+    }
+
+    .full-info__h2.common-h2 {
+        width: 70%;
+    }
+    
+    .mini-help-banner .container {
+        flex-direction: column;
+        padding: 0 15px 52px;
+
+        text-align: center;
+    }
+}
+
+/* 755px */
+@media(max-width: 755px) {
+    .short-info img {
+        width: 70%;
+    }
+    
+    .short-info__btn {
+        width: 70%;
+    }
+
+    .short-info__info-box,
+    .full-info__h2.common-h2,
+    .full-info__info-box,
+    .procedure__info-box,
+    .procedure__p {
+        width: 90%;
+    }
+
+    .mini-help-banner__h2 {
+        width: 90%;
+
+        font-size: var(--text-20);
+    }
+
+    .slider__wrapper {
+        width: 90%;
+    }
+}
+
+/* 470px */
+@media(max-width: 470px) {
+
+    .simple-service .common-h2 {
+        font-size: var(--text-24);
+    }
+}
+
+
+/* 4.SIMPLE-SERVICE PAGE MEDIA START */
 
 /* 
 --------------------------------------------------------------
