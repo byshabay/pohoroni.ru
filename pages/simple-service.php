@@ -123,6 +123,25 @@
 
     <!-- 2.6.BENEFITS END -->
 
+    <!-- 2.7.MINI HELP BANNER START -->
+
+    <section class="common-mini-banner mini-help-banner">
+        <div class="container">
+            <div class="common-h2 mini-help-banner__h2">
+                Поможем получить компенсацию за погребение
+            </div>
+            <a href="#" class="common-btn_white mini-help-banner__btn">Получить консультацию</a>
+        </div>
+    </section>
+
+    <!-- 2.7.MINI HELP BANNER END -->
+
+    <!-- 2.8.PRICES START -->
+
+    <?php include('../parts/tariffs.php') ?>
+
+    <!-- 2.8.PRICES END -->
+
 </main>
 
 <!-- 2.MAIN END -->

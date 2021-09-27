@@ -1,0 +1,220 @@
+/* 7.PRICES START */
+
+/* 7.1.TABS OF PRICES START */
+
+.prices__h2 {
+    text-align: center;
+}
+
+.prices__tabs {
+    display: flex;
+    width: 100%;
+}
+
+.prices__tab {
+    width: 50%;
+}
+
+.prices__tab a {
+    display: block;
+    width: 100%;
+    padding: 31px;
+
+    font-size: var(--text-24);
+    font-family: var(--bold);
+
+    color: var(--pastelGray);
+    text-decoration: none;
+    text-align: center;
+}
+
+.prices__tabs hr {
+    height: 2px;
+
+    border: 0px solid transparent;
+    background-color: var(--middleDirtyWhite);
+
+}
+
+a.prices__active-tab {
+    color: var(--peach);
+}
+
+hr.prices__active-tab {
+    display: block;
+    height: 3px;
+
+    border-radius: 3px;
+    background-color: var(--peach) ;
+}
+
+/* 7.1.TABS OF PRICES END */
+
+/* 7.2.PRICES TARIFFS START */
+
+.prices__tariffs {
+    position: absolute;
+    min-width: 0;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    justify-content: space-between;
+    margin: 52px 0 0;
+}
+
+.prices__tariffs.active-tariff {
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+}
+
+.prices__tariff {
+    position: relative;
+    width: 23%;
+    padding: 0 17px 170px;
+
+    border: 2px solid var(--middleDirtyWhite);
+    text-align: center;
+}
+
+.prices__tariff-h2{
+    padding: 28px 0 45px ;
+    margin: -2px 0 30px;
+
+    font-size: var(--text-15);
+    font-family: var(--bold);
+
+    color: #fff;
+    background: url('../images/tariff-rectangle.svg') 50% 0  no-repeat;
+    background-size: 80%;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.prices__tariff:hover .prices__tariff-h2 {
+    background: url('../images/peach-tariff-rectangle.svg') 50% 0  no-repeat;
+    background-size: 80%;
+    transition: 0.3s;
+}
+
+.prices__p {
+    padding: 19px 5px;
+
+    font-size: var(--text-14);
+
+    border-top: 1px solid var(--middleDirtyWhite);
+}
+
+.prices__tariff :nth-child(2){
+   border-top: 0px solid transparent;
+}
+
+.prices__order-btn {
+    position: absolute;
+    width: 88%;
+    bottom: 74px;
+    left: 6%;
+    padding: 20px;
+
+    font-size: var(--text-15);
+
+    background-color: var(--dirtyRosyBrown) ;
+    transition: 0.3s;
+
+}
+
+.prices__tariff:hover .prices__order-btn {
+    background-color: var(--peach) ;
+    transition: 0.3s;
+}
+
+.prices__more-btn {
+    position: absolute;
+    width: 80%;
+    bottom: 30px;
+    left: 10%;
+
+    font-family: var(--bold);
+    font-size: var(--text-14);
+
+    color: var(--NewYorkPink);
+    text-decoration: none;
+}
+
+/* 7.2.PRICES TARIFFS END */
+
+/* 7.PRICES END */
+
+/* 11.MAIN PAGE MEDIA START */
+
+/* 1140px */
+
+@media(max-width: 1140px) { 
+      .prices__tariffs {
+        width: 70%;
+        margin: 52px auto;
+    } 
+    .prices__tariff {
+        margin: 0 auto 30px;
+    }
+
+    .prices__tariff-h2 {
+        padding: 50px 0 72px;
+
+        background-size: 40%;
+    }
+
+    .prices__order-btn {
+        width: 52%;
+        left: 24%;
+    }
+}
+
+/* 927px */
+@media(max-width: 927px) { 
+    .prices__tariff-h2 {
+        padding: 50px 0 102px;
+
+        background-size: 57%;
+    }
+}
+
+/* 673px */
+@media(max-width: 673px) { 
+    .prices__tariff-h2 {
+        padding: 20px 0 102px;
+    }
+    .prices__tariffs {
+        width: 90%;
+    }
+}
+
+/* 453px */
+@media(max-width: 453px) { 
+        .prices__tab a {
+        font-size: var(--text-15);
+    }
+
+    .prices__tariff-h2 {
+        padding: 13px 0 49px;
+    }
+
+    .prices__p {
+        padding: 10px 5px;
+    }
+
+    .prices__order-btn {
+        width: 88%;
+        left: 6%;
+    }
+}
+
+/* 340px */
+
+@media(max-width: 340px) {
+    .prices__tariff-h2 {
+        background-size: 76%;
+    }
+}
+
+/* 11.MAIN PAGE MEDIA END */
