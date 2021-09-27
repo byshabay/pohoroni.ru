@@ -148,6 +148,12 @@
 
     <!-- 2.9.REVIEWS END -->
 
+    <!-- 2.10.CONTACT START -->
+
+    <?php include('../parts/contact-part.php') ?>
+
+    <!-- 2.10.CONTSCT END -->
+
 </main>
 
 <!-- 2.MAIN END -->
