@@ -4,20 +4,46 @@ COMMON STYLES START
 --------------------------------------------------------------
 */
 
-/* NORMALIZE CSS START */
+/* 1.IMPORTS START */
+
+/* 1.1.NORMALIZE CSS START */
+
 @import url('normalize.css');
 
-/* 1.HEADER START */
+/* 1.1NORMALIZE CSS END */
+
+/* 1.2.HEADER START */
 
 @import url('header.css');
 
-/* 1.HEADER END */
+/* 1.2.HEADER END */
 
-/* 2.FOOTER START */
+/* 1.3.FOOTER START */
 
 @import url('footer.css');
 
-/* 2.FOOTER END */
+/* 1.3.FOOTER END */
+
+/* 1.4.LICENSES-BLOCK START */
+
+@import url('licenses.css');
+
+/* 1.4.LICENSES-BLOCK END */
+
+/* 1.5.SERVICES-BLOCK START */
+
+@import url('services.css');
+
+/* 1.5.SERVICES-BLOCK END */
+
+/* 1.6.CONTACTS-BLOCK START */
+
+@import url('contact-part.css');
+
+/* 1.6.CONTACTS-BLOCK END */
+
+/* 1.IMPORTS END */
+
 :root  {
     /*  Arial, Helvetica, sans-serif; */
     --regular: 'OpenSans';
@@ -88,7 +114,7 @@ a.common-border-button:visited {
 }
 
 .page {
-    padding: 160px 0;
+    padding: 160px 0 0;
 }
 
 .common-btn_white,
@@ -194,7 +220,7 @@ a.common-btn_white:visited {
     display: none;
 }
 
-/* 3.COMMON MEDIA START */
+/* 2.COMMON MEDIA START */
 
 /* > 1140px */
 @media(min-width: 1140px) {
@@ -220,7 +246,7 @@ a.common-btn_white:visited {
 
 @media(max-width: 453px){
     .page {
-        padding: 120px 0;
+        padding: 120px 0 0;
     }
 
     .common-h2 {
@@ -232,7 +258,7 @@ a.common-btn_white:visited {
     }
 }
 
-/* 3.COMMON MEDIA END */
+/* 2.COMMON MEDIA END */
 
 
 /* 
@@ -248,7 +274,7 @@ MAIN PAGE START
 */
 
 
-/* 4.MAIN BANNER START */
+/* 3.MAIN BANNER START */
 
 .banner {
     height: 800px;
@@ -291,9 +317,9 @@ MAIN PAGE START
     width: 30%;
 }
 
-/* 4.MAIN BANNER END */
+/* 3.MAIN BANNER END */
 
-/* 5.HOW WE WORK START */
+/* 4.HOW WE WORK START */
 
 .how-we-work__h2 {
     text-align: center;
@@ -318,9 +344,9 @@ MAIN PAGE START
     height: 332px;
 }
 
-/* 5.HOW WE WORK END */
+/* 4.HOW WE WORK END */
 
-/* 6.WHY BLOCK START */
+/* 5.WHY BLOCK START */
 
 .why-block {
     margin: 52px auto 0;
@@ -358,9 +384,9 @@ MAIN PAGE START
     margin: 20px 0;
 }
 
-/* 6.WHY BLOCK END */
+/* 5.WHY BLOCK END */
 
-/* 7.PROCEDURE START */
+/* 6.PROCEDURE START */
 
 .procedure.container {
     display: flex;
@@ -382,7 +408,7 @@ MAIN PAGE START
     margin: 45px 0 0 0;
 }
 
-/* 7.1.SLIDER START */
+/* 6.1.SLIDER START */
 
 .slider__wrapper {
     width: 40%;
@@ -517,13 +543,13 @@ a.slider_active-tab {
     box-shadow: 0 0 0 0 ;
 }
 
-/* 7.1.SLIDER END */
+/* 6.1.SLIDER END */
 
-/* 7.PROCEDURE END */
+/* 6.PROCEDURE END */
 
-/* 8.PRICES START */
+/* 7.PRICES START */
 
-/* 8.1.TABS OF PRICES START */
+/* 7.1.TABS OF PRICES START */
 
 .prices__h2 {
     text-align: center;
@@ -571,9 +597,9 @@ hr.prices__active-tab {
     background-color: var(--peach) ;
 }
 
-/* 8.1.TABS OF PRICES END */
+/* 7.1.TABS OF PRICES END */
 
-/* 8.2.PRICES TARIFFS START */
+/* 7.2.PRICES TARIFFS START */
 
 .prices__tariffs {
     position: absolute;
@@ -664,63 +690,12 @@ hr.prices__active-tab {
     text-decoration: none;
 }
 
-/* 8.2.PRICES TARIFFS END */
+/* 7.2.PRICES TARIFFS END */
 
-/* 8.PRICES END */
+/* 7.PRICES END */
 
-/* 9.SERVICES START */
 
-.services__h2 {
-    text-align: center;
-}
-
-.services__items {
-    display: flex;
-    justify-content: space-between;
-}
-
-.services__item {
-    width: 15%;
-
-    border: 1px solid  var(--middleDirtyWhite);
-    text-align: center;
-}
-
-.services__item a{
-    font-family: var(--semiBold);
-    font-size: var(--text-18);
-
-    color: var(--deepTaupe);
-    text-decoration: none;
-}
-
-.services__img {
-    width: 100%;
-    height: 120px;
-    padding: 20px 0 0;
-}
-
-.services__img svg path {
-    transition: 0.3s;
-} 
-
-.services__item:hover .services__img svg path {
-    fill: #fff;
-    transition: 0.3s;
-} 
-
-.services__name {
-    padding: 15px 25px;
-}
-
-.services__item:hover .services__img{
-    background-color: var(--peach);
-    transition: 0.3s;
-}
-
-/* 9.SERVICES END */
-
-/* 10.PARTNERS START */
+/* 8.PARTNERS START */
 
 .partners__h2 {
     text-align: center;
@@ -742,30 +717,11 @@ hr.prices__active-tab {
     width: 15%;
 }
 
-/* 10.PARTNERS END */
+/* 8.PARTNERS END */
 
-/* 11.LICENSES START */
-.licenses__h2 {
-    text-align: center;
-}
 
-.licenses__items {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.licenses__item {
-    width: 20%;
-}
-
-.licenses__item img {
-    width: 100%;
-}
-
-/* 11.LICENSES END */
-
-/* 12.REVIEWS START */
+/* 9.REVIEWS START */
 
 .reviews {
     margin: 52px 0 0;
@@ -784,7 +740,7 @@ hr.prices__active-tab {
     margin-left: calc((100% - 1140px)/2);
 }
 
-/* 12.1.REVIEWS SLIDER START */
+/* 9.1.REVIEWS SLIDER START */
 
 .reviews__slider-item {
     position: relative;
@@ -833,73 +789,13 @@ hr.prices__active-tab {
 }
 
 
-/* 12.1.REVIEWS SLIDER END */
+/* 9.1.REVIEWS SLIDER END */
 
-/* 12.REVIEWS END */
+/* 9.REVIEWS END */
 
-/* 11.CONTANCT START */
 
-.ymaps-2-1-79-map {
-	filter: grayscale(1);
-	-ms-filter: grayscale(1);
-	-webkit-filter: grayscale(1);
-	-moz-filter: grayscale(1);
-	-o-filter: grayscale(1);
-}
 
-.contacts {
-    display: flex;
-    justify-content: space-between;
-    margin: 52px auto 0;
-}
-
-.contacts__map {
-    width: 50%;
-}
-
-.contacts__wrapper {
-    width: 40%;
-}
-
-.contacts__item {
-    display: flex;
-    align-items: center;
-    margin: 29px 0 0;
-
-    color: var(--deepTaupe);
-    font-size: var(--text-18);
-    line-height: 24px;
-    text-decoration: none;
-}
-
-.contacts__item img {
-    width: 30px;
-    height: 30px;
-    margin: 0 10px 0 0;
-    padding: 5px;
-
-    background-color: var(--middleDirtyWhite) ;
-    transition: 0.3s;
-}
-
-.contacts__item:hover img{
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    transition: 0.3s;
-}
-
-.contacts__p {
-    margin: 130px 0 0;
-}
-
-.contacts__btn {
-    width: 40%;
-    margin: 40px 0 0;
-    padding: 15px 10px;
-}
-
-/* 11.CONTACTS END */
-
-/* 12.MAIN PAGE MEDIA START */
+/* 11.MAIN PAGE MEDIA START */
 
 /* 1140px */
 
@@ -956,19 +852,7 @@ hr.prices__active-tab {
         left: 24%;
     }
 
-    .services__items {
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .services__item {
-        width: 50%;
-        margin: 0 auto 30px;
-    }
-    .services__item:last-child {
-        margin: 0 auto;
-    }
-
+   
     .partners__items {
         width: 90%;
         margin: 0 auto;
@@ -976,15 +860,6 @@ hr.prices__active-tab {
 
     .partners__item {
         width: 15%;
-    }
-
-    .licenses__items {
-        flex-direction: column;
-    }
-
-    .licenses__item {
-        width: 30%;
-        margin: 0 0 35px;
     }
 
     .reviews .container {
@@ -996,23 +871,7 @@ hr.prices__active-tab {
         padding: 20px 20px 118px;
     }
     
-    .contacts {
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-
-    .contacts__map{
-        width: 70%;
-    }
-
-    .contacts__wrapper {
-        width: 70%; 
-        margin: 0 auto 70px;
-    }
-
-    .contacts__p {
-        margin: 70px 0 0;
-    }
+    
 }
 
 /* 927px */
@@ -1042,10 +901,6 @@ hr.prices__active-tab {
         padding: 50px 0 102px;
 
         background-size: 57%;
-    }
-
-    .services__item {
-        width: 70%;
     }
 
     .reviews .container {
@@ -1133,24 +988,8 @@ hr.prices__active-tab {
         width: 20%;
     }
 
-    .licenses__item {
-        width: 50%;
-    }
-
     .reviews {
         margin: 40px 0;
-    }
-
-    .contacts__wrapper {
-        width: 90%;
-    }
-
-    .contacts__btn {
-        width: 100%;
-    }
-    
-    .contacts__map {
-        width: 100%;
     }
 }
 
@@ -1163,7 +1002,7 @@ hr.prices__active-tab {
 }
 
 
-/* 12.MAIN PAGE MEDIA END */
+/* 11.MAIN PAGE MEDIA END */
 
 /* 
 --------------------------------------------------------------
@@ -1260,6 +1099,113 @@ ABOUT PAGE START
 
 
 /* 3.BENEFITS END */
+
+/* 4.OUR EMPLOYEES START */
+
+.employees__order-box {
+    background: url('../images/employees-block-bkg.png') center no-repeat;
+    background-size: cover;
+}
+
+.employees__h2 {
+    text-align: center;
+}
+
+.employees__info-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.employees__p {
+    margin: 0 0 20px;
+}
+
+.employees__text-box {
+    width: 50%;
+}
+
+.employees__order-box {
+    width: 40%;
+    padding: 32px;
+
+    text-align: center;
+}
+
+.employees__order-box img {
+    width: 60px;
+    height: 60px;
+}
+
+.employees__h3 {
+    margin: 17px 0 22px;
+
+    font-family: var(--semiBold);
+    font-size: var(--text-18);
+
+    color: #fff;
+    line-height: 23px;
+}
+
+.employees__btn {
+    width: 70%;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* 4.OUR EMPLOYEES END */
+
+/* 5.HAVE A QUESTION START */
+
+.have-a-question {
+    margin: 52px 0 0;
+}
+
+.have-a-question .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.have-a-question__h2 {
+    width: 34%;
+
+    color: #fff;
+}
+
+.have-a-question__p {
+    width: 30%;
+
+    color: #fff;
+}
+
+.have-a-question__btn {
+    padding: 15px 25px;
+
+}
+
+/* 5.HAVE A QUESTION END */
+
+/* 6.ABOUT PAGE MEDIA START */
+
+/* 1140px */
+@media(max-width: 1140px){
+    .about-company__info-box {
+        flex-direction: column;
+    }
+
+    .about-company__text-box {
+        width: 90%;
+        margin: 0 auto 52px;
+    }
+
+    .about-company__info-box img {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+/* 6.ABOUT PAGE MEDIA END */
 
 /* 
 --------------------------------------------------------------

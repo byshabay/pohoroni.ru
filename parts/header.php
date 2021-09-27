@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="<?= $root_url ?>styles/style.css">
 
     <!-- FANCYBOX -->
-    <!-- эти стили подлючаются к главной -->
+    <!-- эти стили подлючаются к главной, контакты -->
     <link rel="stylesheet" href="<?= $root_url ?>styles/fancybox.css">
 
 
@@ -35,12 +35,12 @@
     <script src="<?= $root_url ?>scripts/jquery.js"></script>
 
     <!-- SLICK -->
-    <!-- эти скрипты подлючаются к главной -->
+    <!-- эти скрипты подлючаются к главной, контакты -->
     <script src="<?= $root_url ?>scripts/slick.min.js"></script>
     <script src="<?= $root_url ?>scripts/slider.js"></script>
 
     <!-- FANCY BOX -->
-    <!-- эти скрипты подлючаются к главной -->
+    <!-- эти скрипты подлючаются к главной, контакты -->
     <script src="<?= $root_url ?>scripts/fancybox.umd.js"></script>
 
     <!-- SELF-WRITTEN SCRIPTS -->
