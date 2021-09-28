@@ -2,6 +2,8 @@
 
 .why-block {
     margin: 52px auto 0;
+    padding: 0 0 52px;
+
     background-color: var(--middleDirtyWhite);
     text-align: center;
 }
@@ -49,5 +51,9 @@
     .why-block__item {
         width: 70%;
         margin: 0 auto;
+    }    
+
+    .why-block {
+        padding: 0;
     }    
 }

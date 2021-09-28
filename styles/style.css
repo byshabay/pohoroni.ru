@@ -1127,6 +1127,122 @@ SERVICES PAGE START
 
 /* 3.TYPES OF BURIAL END */
 
+/* 4.SERVICES PAGE MEDIA START */
+
+/* 1140px */
+@media(max-width: 1140px) {
+    .services-info__info-boxs {
+        flex-direction: column;
+    }
+
+    .services-info__info-box-1,
+    .services-info__info-box-2 {
+        width: 90%;
+        margin: 0 auto;
+
+        text-align: justify;
+    }
+
+    .services-info__h1 {
+        text-align: center;
+    }
+
+    .services-prices__info-box {
+        flex-direction: column;
+    }
+
+    .services-prices__table {
+        width: 90%;
+        margin: 0 auto 52px;
+    }
+
+    .services-prices__table:last-child {
+        margin: 0 auto;
+    }
+
+    .types-of-burial__items {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* 923px */
+
+@media(max-width: 923px) {
+    .types-of-burial__items {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .types-of-burial__item a p {
+        font-size: var(--text-20);
+    }
+
+    .types-of-burial__item a {
+        padding: 30px 10px;
+    }
+}
+
+/* 595px */
+
+@media(max-width: 595px) {
+    .types-of-burial__item a p {
+        font-size: var(--text-15);
+    }
+
+    .types-of-burial__items {
+        grid-gap: 20px;
+    }
+
+    .types-of-burial__item a img {
+        width: 40px;
+    }
+
+    .services-prices__table thead tr :first-child {
+        width: 70%;
+        padding: 25px 10px;
+    }
+
+    .services-prices__table tbody tr :first-child {
+        padding: 10px;
+
+        text-align: justify;
+    }
+}
+
+/* 424px */
+
+@media(max-width: 424px) {
+    .services-prices__table tbody tr td {
+        width: 25%;
+    }
+
+    .services-prices__table thead tr th {
+        width: 50%;
+
+        font-size: var(--text-15);
+    }
+
+    .services-prices__table thead tr :last-child::after {
+        top: 26px;
+
+        background-size: 80%
+    }
+
+    .services-prices__table tr :last-child {
+        padding: 10px 25px 10px 10px;
+    }
+
+    .services-prices__table thead tr th:last-child{
+        padding: 25px 25px 10px 10px;
+    }
+
+    .services-prices__table tr .common-btn_peach.services-prices__btn {
+        width: 90%;
+    }
+}
+
+/* 4.SERVICES PAGE MEDIA END */
+
 /* 
 --------------------------------------------------------------
 SERVICES PAGE END
