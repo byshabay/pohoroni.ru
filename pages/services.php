@@ -410,6 +410,12 @@
 
     <!-- 2.6.WHY BLOCK END -->
 
+    <!-- 2.7.CONTACTS START -->
+
+    <?php include('../parts/contact-part.php') ?>
+
+    <!-- 2.7.CONTACTS END -->
+
 </main>
 
 <!-- 2.MAIN END -->
