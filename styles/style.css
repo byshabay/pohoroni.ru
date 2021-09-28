@@ -72,6 +72,12 @@ COMMON STYLES START
 
 /* 1.11.REVIEWS BLOCK END */
 
+/* 1.12.WHY BLOCK START */
+
+@import url('why-block.css');
+
+/* 1.12.WHY BLOCK END */
+
 /* 1.IMPORTS END */
 
 :root  {
@@ -406,46 +412,6 @@ MAIN PAGE START
 
 /* 4.HOW WE WORK END */
 
-/* 5.WHY BLOCK START */
-
-.why-block {
-    margin: 52px auto 0;
-    background-color: var(--middleDirtyWhite);
-    text-align: center;
-}
-
-.why-block__items {
-    display: flex;
-    justify-content: space-between;
-}
-
-.why-block__item {
-    width: 23%;
-    padding: 33px 13px 50px;
-
-    transition: 0.3s;
-    box-sizing: border-box;
-    border-bottom: 9px solid transparent;
-}
-
-.why-block__item:hover {
-    background-color: #fff;
-    border-bottom: 9px solid var(--peach);
-
-    transition: 0.3s;
-}
-
-.why-block__item img {
-    width: 45px;
-    height: 45px;
-}
-
-.why-block__h3 {
-    margin: 20px 0;
-}
-
-/* 5.WHY BLOCK END */
-
 /* 6.PROCEDURE START */
 
 .procedure.container {
@@ -550,15 +516,6 @@ MAIN PAGE START
 
     .banner__calc {
         width: 50%;
-    }
-
-    .why-block__items {
-        flex-direction: column;
-    }
-
-    .why-block__item {
-        width: 70%;
-        margin: 0 auto;
     }
 
 }
@@ -990,6 +947,189 @@ SIMPLE-SERVICE PAGE START
 /* 
 --------------------------------------------------------------
 SIMPLE-SERVICE PAGE END
+--------------------------------------------------------------
+*/
+
+/* 
+--------------------------------------------------------------
+SERVICES PAGE START
+--------------------------------------------------------------
+*/
+
+/* 1.SERVICES INFO START */
+
+.services-info__info-boxs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-info__info-box-1 {
+    width: 50%;
+}
+
+.services-info__info-box-2 {
+    width: 40%;
+}
+
+.services-info__p {
+    margin: 0 0 20px 0;
+}
+
+/* 1.SERVICES INFO END */
+
+/* 2.PRICES OF SERVICES START */
+
+.services-prices__h2 {
+    text-align: center;
+}
+
+.services-prices__info-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-prices__table {
+    width: 49%;
+
+    border-spacing: 0px;
+}
+
+.services-prices__table thead tr th {
+    padding: 25px 30px 25px 25px ;
+
+    font-family: var(--bold);
+    font-size: var(--text-20);
+
+    color: #fff;
+    background-color: var(--peach) ;
+}
+
+.services-prices__table thead tr :first-child {
+    width: 70%;
+    text-align: start;
+}
+
+.services-prices__table tr :last-child {
+    position: relative;
+
+    font-family: var(--bold);
+
+    text-align: end;
+    vertical-align: top;
+}
+
+.services-prices__table tr :last-child::after {
+    display: inline-block;
+    position: absolute;
+    top: 14px;
+    right: 11px;
+    content: '';
+
+    background: url('../images/ruble_peach.png') center no-repeat;
+    background-size: 70%;
+
+    width: 15px;
+    height: 15px;
+}
+
+.services-prices__table thead tr :last-child::after {
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    content: '';
+
+    background: url('../images/ruble_white.png') center no-repeat;
+
+    background-size: 100%;
+
+    width: 15px;
+    height: 15px;
+}
+
+
+.services-prices__table tbody tr td {
+    width: 20%;
+    padding: 10px 30px 10px 25px;
+
+    font-size: var(--text-15);
+    border-bottom: 1px solid var(--pastelGray);
+
+    color: var(--horses);
+    background-color: var(--middleDirtyWhite);
+    line-height: 22.5px;
+}
+
+.services-prices__table tbody tr.services-prices__btn-tr ::after,
+.services-prices__table tbody tr.services-prices__btn-ask-tr ::after {
+    display: none;
+}
+
+.services-prices__table tbody tr.services-prices__btn-tr td,
+.services-prices__table tbody tr.services-prices__btn-ask-tr td {
+    border: 0px solid transparent;
+    text-align: center;
+}
+
+.services-prices__table tr .common-btn_peach.services-prices__btn {
+    width: 60%;
+    margin: 40px auto 0;
+
+    text-align: center;
+}
+
+.services-prices__btn-ask {
+    font-size: var(--text-15);
+
+    color: var(--deepTaupe);
+    text-decoration: none;
+}
+
+.services-prices__table tr.services-prices__btn-ask-tr td {
+    padding: 10px 30px 40px 25px;
+}
+
+/* 2.PRICES OF SERVICES END */
+
+/* 3.TYPES OF BURIAL START */
+
+.types-of-burial__h2 {
+    text-align: center;
+}
+
+.types-of-burial__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+
+.types-of-burial__item {
+    background-color: var(--peach);
+}
+
+.types-of-burial__item a {
+    display: block;
+    padding: 30px;
+    
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.types-of-burial__item a p {
+    font-size: var(--text-24);
+    font-family: var(--bold);
+}
+
+.types-of-burial__item a img {
+    width: 73px;
+}
+
+
+/* 3.TYPES OF BURIAL END */
+
+/* 
+--------------------------------------------------------------
+SERVICES PAGE END
 --------------------------------------------------------------
 */
 

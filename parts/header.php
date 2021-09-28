@@ -63,7 +63,7 @@
                 <!-- 1.2.BURGER END -->
                 <a class="logo" href="<?= $root_url ?>">
                     <img src="<?= $root_url ?>images/logo.png" alt="Логотип pohoroni.ru">
-                    <div>Ритуальные <br> Услуги <br> Москвы</div>
+                    <div>Ритуальные <br class="mobile-br"> Услуги <br> Москвы</div>
                 </a>
 
                 <div class="header__tagline">Более 1200 людей в год доверяют нам самый сложный день</div>
@@ -138,7 +138,7 @@
 
                     </li>
                     <li class="menu__item menu__item_parent">
-                        <a href="#">Услуги</a>
+                        <a href="<?= $root_url ?>pages/services.php">Услуги</a>
 
                         <!-- 2.1.SUBMENU START -->
 
