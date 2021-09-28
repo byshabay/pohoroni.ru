@@ -109,7 +109,7 @@ hr.prices__active-tab {
    border-top: 0px solid transparent;
 }
 
-.prices__order-btn {
+.prices__order-btn.common-btn_peach {
     position: absolute;
     width: 88%;
     bottom: 74px;
@@ -123,7 +123,7 @@ hr.prices__active-tab {
 
 }
 
-.prices__tariff:hover .prices__order-btn {
+.prices__tariff:hover .prices__order-btn.common-btn_peach {
     background-color: var(--peach) ;
     transition: 0.3s;
 }
@@ -164,7 +164,7 @@ hr.prices__active-tab {
         background-size: 40%;
     }
 
-    .prices__order-btn {
+    .prices__order-btn.common-btn_peach {
         width: 52%;
         left: 24%;
     }
@@ -203,7 +203,7 @@ hr.prices__active-tab {
         padding: 10px 5px;
     }
 
-    .prices__order-btn {
+    .prices__order-btn.common-btn_peach {
         width: 88%;
         left: 6%;
     }

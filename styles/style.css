@@ -107,6 +107,7 @@ COMMON STYLES START
     --deepTaupe: #816B68;
     --NewYorkPink: #CD8A82;
     --horses: #603631;
+    --box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 * {
@@ -143,6 +144,19 @@ li {
     background-color: transparent;
     color: var(--peach);
     border-radius: 45px;
+    transition: .5s;
+}
+
+.common-border-button:hover {
+    box-shadow: var(--box-shadow);
+    background-color: var(--peach);
+    color: #fff;
+    transition: .5s;
+}
+
+.common-btn_white:hover {
+    box-shadow: var(--box-shadow);
+    transition: .5s;
 }
 
 a.common-border-button:visited {
@@ -164,6 +178,14 @@ a.common-border-button:visited {
 
     text-align: center;
     text-decoration: none;
+    transition: .5s;
+}
+
+.common-btn_peach:hover {
+    background-color: var(--horses);
+    color: #fff;
+    box-shadow: var(--box-shadow);
+    transition: .5s;
 }
 
 .common-btn_peach {
@@ -1073,6 +1095,7 @@ SERVICES PAGE START
 .services-prices__table tr .common-btn_peach.services-prices__btn {
     width: 60%;
     margin: 40px auto 0;
+    z-index: 1;
 
     text-align: center;
 }

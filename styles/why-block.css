@@ -11,6 +11,16 @@
 .why-block__items {
     display: flex;
     justify-content: space-between;
+    
+    cursor: default;
+}
+
+.why-block__items ::selection {
+   background: transparent;
+}
+
+.why-block__items ::-moz-selection {
+   background: transparent;
 }
 
 .why-block__item {
