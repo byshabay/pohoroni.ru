@@ -23,7 +23,7 @@
                 </div>
             </div>
 
-            <!-- 1 SLIDE -->
+            <!-- 2 SLIDE -->
 
             <div class="slider__item reviews__slider-item">
                 <div class="reviews__quote common-p">
@@ -42,7 +42,7 @@
                 </div>
             </div>
 
-            <!-- 2 SLIDE -->
+            <!-- 3 SLIDE -->
 
             <div class="slider__item reviews__slider-item">
                 <div class="reviews__quote common-p">
@@ -56,6 +56,60 @@
                         </div>
                         <div class="reviews__date">
                             09.03.2020
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4 SLIDE -->
+            <div class="slider__item reviews__slider-item">
+                <div class="reviews__quote common-p">
+                    Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: сплочённость команды профессионалов влечет за собой процесс внедрения и модернизации глубокомысленных рассуждений.
+                </div>
+                <div class="reviews__person">
+                    <img src="<?= $root_url ?>images/man.png">
+                    <div class="reviews__meta-info">
+                        <div class="reviews__full-name">
+                            Иван Авдеев
+                        </div>
+                        <div class="reviews__date">
+                            07.03.2020
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5 SLIDE -->
+            <div class="slider__item reviews__slider-item">
+                <div class="reviews__quote common-p">
+                    Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: сплочённость команды профессионалов влечет за собой процесс внедрения и модернизации глубокомысленных рассуждений.
+                </div>
+                <div class="reviews__person">
+                    <img src="<?= $root_url ?>images/man.png">
+                    <div class="reviews__meta-info">
+                        <div class="reviews__full-name">
+                            Иван Авдеев
+                        </div>
+                        <div class="reviews__date">
+                            07.03.2020
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6 SLIDE -->
+            <div class="slider__item reviews__slider-item">
+                <div class="reviews__quote common-p">
+                    Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: сплочённость команды профессионалов влечет за собой процесс внедрения и модернизации глубокомысленных рассуждений.
+                </div>
+                <div class="reviews__person">
+                    <img src="<?= $root_url ?>images/man.png">
+                    <div class="reviews__meta-info">
+                        <div class="reviews__full-name">
+                            Иван Авдеев
+                        </div>
+                        <div class="reviews__date">
+                            07.03.2020
                         </div>
                     </div>
                 </div>

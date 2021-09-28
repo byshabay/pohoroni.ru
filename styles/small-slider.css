@@ -1,6 +1,7 @@
 /* 6.1.SLIDER START */
 
 .slider__wrapper {
+    position: relative;
     width: 40%;
 }
 
@@ -14,6 +15,7 @@
 
 .slider__item {
     position: relative;
+    padding: 40px 0 0;
 }
 
 .slick-list {
@@ -25,26 +27,27 @@
     align-items: center;
 }
 
-.slider__tabs {
-    position: relative;
+.slick-dots {
+    position: absolute;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
 }
 
-.slider__tabs hr {
+.slider__wrapper hr {
     position: absolute;
-    width: 100%;
+    width: 99%;
     height: 2px;
     z-index: 0;
-
+    margin: 20px 0 0;
 
     border: 0px solid transparent;
-    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23A8544AFF' stroke-width='3' stroke-dasharray='3%2c 16' stroke-dashoffset='30' stroke-linecap='square'/%3e%3c/svg%3e");
+    background: url('../images/small-slider-hr.png');
 }
 
-.slider__tab a{
+.slick-dots button {
     position: relative;
     display: block;
     width: 45px;
@@ -56,6 +59,7 @@
     font-size: var(--text-24) ;
 
     background-color: var(--NewYorkPink);
+    border: 0px solid transparent;
     color: #fff;
     text-align: center;
     text-decoration: none;
@@ -63,7 +67,12 @@
     cursor: default ;
 }
 
-a.slider_active-tab {
+.slick-dots button::before {
+    content: '0';
+}
+
+a.slider_active-tab, 
+.slick-active button {
     display: flex;
     align-items: center;
 

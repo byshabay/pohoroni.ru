@@ -649,8 +649,21 @@ button.popup-btn {
     }
 
     .menu-wrapper .header__phone-box {
+        position: relative;
         display: flex;
-        margin: 20px 0 0
+        margin: 20px 0 0;
+        padding: 0 0 15px;
+    }
+
+    .header__phone-top-text {
+        position: absolute;
+        bottom: 0;
+
+        color: #fff;
+    }
+
+    .header__phone-bottom-text {
+        color: #fff;
     }
 
     .header__top-nav .container {
@@ -674,6 +687,19 @@ button.popup-btn {
 
     .mobile-br {
         display: none;
+    }
+
+    .blackout {
+        top: 69px;
+    }
+    
+    .header .menu-wrapper {
+        height: calc(100vh - 69px);
+    }
+
+    .menu__sub-menu.submenu-mobile-active, 
+    .submenu-mobile-active .sub-submenu-mobile-active {
+        min-height: calc(100vh - 69px);
     }
 }
 

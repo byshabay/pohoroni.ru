@@ -2,6 +2,10 @@
 
 /* 7.1.TABS OF PRICES START */
 
+.prices {
+    position: relative;
+}
+
 .prices__h2 {
     text-align: center;
 }
@@ -114,7 +118,7 @@ hr.prices__active-tab {
     width: 88%;
     bottom: 74px;
     left: 6%;
-    padding: 20px;
+    padding: 16px;
 
     font-size: var(--text-15);
 
