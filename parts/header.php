@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="<?= $root_url ?>styles/style.css">
 
     <!-- FANCYBOX -->
-    <!-- эти стили подлючаются к главной -->
+    <!-- эти стили подлючаются к главной, контакты -->
     <link rel="stylesheet" href="<?= $root_url ?>styles/fancybox.css">
 
 
@@ -35,12 +35,12 @@
     <script src="<?= $root_url ?>scripts/jquery.js"></script>
 
     <!-- SLICK -->
-    <!-- эти скрипты подлючаются к главной -->
+    <!-- эти скрипты подлючаются к главной, контакты -->
     <script src="<?= $root_url ?>scripts/slick.min.js"></script>
     <script src="<?= $root_url ?>scripts/slider.js"></script>
 
     <!-- FANCY BOX -->
-    <!-- эти скрипты подлючаются к главной -->
+    <!-- эти скрипты подлючаются к главной, контакты -->
     <script src="<?= $root_url ?>scripts/fancybox.umd.js"></script>
 
     <!-- SELF-WRITTEN SCRIPTS -->
@@ -63,7 +63,7 @@
                 <!-- 1.2.BURGER END -->
                 <a class="logo" href="<?= $root_url ?>">
                     <img src="<?= $root_url ?>images/logo.png" alt="Логотип pohoroni.ru">
-                    <div>Ритуальные <br> Услуги <br> Москвы</div>
+                    <div>Ритуальные <br class="mobile-br"> Услуги <br> Москвы</div>
                 </a>
 
                 <div class="header__tagline">Более 1200 людей в год доверяют нам самый сложный день</div>
@@ -138,13 +138,13 @@
 
                     </li>
                     <li class="menu__item menu__item_parent">
-                        <a href="#">Услуги</a>
+                        <a href="<?= $root_url ?>pages/services.php">Услуги</a>
 
                         <!-- 2.1.SUBMENU START -->
 
                         <ul class="menu__sub-menu">
                             <li class="menu__sub-menu-item">
-                                <a href="#">Подпункт 1</a>
+                                <a href="<?= $root_url ?>pages/simple-service.php">Оформление документов</a>
                             </li>
                             <li class="menu__sub-menu-item">
                                 <a href="#">Подпункт 2</a>

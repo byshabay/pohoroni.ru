@@ -58,20 +58,27 @@ $(document).ready(function () {
 
     // 4.SUBMENU MOBILE START
 
-    $('.menu__item_parent').click(function () {
-        $(this).addClass('submenu-mobile-active');
-        $(this).children('.menu__sub-menu').addClass("submenu-mobile-active");
-        $(".burger").addClass("submenu-mobile-active");
-        $(".menu-wrapper").addClass("submenu-mobile-active");
+    $('.menu__item_parent').click(function (e) {
+        if (e.offsetX > 100) {
+            e.preventDefault();
+            $(this).addClass('submenu-mobile-active');
+            $(this).children('.menu__sub-menu').addClass("submenu-mobile-active");
+            $(".burger").addClass("submenu-mobile-active");
+            $(".menu-wrapper").addClass("submenu-mobile-active");
+        }
+
     });
 
     // 4.SUBMENU MOBILE END
 
     // 5.SUB-SUBMENU MOBILE START
-    $('.menu__sub-menu-parent').click(function () {
-        $(this).addClass('sub-submenu-mobile-active');
-        $(this).parent().addClass('sub-submenu-mobile-active');
-        $(this).children('.menu__sub-sub-menu').addClass("sub-submenu-mobile-active");
+    $('.menu__sub-menu-parent').click(function (e) {
+        if (e.offsetX > 100) {
+            e.preventDefault();
+            $(this).addClass('sub-submenu-mobile-active');
+            $(this).parent().addClass('sub-submenu-mobile-active');
+            $(this).children('.menu__sub-sub-menu').addClass("sub-submenu-mobile-active");
+        }
     })
     // 5.SUB-SUBMENU MOBILE END
 

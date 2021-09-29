@@ -1156,6 +1156,8 @@ SERVICES PAGE START
 @media(max-width: 1140px) {
     .services-info__info-boxs {
         flex-direction: column;
+        align-items: center;
+        padding: 100px 0 0;
     }
 
     .services-info__info-box-1,
@@ -1427,8 +1429,6 @@ PRODUCTS PAGE END
     margin: 0 0 15px;
     font-family: var(--semiBold);
     font-size: var(--text-18);
-
-    color: var(--horses);
 }
 
 .catalog__in-stock {

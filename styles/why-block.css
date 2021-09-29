@@ -1,0 +1,69 @@
+/* 5.WHY BLOCK START */
+
+.why-block {
+    margin: 52px auto 0;
+    padding: 0 0 52px;
+
+    background-color: var(--middleDirtyWhite);
+    text-align: center;
+}
+
+.why-block__items {
+    display: flex;
+    justify-content: space-between;
+    
+    cursor: default;
+}
+
+.why-block__items ::selection {
+   background: transparent;
+}
+
+.why-block__items ::-moz-selection {
+   background: transparent;
+}
+
+.why-block__item {
+    width: 23%;
+    padding: 33px 13px 50px;
+
+    transition: 0.3s;
+    box-sizing: border-box;
+    border-bottom: 9px solid transparent;
+}
+
+.why-block__item:hover {
+    background-color: #fff;
+    border-bottom: 9px solid var(--peach);
+
+    transition: 0.3s;
+}
+
+.why-block__item img {
+    width: 45px;
+    height: 45px;
+}
+
+.why-block__h3 {
+    margin: 20px 0;
+}
+
+/* 5.WHY BLOCK END */
+
+/* 11.MAIN PAGE MEDIA START */
+
+/* 927px */
+@media(max-width: 927px) { 
+    .why-block__items {
+        flex-direction: column;
+    }
+
+    .why-block__item {
+        width: 70%;
+        margin: 0 auto;
+    }    
+
+    .why-block {
+        padding: 0;
+    }    
+}

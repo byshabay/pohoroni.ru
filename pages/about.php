@@ -51,44 +51,62 @@
 
     <!-- 2.4.BENEFITS START -->
 
-    <section class="benefits container">
-        <div class="common-h2 benefits__h2">
-            Наши преимущества
-        </div>
-        <ul class="benefits__items">
-            <li class="benefits__item">
-                <img src="../images/case.png">
-                <div class="common-h3 benefits__h3">
-                    Большой опыт
-                </div>
-                <p class="common-p  benefits__p">
-                    Мы защитим вас от любых схем обмана при взаимодействии с сотрудниками служб экстренного вызова, моргов, кладбищ и колумбариев
-                </p>
-            </li>
-            <li class="benefits__item ">
-                <img src="../images/clock.png">
-                <div class="common-h3 benefits__h3">
-                    Пунктуальность
-                </div>
-                <p class="common-p benefits__p">
-                    У нас не бывает сбоев — инфраструктура предприятия позволяет нам проводить 20 траурных церемоний в день строго по графику
-                </p>
-            </li>
-            <li class="benefits__item">
-                <img src="../images/reliability.png">
-                <div class="common-h3 benefits__h3">
-                    Надежность
-                </div>
-                <p class="common-p benefits__p">
-                    Высокий уровень квалификации персонала в оказании ритуальных услуг и органзиации всех нюансов.
-                </p>
-            </li>
-
-        </ul>
-
-    </section>
+    <?php include('../parts/benefits.php') ?>
 
     <!-- 2.4.BENEFITS END -->
+
+    <!-- 2.5.LICENSES START -->
+
+    <?php include("../parts/licenses.php") ?>
+
+    <!-- 2.5.LICENSES END -->
+
+    <!-- 2.6.SERVICES START -->
+
+    <?php include('../parts/services.php') ?>
+
+    <!-- 2.6.SERVICES END -->
+
+    <!-- 2.7.OUR EMPLOYEES START -->
+
+    <section class="employees container">
+        <div class="common-h2 employees__h2">
+            Наши сотрудники
+        </div>
+        <div class="employees__info-box">
+            <div class="employees__text-box">
+                <p class="common-p employees__p">
+                    Каждый работник со всей ответственностью относится к возложенным на него обязательствам, понимая и осознавая всю серьезность мероприятия. Профессиональные менеджеры грамотно и деликатно работают с клиентами, пытаясь в самые сложные моменты их жизни в индивидуальном порядке выполнить все пожелания и требования.
+                </p>
+
+                <p class="common-p employees__p">
+                    Каждый работник со всей ответственностью относится к возложенным на него обязательствам, понимая и осознавая всю серьезность мероприятия. Профессиональные менеджеры грамотно и деликатно работают с клиентами, пытаясь в самые сложные моменты их жизни в индивидуальном порядке выполнить все пожелания и требования.
+                </p>
+            </div>
+
+            <div class="employees__order-box">
+                <img src="../images/businesswoman.png">
+                <p class="employees__h3">
+                    Одно из преимуществ сотрудничества с нами – индивидуальный подход к каждому клиенту.
+                </p>
+                <a href="#" class="common-btn_white employees__btn">Вызов ретуального агента</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2.7.OUR EMPLOYEES END -->
+
+    <!-- 2.8.HAVE A QUESTION START -->
+
+    <?php include('../parts/have-a-question.php') ?>
+
+    <!-- 2.8.HAVE A QUESTION END -->
+
+    <!-- 2.9.CONTACT START -->
+
+    <?php include('../parts/contact-part.php') ?>
+
+    <!-- 2.9.CONTSCT END -->
 
     <!-- 2.5.LICENSES START -->
 

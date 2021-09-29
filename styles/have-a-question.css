@@ -1,0 +1,52 @@
+/* 5.HAVE A QUESTION START */
+
+.have-a-question {
+    margin: 52px 0 0;
+}
+
+.have-a-question .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.have-a-question__h2.common-h2 {
+    width: 34%;
+
+    color: #fff;
+}
+
+.have-a-question__p.common-p {
+    width: 30%;
+
+    color: #fff;
+}
+
+.have-a-question__btn.common-btn_white {
+    padding: 15px 25px;
+
+}
+
+/* 5.HAVE A QUESTION END */
+
+/* 6.ABOUT PAGE MEDIA START */
+
+/* 1140px */
+@media(max-width: 1140px){ 
+
+    .have-a-question .container {
+        flex-direction: column;
+    }
+
+    .have-a-question__h2.common-h2, 
+    .have-a-question__p.common-p {
+        width: 90%;
+
+        text-align: center;
+    }
+
+    .have-a-question__btn.common-btn_white {
+        margin: 52px 0 ;
+    }
+
+}
