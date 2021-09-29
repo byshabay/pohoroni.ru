@@ -4,20 +4,82 @@ COMMON STYLES START
 --------------------------------------------------------------
 */
 
-/* NORMALIZE CSS START */
+/* 1.IMPORTS START */
+
+/* 1.1.NORMALIZE CSS START */
+
 @import url('normalize.css');
 
-/* 1.HEADER START */
+/* 1.1NORMALIZE CSS END */
+
+/* 1.2.HEADER START */
 
 @import url('header.css');
 
-/* 1.HEADER END */
+/* 1.2.HEADER END */
 
-/* 2.FOOTER START */
+/* 1.3.FOOTER START */
 
 @import url('footer.css');
 
-/* 2.FOOTER END */
+/* 1.3.FOOTER END */
+
+/* 1.4.LICENSES-BLOCK START */
+
+@import url('licenses.css');
+
+/* 1.4.LICENSES-BLOCK END */
+
+/* 1.5.SERVICES-BLOCK START */
+
+@import url('services.css');
+
+/* 1.5.SERVICES-BLOCK END */
+
+/* 1.6.CONTACTS-BLOCK START */
+
+@import url('contact-part.css');
+
+/* 1.6.CONTACTS-BLOCK END */
+
+/* 1.7.HAVE A QUESTION BLOCK START */
+
+@import url('have-a-question.css');
+
+/* 1.7.HAVE A QUESTION BLOCK END */
+
+/* 1.8.SMALL SLIDER BLOCK START */
+
+@import url('small-slider.css');
+
+/* 1.8.SMALL SLIDER BLOCK END */
+
+/* 1.9.BENEFITS BLOCK START */
+
+@import url('benefits.css');
+
+/* 1.9.BENEFITS BLOCK END */
+
+/* 1.10.TARIFFS BLOCK START */
+
+@import url('tariffs.css');
+
+/* 1.10.TARIFFS BLOCK END */
+
+/* 1.11.REVIEWS BLOCK START */
+
+@import url('reviews.css');
+
+/* 1.11.REVIEWS BLOCK END */
+
+/* 1.12.WHY BLOCK START */
+
+@import url('why-block.css');
+
+/* 1.12.WHY BLOCK END */
+
+/* 1.IMPORTS END */
+
 :root  {
     /*  Arial, Helvetica, sans-serif; */
     --regular: 'OpenSans';
@@ -45,6 +107,7 @@ COMMON STYLES START
     --deepTaupe: #816B68;
     --NewYorkPink: #CD8A82;
     --horses: #603631;
+    --box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 * {
@@ -81,6 +144,19 @@ li {
     background-color: transparent;
     color: var(--peach);
     border-radius: 45px;
+    transition: .5s;
+}
+
+.common-border-button:hover {
+    box-shadow: var(--box-shadow);
+    background-color: var(--peach);
+    color: #fff;
+    transition: .5s;
+}
+
+.common-btn_white:hover {
+    box-shadow: var(--box-shadow);
+    transition: .5s;
 }
 
 a.common-border-button:visited {
@@ -88,19 +164,28 @@ a.common-border-button:visited {
 }
 
 .page {
-    padding: 160px 0;
+    padding: 160px 0 0;
 }
 
 .common-btn_white,
 .common-btn_peach {
     display: block;
-    padding: 10px;
+    padding: 15px;
 
     border-radius: 48px;
     border: 0px solid transparent;
+    font-size: var(--text-15);
 
     text-align: center;
     text-decoration: none;
+    transition: .5s;
+}
+
+.common-btn_peach:hover {
+    background-color: var(--horses);
+    color: #fff;
+    box-shadow: var(--box-shadow);
+    transition: .5s;
 }
 
 .common-btn_peach {
@@ -170,6 +255,7 @@ a.common-btn_white:visited {
 
 .bread-crumbs {
     display: flex;
+    flex-wrap: wrap;
 
     margin: 61px auto 0;
 }
@@ -194,7 +280,31 @@ a.common-btn_white:visited {
     display: none;
 }
 
-/* 3.COMMON MEDIA START */
+.common-ol li {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    counter-increment: custom;
+
+    font-family: var(--bold);
+    font-size: var(--text-15);
+
+    color: var(--horses);
+}
+
+.common-ol li::before {  
+    content: counter(custom, decimal-leading-zero);  
+    margin: 0 10px 0 0;
+    padding: 5px;
+
+    font-family: var(--bold);
+    font-size: var(--text-15);
+
+    background-color: var(--peach);
+    color: #fff;
+}
+
+/* 2.COMMON MEDIA START */
 
 /* > 1140px */
 @media(min-width: 1140px) {
@@ -220,7 +330,7 @@ a.common-btn_white:visited {
 
 @media(max-width: 453px){
     .page {
-        padding: 120px 0;
+        padding: 52px 0 0;
     }
 
     .common-h2 {
@@ -230,9 +340,13 @@ a.common-btn_white:visited {
     .common-border-button {
         font-size: var(--text-14);
     }
+
+    .common-h1 {
+        font-size: var(--text-36);
+    }
 }
 
-/* 3.COMMON MEDIA END */
+/* 2.COMMON MEDIA END */
 
 
 /* 
@@ -248,7 +362,7 @@ MAIN PAGE START
 */
 
 
-/* 4.MAIN BANNER START */
+/* 3.MAIN BANNER START */
 
 .banner {
     height: 800px;
@@ -291,9 +405,9 @@ MAIN PAGE START
     width: 30%;
 }
 
-/* 4.MAIN BANNER END */
+/* 3.MAIN BANNER END */
 
-/* 5.HOW WE WORK START */
+/* 4.HOW WE WORK START */
 
 .how-we-work__h2 {
     text-align: center;
@@ -318,49 +432,9 @@ MAIN PAGE START
     height: 332px;
 }
 
-/* 5.HOW WE WORK END */
+/* 4.HOW WE WORK END */
 
-/* 6.WHY BLOCK START */
-
-.why-block {
-    margin: 52px auto 0;
-    background-color: var(--middleDirtyWhite);
-    text-align: center;
-}
-
-.why-block__items {
-    display: flex;
-    justify-content: space-between;
-}
-
-.why-block__item {
-    width: 23%;
-    padding: 33px 13px 50px;
-
-    transition: 0.3s;
-    box-sizing: border-box;
-    border-bottom: 9px solid transparent;
-}
-
-.why-block__item:hover {
-    background-color: #fff;
-    border-bottom: 9px solid var(--peach);
-
-    transition: 0.3s;
-}
-
-.why-block__item img {
-    width: 45px;
-    height: 45px;
-}
-
-.why-block__h3 {
-    margin: 20px 0;
-}
-
-/* 6.WHY BLOCK END */
-
-/* 7.PROCEDURE START */
+/* 6.PROCEDURE START */
 
 .procedure.container {
     display: flex;
@@ -382,345 +456,11 @@ MAIN PAGE START
     margin: 45px 0 0 0;
 }
 
-/* 7.1.SLIDER START */
 
-.slider__wrapper {
-    width: 40%;
-}
+/* 6.PROCEDURE END */
 
-.slider {
-    position: relative;
-}
 
-.slick-track {
-    display: flex;
-}
-
-.slider__item {
-    position: relative;
-}
-
-.slick-list {
-    overflow: hidden;
-}
-
-.slider__tab {
-    display: flex;
-    align-items: center;
-}
-
-.slider__tabs {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.slider__tabs hr {
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    z-index: 0;
-
-
-    border: 0px solid transparent;
-    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23A8544AFF' stroke-width='3' stroke-dasharray='3%2c 16' stroke-dashoffset='30' stroke-linecap='square'/%3e%3c/svg%3e");
-}
-
-.slider__tab a{
-    position: relative;
-    display: block;
-    width: 45px;
-    height: 45px;
-    padding: 7px;
-    z-index: 1;
-
-    font-family: var(--bold);
-    font-size: var(--text-24) ;
-
-    background-color: var(--NewYorkPink);
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    transition: 0.3s;
-    cursor: default ;
-}
-
-a.slider_active-tab {
-    display: flex;
-    align-items: center;
-
-    background-color: var(--peach);
-    transform: scale(1.7);
-    transition: 0.3s;
-}
-
-.slider__h1 {
-    margin: 40px 0 5px;
-    font-family: var(--bold);
-    font-size: var(--text-24);
-
-    color: var(--horses);
-}
-
-.slider__item p{
-    margin: 20px 0 30px;
-}
-
-.slick-next {
-    position: absolute;
-    top: 100%; 
-    left: 45px;
-
-    background: url("../images/next-active-arrow.png") center no-repeat;
-    background-size: 30%;
-}
-
-.slick-prev {
-    position: absolute;
-    top: 100%;
-
-    background: url("../images/prev-active-arrow.png") center no-repeat;
-    background-size: 30%;
-}
-
-.slick-prev.slick-disabled{
-    background: url("../images/prev-arrow.png") center no-repeat;
-    background-size: 30%;
-    background-color: var(--middleDirtyWhite);
-}
-
-.slick-next.slick-disabled{
-    background: url("../images/next-arrow.png") center no-repeat;
-    background-size: 30%;
-    background-color: var(--middleDirtyWhite);
-}
-
-.slick-arrow {
-    width: 40px;
-    height: 40px;
-
-    font-size: 0px;
-
-    border: 0px solid transparent;
-    background-color: var(--middleDirtyWhite);
-    transition: .3s;
-}
-
-.slick-arrow:hover {
-   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-   transition: .3s;
-}
-
-.slick-arrow.slick-disabled:hover {
-    box-shadow: 0 0 0 0 ;
-}
-
-/* 7.1.SLIDER END */
-
-/* 7.PROCEDURE END */
-
-/* 8.PRICES START */
-
-/* 8.1.TABS OF PRICES START */
-
-.prices__h2 {
-    text-align: center;
-}
-
-.prices__tabs {
-    display: flex;
-    width: 100%;
-}
-
-.prices__tab {
-    width: 50%;
-}
-
-.prices__tab a {
-    display: block;
-    width: 100%;
-    padding: 31px;
-
-    font-size: var(--text-24);
-    font-family: var(--bold);
-
-    color: var(--pastelGray);
-    text-decoration: none;
-    text-align: center;
-}
-
-.prices__tabs hr {
-    height: 2px;
-
-    border: 0px solid transparent;
-    background-color: var(--middleDirtyWhite);
-
-}
-
-a.prices__active-tab {
-    color: var(--peach);
-}
-
-hr.prices__active-tab {
-    display: block;
-    height: 3px;
-
-    border-radius: 3px;
-    background-color: var(--peach) ;
-}
-
-/* 8.1.TABS OF PRICES END */
-
-/* 8.2.PRICES TARIFFS START */
-
-.prices__tariffs {
-    position: absolute;
-    min-width: 0;
-    opacity: 0;
-    visibility: hidden;
-    display: flex;
-    justify-content: space-between;
-    margin: 52px 0 0;
-}
-
-.prices__tariffs.active-tariff {
-    position: relative;
-    opacity: 1;
-    visibility: visible;
-}
-
-.prices__tariff {
-    position: relative;
-    width: 23%;
-    padding: 0 17px 170px;
-
-    border: 2px solid var(--middleDirtyWhite);
-    text-align: center;
-}
-
-.prices__tariff-h2{
-    padding: 28px 0 45px ;
-    margin: -2px 0 30px;
-
-    font-size: var(--text-15);
-    font-family: var(--bold);
-
-    color: #fff;
-    background: url('../images/tariff-rectangle.svg') 50% 0  no-repeat;
-    background-size: 80%;
-    text-align: center;
-    transition: 0.3s;
-}
-
-.prices__tariff:hover .prices__tariff-h2 {
-    background: url('../images/peach-tariff-rectangle.svg') 50% 0  no-repeat;
-    background-size: 80%;
-    transition: 0.3s;
-}
-
-.prices__p {
-    padding: 19px 5px;
-
-    font-size: var(--text-14);
-
-    border-top: 1px solid var(--middleDirtyWhite);
-}
-
-.prices__tariff :nth-child(2){
-   border-top: 0px solid transparent;
-}
-
-.prices__order-btn {
-    position: absolute;
-    width: 88%;
-    bottom: 74px;
-    left: 6%;
-    padding: 20px;
-
-    font-size: var(--text-15);
-
-    background-color: var(--dirtyRosyBrown) ;
-    transition: 0.3s;
-
-}
-
-.prices__tariff:hover .prices__order-btn {
-    background-color: var(--peach) ;
-    transition: 0.3s;
-}
-
-.prices__more-btn {
-    position: absolute;
-    width: 80%;
-    bottom: 30px;
-    left: 10%;
-
-    font-family: var(--bold);
-    font-size: var(--text-14);
-
-    color: var(--NewYorkPink);
-    text-decoration: none;
-}
-
-/* 8.2.PRICES TARIFFS END */
-
-/* 8.PRICES END */
-
-/* 9.SERVICES START */
-
-.services__h2 {
-    text-align: center;
-}
-
-.services__items {
-    display: flex;
-    justify-content: space-between;
-}
-
-.services__item {
-    width: 15%;
-
-    border: 1px solid  var(--middleDirtyWhite);
-    text-align: center;
-}
-
-.services__item a{
-    font-family: var(--semiBold);
-    font-size: var(--text-18);
-
-    color: var(--deepTaupe);
-    text-decoration: none;
-}
-
-.services__img {
-    width: 100%;
-    height: 120px;
-    padding: 20px 0 0;
-}
-
-.services__img svg path {
-    transition: 0.3s;
-} 
-
-.services__item:hover .services__img svg path {
-    fill: #fff;
-    transition: 0.3s;
-} 
-
-.services__name {
-    padding: 15px 25px;
-}
-
-.services__item:hover .services__img{
-    background-color: var(--peach);
-    transition: 0.3s;
-}
-
-/* 9.SERVICES END */
-
-/* 10.PARTNERS START */
+/* 8.PARTNERS START */
 
 .partners__h2 {
     text-align: center;
@@ -742,164 +482,10 @@ hr.prices__active-tab {
     width: 15%;
 }
 
-/* 10.PARTNERS END */
-
-/* 11.LICENSES START */
-.licenses__h2 {
-    text-align: center;
-}
-
-.licenses__items {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.licenses__item {
-    width: 20%;
-}
-
-.licenses__item img {
-    width: 100%;
-}
-
-/* 11.LICENSES END */
-
-/* 12.REVIEWS START */
-
-.reviews {
-    margin: 52px 0 0;
-    padding: 0px 0 63px;
-    
-    background: url('../images/reviews-bkg.png') center no-repeat;
-    background-size: cover;
-}
-
-.reviews__h2 {
-    color: #fff;
-}
-.reviews .container {
-    max-width: calc(100% - (100% - 1140px)/2);
-    padding: 0;
-    margin-left: calc((100% - 1140px)/2);
-}
-
-/* 12.1.REVIEWS SLIDER START */
-
-.reviews__slider-item {
-    position: relative;
-    margin: 40px 32px 40px 0;
-    padding: 20px 70px 118px 40px;
-    
-    background-color: #fff;
-}
-
-.reviews__quote::before {
-    display: block;
-    width: 30px;
-    height: 30px;
-    margin: 0 0 25px;
-
-    content: ' ';
-    background: url('../images/left-quotes-sign.png') center no-repeat;
-    background-size: 100%; 
-}
-
-.reviews__person {
-    position: absolute;
-    display: flex;
-    align-items: stretch;
-    bottom: 30px;
-}
-
-.reviews__person img {
-    width: 57px;
-    height: 57px;
-    margin: 0 18px 0 0 ;
-}
-
-.reviews__full-name {
-    margin: 8px 0 10px;
-    font-family: var(--bold);
-    font-size: var(--text-15);
-
-    color: var(--peach);
-}
-
-.reviews__date {
-    font-size: var(--text-15);
-
-    color: var(--pastelGray);
-}
+/* 8.PARTNERS END */
 
 
-/* 12.1.REVIEWS SLIDER END */
-
-/* 12.REVIEWS END */
-
-/* 11.CONTANCT START */
-
-.ymaps-2-1-79-map {
-	filter: grayscale(1);
-	-ms-filter: grayscale(1);
-	-webkit-filter: grayscale(1);
-	-moz-filter: grayscale(1);
-	-o-filter: grayscale(1);
-}
-
-.contacts {
-    display: flex;
-    justify-content: space-between;
-    margin: 52px auto 0;
-}
-
-.contacts__map {
-    width: 50%;
-}
-
-.contacts__wrapper {
-    width: 40%;
-}
-
-.contacts__item {
-    display: flex;
-    align-items: center;
-    margin: 29px 0 0;
-
-    color: var(--deepTaupe);
-    font-size: var(--text-18);
-    line-height: 24px;
-    text-decoration: none;
-}
-
-.contacts__item img {
-    width: 30px;
-    height: 30px;
-    margin: 0 10px 0 0;
-    padding: 5px;
-
-    background-color: var(--middleDirtyWhite) ;
-    transition: 0.3s;
-}
-
-.contacts__item:hover img{
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    transition: 0.3s;
-}
-
-.contacts__p {
-    margin: 130px 0 0;
-}
-
-.contacts__btn {
-    width: 40%;
-    margin: 40px 0 0;
-    padding: 15px 10px;
-}
-
-/* 11.CONTACTS END */
-
-/* 12.MAIN PAGE MEDIA START */
+/* 11.MAIN PAGE MEDIA START */
 
 /* 1140px */
 
@@ -931,44 +517,7 @@ hr.prices__active-tab {
     .procedure__info-box {
         width: 70%;
     }
-
-    .slider__wrapper {
-        width: 70%;
-        margin: 65px auto 0;
-    }
-
-    .prices__tariffs {
-        width: 70%;
-        margin: 52px auto;
-    } 
-    .prices__tariff {
-        margin: 0 auto 30px;
-    }
-
-    .prices__tariff-h2 {
-        padding: 50px 0 72px;
-
-        background-size: 40%;
-    }
-
-    .prices__order-btn {
-        width: 52%;
-        left: 24%;
-    }
-
-    .services__items {
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .services__item {
-        width: 50%;
-        margin: 0 auto 30px;
-    }
-    .services__item:last-child {
-        margin: 0 auto;
-    }
-
+   
     .partners__items {
         width: 90%;
         margin: 0 auto;
@@ -977,42 +526,8 @@ hr.prices__active-tab {
     .partners__item {
         width: 15%;
     }
-
-    .licenses__items {
-        flex-direction: column;
-    }
-
-    .licenses__item {
-        width: 30%;
-        margin: 0 0 35px;
-    }
-
-    .reviews .container {
-        width: 90%;
-        margin: 0 0 0 10%;
-    }
-
-    .reviews__slider-item {
-        padding: 20px 20px 118px;
-    }
+   
     
-    .contacts {
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-
-    .contacts__map{
-        width: 70%;
-    }
-
-    .contacts__wrapper {
-        width: 70%; 
-        margin: 0 auto 70px;
-    }
-
-    .contacts__p {
-        margin: 70px 0 0;
-    }
 }
 
 /* 927px */
@@ -1025,37 +540,6 @@ hr.prices__active-tab {
         width: 50%;
     }
 
-    .why-block__items {
-        flex-direction: column;
-    }
-
-    .why-block__item {
-        width: 70%;
-        margin: 0 auto;
-    }
-
-    .slider__wrapper {
-        margin: 110px auto 75px;
-    }
-
-    .prices__tariff-h2 {
-        padding: 50px 0 102px;
-
-        background-size: 57%;
-    }
-
-    .services__item {
-        width: 70%;
-    }
-
-    .reviews .container {
-        width: 80%;
-    }
-
-    .reviews__h2 {
-        width: 70%;
-    }
-
 }
 
 /* 673px */
@@ -1066,13 +550,6 @@ hr.prices__active-tab {
 
     .procedure__order-btn {
         width: 100%;
-    }
-
-    .prices__tariff-h2 {
-        padding: 20px 0 102px;
-    }
-    .prices__tariffs {
-        width: 90%;
     }
 }
 
@@ -1104,66 +581,17 @@ hr.prices__active-tab {
         height: 250px;
     }
 
-    .slider__tab a {
-        width: 25px;
-        height: 25px;
-        padding: 4px;
-
-        font-size: var(--text-18);
-    }
-
-    .prices__tab a {
-        font-size: var(--text-15);
-    }
-
-    .prices__tariff-h2 {
-        padding: 13px 0 49px;
-    }
-
-    .prices__p {
-        padding: 10px 5px;
-    }
-
-    .prices__order-btn {
-        width: 88%;
-        left: 6%;
-    }
-
     .partners__item {
         width: 20%;
     }
-
-    .licenses__item {
-        width: 50%;
-    }
-
-    .reviews {
-        margin: 40px 0;
-    }
-
-    .contacts__wrapper {
-        width: 90%;
-    }
-
-    .contacts__btn {
-        width: 100%;
-    }
     
-    .contacts__map {
-        width: 100%;
+    .home .page {
+        padding: 120px 0 0;
     }
+
 }
 
-/* 340px */
-
-@media(max-width: 340px) {
-    .prices__tariff-h2 {
-        background-size: 76%;
-    }
-}
-
-
-/* 12.MAIN PAGE MEDIA END */
+/* 11.MAIN PAGE MEDIA END */
 
 /* 
 --------------------------------------------------------------
@@ -1224,42 +652,130 @@ ABOUT PAGE START
 
 /* 2.WHY OUR COMPANY END */
 
-/* 3.BENEFITS START */
 
-.benefits__h2 {
+/* 4.OUR EMPLOYEES START */
+
+.employees__order-box {
+    background: url('../images/employees-block-bkg.png') center no-repeat;
+    background-size: cover;
+}
+
+.employees__h2 {
     text-align: center;
 }
 
-.benefits__items {
+.employees__info-box {
     display: flex;
-    align-items: stretch;
+    align-items: center;
     justify-content: space-between;
 }
 
-.benefits__item {
-    width: 31%;
-    padding: 20px 31px;
-
-    background-color: var(--middleDirtyWhite);
+.employees__p {
+    margin: 0 0 20px;
 }
 
-.benefits__item img {
-    width: 55px;
-    height: 55px;
+.employees__text-box {
+    width: 50%;
 }
 
-.benefits__h3 {
-    margin: 24px 0 13px;
+.employees__order-box {
+    width: 40%;
+    padding: 32px;
 
-    color: var(--horses);
+    text-align: center;
 }
 
-.benefits__p {
-    font-size: var(--text-14);
+.employees__order-box img {
+    width: 60px;
+    height: 60px;
 }
 
+.employees__h3 {
+    margin: 17px 0 22px;
 
-/* 3.BENEFITS END */
+    font-family: var(--semiBold);
+    font-size: var(--text-18);
+
+    color: #fff;
+    line-height: 23px;
+}
+
+.employees__btn {
+    width: 70%;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* 4.OUR EMPLOYEES END */
+
+
+/* 6.ABOUT PAGE MEDIA START */
+
+/* 1140px */
+@media(max-width: 1140px){
+    .about-company__info-box {
+        flex-direction: column;
+    }
+
+    .about-company__text-box {
+        width: 90%;
+        margin: 0 auto 52px;
+    }
+
+    .about-company__info-box img {
+        width: 50%;
+        margin: 0 0 0 23%;
+    }
+
+    .why-our-company .container {
+        flex-direction: column;
+    }
+
+    .why-our-company__h2 {
+        width: 90%;
+        margin: 0 auto;
+
+        text-align: center;
+    }
+
+    .why-our-company__p {
+        width: 90%;
+        margin: 0 auto 52px;
+
+        text-align: center;
+    }
+
+    .employees__info-box {
+        flex-direction: column;
+    }
+
+    .employees__text-box {
+        width: 90%;
+    }
+
+    .employees__order-box {
+        width: 90%;
+    }
+
+    .employees__text-box :last-child {
+        margin: 0 0 52px;
+    }
+}
+
+/* 625px */
+
+@media(max-width: 625px) {
+    .about-company__info-box img {
+        width: 70%;
+        margin: 0 0 0 11%;
+    }
+
+    .employees__btn {
+        width: 100%;
+    }
+}
+
+/* 6.ABOUT PAGE MEDIA END */
 
 /* 
 --------------------------------------------------------------
@@ -1267,6 +783,671 @@ ABOUT PAGE END
 --------------------------------------------------------------
 */
 
+/* 
+--------------------------------------------------------------
+SIMPLE-SERVICE PAGE START
+--------------------------------------------------------------
+*/
+
+/* 1.SHORT INFO START */
+
+.short-info.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 52px auto 0;
+}
+
+.short-info img {
+    width: 40%;
+}
+
+.short-info__info-box {
+    width: 50%;
+}
+
+.short-info__h2.common-h2{
+    margin: 0;
+    padding: 0 0 52px;
+}
+
+.short-info__items {
+    margin: 0 0 30px;
+}
+
+.short-info__items td.short-info__item-name {
+    padding: 20px 0 0;
+
+    font-family: var(--bold);
+    font-size: var(--text-15);
+
+    color: var(--horses);
+}
+
+.short-info__items td.short-info__item-value {
+    padding: 20px 0 0 40px;
+
+    font-size: var(--text-15);
+
+    color: var(--peach);
+}
+
+.short-info__btn {
+    width: 40%;
+}
+
+/* 1.SHORT INFO END */
+
+/* 2.FULL INFO START */
+
+.full-info__h2 {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.full-info__info-boxes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.full-info__info-box {
+    width: 48%;
+}
+
+.full-info__p {
+    margin: 0 0 20px;
+}
+
+/* 2.FULL INFO END */
+
+/* 3.MINI HELP BANNER START */
+
+.mini-help-banner {
+    margin: 52px auto 0;
+}
+
+.mini-help-banner .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mini-help-banner__h2 {
+    width: 50%;
+    
+    color: #fff;
+}
+
+/* 3.MINI HELP BANNER END */
+
+/* 4.SIMPLE-SERVICE PAGE MEDIA START */
+
+/* 1140px */
+@media(max-width: 1140px) {
+
+    .short-info.container {
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 0 0;
+    }
+
+    .short-info__h2.common-h2 {
+        position: absolute;
+        width: 90%;
+        top: 0;
+        left: 5%;
+
+        text-align: center;        
+    }
+
+    .short-info__info-box {
+        width: 70%;
+        margin: 52px 0 0;
+    }
+
+    .full-info__info-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .full-info__info-box {
+        width: 70%;
+    }
+
+    .full-info__h2.common-h2 {
+        width: 70%;
+    }
+    
+    .mini-help-banner .container {
+        flex-direction: column;
+        padding: 0 15px 52px;
+
+        text-align: center;
+    }
+}
+
+/* 755px */
+@media(max-width: 755px) {
+    .short-info img {
+        width: 70%;
+    }
+    
+    .short-info__btn {
+        width: 70%;
+    }
+
+    .short-info__info-box,
+    .full-info__h2.common-h2,
+    .full-info__info-box,
+    .procedure__info-box,
+    .procedure__p {
+        width: 90%;
+    }
+
+    .mini-help-banner__h2 {
+        width: 90%;
+
+        font-size: var(--text-20);
+    }
+
+    .slider__wrapper {
+        width: 90%;
+    }
+}
+
+/* 470px */
+@media(max-width: 470px) {
+
+    .simple-service .common-h2 {
+        font-size: var(--text-24);
+    }
+}
+
+
+/* 4.SIMPLE-SERVICE PAGE MEDIA START */
+
+/* 
+--------------------------------------------------------------
+SIMPLE-SERVICE PAGE END
+--------------------------------------------------------------
+*/
+
+/* 
+--------------------------------------------------------------
+SERVICES PAGE START
+--------------------------------------------------------------
+*/
+
+/* 1.SERVICES INFO START */
+
+.services-info__info-boxs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-info__info-box-1 {
+    width: 50%;
+}
+
+.services-info__info-box-2 {
+    width: 40%;
+}
+
+.services-info__p {
+    margin: 0 0 20px 0;
+}
+
+/* 1.SERVICES INFO END */
+
+/* 2.PRICES OF SERVICES START */
+
+.services-prices__h2 {
+    text-align: center;
+}
+
+.services-prices__info-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-prices__table {
+    width: 49%;
+
+    border-spacing: 0px;
+}
+
+.services-prices__table thead tr th {
+    padding: 25px 30px 25px 25px ;
+
+    font-family: var(--bold);
+    font-size: var(--text-20);
+
+    color: #fff;
+    background-color: var(--peach) ;
+}
+
+.services-prices__table thead tr :first-child {
+    width: 70%;
+    text-align: start;
+}
+
+.services-prices__table tr :last-child {
+    position: relative;
+
+    font-family: var(--bold);
+
+    text-align: end;
+    vertical-align: top;
+}
+
+.services-prices__table tr :last-child::after {
+    display: inline-block;
+    position: absolute;
+    top: 14px;
+    right: 11px;
+    content: '';
+
+    background: url('../images/ruble_peach.png') center no-repeat;
+    background-size: 70%;
+
+    width: 15px;
+    height: 15px;
+}
+
+.services-prices__table thead tr :last-child::after {
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    content: '';
+
+    background: url('../images/ruble_white.png') center no-repeat;
+
+    background-size: 100%;
+
+    width: 15px;
+    height: 15px;
+}
+
+
+.services-prices__table tbody tr td {
+    width: 20%;
+    padding: 10px 30px 10px 25px;
+
+    font-size: var(--text-15);
+    border-bottom: 1px solid var(--pastelGray);
+
+    color: var(--horses);
+    background-color: var(--middleDirtyWhite);
+    line-height: 22.5px;
+}
+
+.services-prices__table tbody tr.services-prices__btn-tr ::after,
+.services-prices__table tbody tr.services-prices__btn-ask-tr ::after {
+    display: none;
+}
+
+.services-prices__table tbody tr.services-prices__btn-tr td,
+.services-prices__table tbody tr.services-prices__btn-ask-tr td {
+    border: 0px solid transparent;
+    text-align: center;
+}
+
+.services-prices__table tr .common-btn_peach.services-prices__btn {
+    width: 60%;
+    margin: 40px auto 0;
+    z-index: 1;
+
+    text-align: center;
+}
+
+.services-prices__btn-ask {
+    font-size: var(--text-15);
+
+    color: var(--deepTaupe);
+    text-decoration: none;
+}
+
+.services-prices__table tr.services-prices__btn-ask-tr td {
+    padding: 10px 30px 40px 25px;
+}
+
+/* 2.PRICES OF SERVICES END */
+
+/* 3.TYPES OF BURIAL START */
+
+.types-of-burial__h2 {
+    text-align: center;
+}
+
+.types-of-burial__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+
+.types-of-burial__item {
+    background-color: var(--peach);
+}
+
+.types-of-burial__item a {
+    display: block;
+    padding: 30px;
+    
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.types-of-burial__item a p {
+    font-size: var(--text-24);
+    font-family: var(--bold);
+}
+
+.types-of-burial__item a img {
+    width: 73px;
+}
+
+
+/* 3.TYPES OF BURIAL END */
+
+/* 4.SERVICES PAGE MEDIA START */
+
+/* 1140px */
+@media(max-width: 1140px) {
+    .services-info__info-boxs {
+        flex-direction: column;
+    }
+
+    .services-info__info-box-1,
+    .services-info__info-box-2 {
+        width: 90%;
+        margin: 0 auto;
+
+        text-align: justify;
+    }
+
+    .services-info__h1 {
+        text-align: center;
+    }
+
+    .services-prices__info-box {
+        flex-direction: column;
+    }
+
+    .services-prices__table {
+        width: 90%;
+        margin: 0 auto 52px;
+    }
+
+    .services-prices__table:last-child {
+        margin: 0 auto;
+    }
+
+    .types-of-burial__items {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* 923px */
+
+@media(max-width: 923px) {
+    .types-of-burial__items {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .types-of-burial__item a p {
+        font-size: var(--text-20);
+    }
+
+    .types-of-burial__item a {
+        padding: 30px 10px;
+    }
+}
+
+/* 595px */
+
+@media(max-width: 595px) {
+    .types-of-burial__item a p {
+        font-size: var(--text-15);
+    }
+
+    .types-of-burial__items {
+        grid-gap: 20px;
+    }
+
+    .types-of-burial__item a img {
+        width: 40px;
+    }
+
+    .services-prices__table thead tr :first-child {
+        width: 70%;
+        padding: 25px 10px;
+    }
+
+    .services-prices__table tbody tr :first-child {
+        padding: 10px;
+
+        text-align: justify;
+    }
+}
+
+/* 424px */
+
+@media(max-width: 424px) {
+    .services-prices__table tbody tr td {
+        width: 25%;
+    }
+
+    .services-prices__table thead tr th {
+        width: 50%;
+
+        font-size: var(--text-15);
+    }
+
+    .services-prices__table thead tr :last-child::after {
+        top: 26px;
+
+        background-size: 80%
+    }
+
+    .services-prices__table tr :last-child {
+        padding: 10px 25px 10px 10px;
+    }
+
+    .services-prices__table thead tr th:last-child{
+        padding: 25px 25px 10px 10px;
+    }
+
+    .services-prices__table tr .common-btn_peach.services-prices__btn {
+        width: 90%;
+    }
+}
+
+/* 4.SERVICES PAGE MEDIA END */
+
+/* 
+--------------------------------------------------------------
+SERVICES PAGE END
+--------------------------------------------------------------
+*/
+
+
+/* 
+--------------------------------------------------------------
+PRODUCTS PAGE END
+--------------------------------------------------------------
+*/
+
+/* 1.CATALOG START */
+
+/* 1.1.SIDEBAR START */
+
+.common-h2.catalog__h2 {
+    padding: 0 0 15px;
+
+    color: var(--peach);
+    
+}
+.catalog__sidebar-item a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+    font-family: var(--bold);
+    font-size: var(--text-15);
+
+    color: var(--deepTaupe);
+    text-decoration: none;
+    transition: .3s;
+}
+
+.catalog__sidebar-item {
+   border-bottom: 1px solid var(--middleDirtyWhite);
+}
+
+.catalog__sidebar-item:hover > a {
+    color: var(--peach);
+    transition: .3s;
+}
+
+.catalog__sidebar-item:hover .catalog__sidebar-item-count::after {
+    transform: rotate(90deg);
+    transition: .3s;
+}
+
+.catalog__sidebar-item:last-child {
+    border-bottom: 0px solid transparent;
+}
+
+.catalog__sidebar-item-count {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.catalog__sidebar-item-count::after {
+    position: relative;
+    display: block;
+    width: 6px;
+    height: 11px;
+    margin: 1px 0 0 5px;
+    content: ' ';
+
+    background: url('../images/next-active-arrow.png') center no-repeat;
+    background-size: 100%;
+    transition: .3s;
+}
+
+.catalog__sidebar {
+    width: 25%;
+}
+
+.catalog__sidebar-submenu {
+    visibility: hidden;
+    max-height: 0px;
+    overflow: hidden;
+
+    transition: all .5s;
+}
+
+.catalog__sidebar-item:hover .catalog__sidebar-submenu {
+    visibility: visible;
+    max-height: 400px;
+    height: 100%;
+    
+    transition: all 2s;
+}
+
+.catalog__sidebar-submenu a {
+    font-family: var(--regular);
+
+    color: var(--horses);
+}
+
+.catalog__sidebar {
+    position: sticky;
+    top: 170px;
+    align-self: flex-start;
+}
+
+/* 1.1.SIDEBAR END */
+
+.common-h1.catalog__h1 {
+    color: var(--peach);
+    text-align: center;
+}
+
+.catalog__wrapper {
+    display: flex;
+    justify-content: space-between;
+    /* overflow: hidden; */
+    height: auto;
+}
+
+/* 1.2.CATALOG OF PRODUCT BLOCK START */
+
+.catalog__products {
+    display: grid;
+    width: 70%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.catalog__simple-product img {
+    display: block;
+    width: 100%;
+}
+
+.catalog__to-order-btn {
+    display: block;
+
+    text-decoration: none;
+}
+
+.catalog__product-info-box {
+    padding: 15px;
+
+    background-color: var(--middleDirtyWhite);
+    text-align: center;
+}
+
+.catalog__product-name {
+    font-family: var(--bold);
+    font-size: var(--text-15);
+
+    color: var(--horses);
+    line-height: 22px;
+    text-decoration: none;
+}
+
+.catalog__price {
+    margin: 0 0 15px;
+    font-family: var(--semiBold);
+    font-size: var(--text-18);
+
+    color: var(--horses);
+}
+
+.catalog__in-stock {
+    margin: 10px 0 18px;
+    font-size: var(--text-14);
+
+    color: var(--pastelGray);
+}
+
+/* 1.2.CATALOG OF PRODUCT BLOCK END */
+
+
+/* 1.CATALOG END */
+
+/* 
+--------------------------------------------------------------
+PRODUCTS PAGE END
+--------------------------------------------------------------
+*/
 
 
 /* 

@@ -1,0 +1,44 @@
+/* 1.LICENSES START */
+.licenses__h2 {
+    text-align: center;
+}
+
+.licenses__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.licenses__item {
+    width: 20%;
+}
+
+.licenses__item img {
+    width: 100%;
+}
+
+/* 1.LICENSES END */
+
+/* 2.MEDIA START */
+
+/* 1140px */
+
+@media(max-width: 1140px) {
+    .licenses__items {
+        flex-direction: column;
+    }
+
+    .licenses__item {
+        width: 30%;
+        margin: 0 0 35px;
+    }
+}
+
+/* 453px */
+@media(max-width: 453px) { 
+    .licenses__item {
+        width: 50%;
+    }
+}
+
+/* 2.MEDIA END */
