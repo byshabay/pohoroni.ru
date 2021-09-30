@@ -1392,10 +1392,14 @@ PRODUCTS PAGE END
 /* 1.2.CATALOG OF PRODUCT BLOCK START */
 
 .catalog__products {
-    display: grid;
+    display: none;
     width: 70%;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
+}
+
+.catalog__products_active {
+    display: grid;
 }
 
 .catalog__simple-product img {
@@ -1439,6 +1443,26 @@ PRODUCTS PAGE END
 }
 
 /* 1.2.CATALOG OF PRODUCT BLOCK END */
+
+/* 1.3.CATALOG OF WREATH BLOCK START */
+
+#wreath .catalog__simple-product {
+    background: var(--middleDirtyWhite);
+}
+
+.insctiption,
+.yourInscription,
+.catalog__ribbon-box-2,
+.catalog__ribbon-box-3 {
+    display: none;
+}
+
+.catalog__ribbon-box_visible,
+.catalog_type-ribbon-visible {
+    display: block;
+}
+
+/* 1.3.CATALOG OF WREATH BLOCK END */
 
 
 /* 1.CATALOG END */
