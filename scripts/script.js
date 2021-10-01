@@ -180,4 +180,15 @@ $(document).ready(function () {
 
     // 11.CATALOG CATEGORY FOR MOBILE END
 
+    // 12.AUTO HMARGIN OF PRODUCT DARD H1 START 
+
+    if (
+        $(document).width() < 1140
+    ) {
+        let height = $('.card__top-block').height() + 20;
+        $('.card img').css('margin-top', height);
+    }
+
+    // 12.AUTO HMARGIN OF PRODUCT DARD H1 END
+
 });

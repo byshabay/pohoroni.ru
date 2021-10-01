@@ -1277,7 +1277,7 @@ SERVICES PAGE END
 
 /* 
 --------------------------------------------------------------
-PRODUCTS PAGE END
+PRODUCTS PAGE START
 --------------------------------------------------------------
 */
 
@@ -1862,6 +1862,149 @@ select.catalog__product-option  {
 /* 
 --------------------------------------------------------------
 PRODUCTS PAGE END
+--------------------------------------------------------------
+*/
+
+/* 
+--------------------------------------------------------------
+CARD PAGE START
+--------------------------------------------------------------
+*/
+
+/* 1.CARD BLOCK START */
+
+.card.container {
+    display: flex;
+    margin: 52px auto 0;
+}
+
+.card img {
+    width: 30%;
+    object-fit: cover;
+}
+
+.card__top-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__in-stock {
+    width: 20%;
+
+    font-family: var(--light);
+    font-size: var(--text-14);
+
+    color: var(--peach);
+}
+
+.common-h2.card__h1 {
+    padding: 0;
+    margin: 0 0 30px;
+
+    font-size: var(--text-24);
+}
+
+.card__items {
+    margin: 40px 0 0;
+}
+
+.card .catalog__product-options {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card__product-option {
+    width: 48%;
+}
+
+.card__info-box {
+    width: 50%;
+    margin: 0 auto 0;
+}
+
+.card .single-product-popup__price-block {
+    padding: 20px;
+
+    background-color: var(--middleDirtyWhite);
+    text-align: center;
+}
+
+.card .single-product-popup__price-block p {
+    margin: 0 0 20px;
+
+    font-family: var(--light);
+    font-size: var(--text-12);
+    line-height: 22px;
+}
+
+.card .single-product-popup__btn {
+    width: 100%;
+    margin: 20px 0 0;
+}
+
+/* 1.CARD BLOCK END */
+
+/* 2.CARD PAGE MEDIA START */
+
+/* 1140px */
+@media(max-width: 1140px) {
+    .card.container {
+        position: relative;
+        flex-direction: column;
+    }
+
+    .card img {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .card__top-block {
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+
+        text-align: center;
+    }
+
+    .common-h2.card__h1 {
+        margin: 0 0 10px;
+    }
+    
+    .card__info-box {
+        margin: 20px auto 0;
+        width: 90%;
+    }
+}
+
+/* 450px */
+@media(max-width: 450px) { 
+    .card .catalog__product-options {
+        flex-direction: column;
+        position: relative;
+        padding: 0 0 180px;
+    }
+
+    .card__product-option {
+        width: 100%;
+    }
+
+    .single-product-popup__price-block {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+
+/* 2.CARD PAGE MEDIA END */
+
+/* 
+--------------------------------------------------------------
+CARD PAGE END
 --------------------------------------------------------------
 */
 

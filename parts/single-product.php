@@ -1,7 +1,7 @@
 <li class="catalog__simple-product">
     <img src="../images/product-img.png">
     <div class="catalog__product-info-box">
-        <a href="#" class="catalog__product-name">
+        <a href="<?= $root_url ?>pages/product-card.php" class="catalog__product-name">
             Покрывало
             тюль ритуальный
         </a>
