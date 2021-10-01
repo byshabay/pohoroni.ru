@@ -78,6 +78,12 @@ COMMON STYLES START
 
 /* 1.12.WHY BLOCK END */
 
+/* 1.13.WHY BLOCK START */
+
+@import url('help-banner.css');
+
+/* 1.13.WHY BLOCK END */
+
 /* 1.IMPORTS END */
 
 :root  {
@@ -859,26 +865,6 @@ SIMPLE-SERVICE PAGE START
 
 /* 2.FULL INFO END */
 
-/* 3.MINI HELP BANNER START */
-
-.mini-help-banner {
-    margin: 52px auto 0;
-}
-
-.mini-help-banner .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.mini-help-banner__h2 {
-    width: 50%;
-    
-    color: #fff;
-}
-
-/* 3.MINI HELP BANNER END */
-
 /* 4.SIMPLE-SERVICE PAGE MEDIA START */
 
 /* 1140px */
@@ -917,13 +903,7 @@ SIMPLE-SERVICE PAGE START
     .full-info__h2.common-h2 {
         width: 70%;
     }
-    
-    .mini-help-banner .container {
-        flex-direction: column;
-        padding: 0 15px 52px;
 
-        text-align: center;
-    }
 }
 
 /* 755px */
@@ -942,12 +922,6 @@ SIMPLE-SERVICE PAGE START
     .procedure__info-box,
     .procedure__p {
         width: 90%;
-    }
-
-    .mini-help-banner__h2 {
-        width: 90%;
-
-        font-size: var(--text-20);
     }
 
     .slider__wrapper {
@@ -2005,6 +1979,121 @@ CARD PAGE START
 /* 
 --------------------------------------------------------------
 CARD PAGE END
+--------------------------------------------------------------
+*/
+
+/* 
+--------------------------------------------------------------
+PRICES PAGE START
+--------------------------------------------------------------
+*/
+
+/* 1.PRICES BLOCK START */
+
+.common-h1.prices-block__h1 {
+    text-align: center;
+}
+
+.prices-block__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prices-block__info-box {
+    width: 45%;
+}
+
+.prices-block__img-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    width: 45%;
+    background: url('../images/employees-block-bkg.png') center /cover no-repeat;
+}
+
+.prices-block__img-box div {
+    width: 75%;
+
+    font-size: var(--text-20);
+    font-family: var(--bold);
+
+    color: #fff;
+    text-align: center;
+    line-height: 28px;
+}
+
+.prices-block__img-box img {
+    width: 72px;
+    height: 74px;
+    margin: 0 0 30px;
+}
+
+.common-p.prices-block__p {
+    margin: 0 0 20px;
+}
+
+.common-btn_peach.prices-block__btn {
+    margin: 20px 0 0;
+    width: 45%;
+}
+
+/* 1.PRICES BLOCK END */
+
+/* 2.PROCEDURE BLOCK START */
+
+.prices-procedure-h2 {
+    padding: 0 0 52px;
+}
+
+.prices-page .procedure {
+    margin: 52px auto 0;
+}
+
+/* 2.PROCEDURE BLOCK END */
+
+/* 3.PRICES PAGE MEDIA START */
+
+/* 1140px */
+@media(max-width: 1140px) {
+    .prices-block__wrapper {
+        flex-direction: column;
+    }
+
+    .prices-block__img-box {
+        width: 90%;
+        margin: 0 auto 52px;
+    }
+
+    .prices-block__info-box {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+}
+
+/* 470px */
+@media(max-width: 470px) {
+    .common-btn_peach.prices-block__btn {
+        width: 90%;
+        margin: 20px auto 0;
+    }
+
+    .common-p.prices-block__p {
+        text-align: justify;
+    }
+    
+    .prices-block__img-box div {
+        font-size: var(--text-15);
+    }
+}
+
+/* 3.PRICES PAGE MEDIA END */
+
+/* 
+--------------------------------------------------------------
+PRICES PAGE END
 --------------------------------------------------------------
 */
 

@@ -125,14 +125,7 @@
 
     <!-- 2.7.MINI HELP BANNER START -->
 
-    <section class="common-mini-banner mini-help-banner">
-        <div class="container">
-            <div class="common-h2 mini-help-banner__h2">
-                Поможем получить компенсацию за погребение
-            </div>
-            <a href="#" class="common-btn_white mini-help-banner__btn">Получить консультацию</a>
-        </div>
-    </section>
+    <?php include("../parts/help-banner.php") ?>
 
     <!-- 2.7.MINI HELP BANNER END -->
 
