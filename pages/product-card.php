@@ -174,6 +174,18 @@
 
     <!-- 2.2.CARD END -->
 
+    <!-- 2.3.HAVE A QUESTION START -->
+
+    <?php include('../parts/have-a-question.php') ?>
+
+    <!-- 2.3.HAVE A QUESTION END -->
+
+    <!-- 2.4.CONTACT START -->
+
+    <?php include('../parts/contact-part.php') ?>
+
+    <!-- 2.4.CONTSCT END -->
+
 
 </main>
 
