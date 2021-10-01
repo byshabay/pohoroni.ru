@@ -178,6 +178,6 @@ $(document).ready(function () {
         $('.catalog__sidebar').toggleClass('catalog__sidebar_visible')
     })
 
-    // 12.CATALOG CATEGORY FOR MOBILE END
+    // 11.CATALOG CATEGORY FOR MOBILE END
 
 });

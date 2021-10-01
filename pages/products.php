@@ -279,6 +279,18 @@
                 <?php include("../parts/single-product.php") ?>
 
             </ul>
+
+            <!-- 2.2.1.SINGLE PRODUCT POPUP START -->
+
+            <?php include('../parts/single-product-popup.php') ?>
+
+            <!-- 2.2.1.SINGLE PRODUCT POPUP END -->
+
+            <!-- 2.2.2.SINGLE PRODUCT WREATH POPUP START -->
+
+            <?php include('../parts/single-wreath-product-popup.php') ?>
+
+            <!-- 2.2.2.SINGLE PRODUCT WREATH POPUP END -->
         </div>
     </section>
 

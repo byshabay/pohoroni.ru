@@ -110,7 +110,7 @@
         <p class="catalog__price">
             1464 ₽
         </p>
-        <a href="#" class="common-border-button catalog__to-order-btn">
+        <a data-fancybox data-src="#single-wreath-product-popup" class="common-border-button catalog__to-order-btn">
             Заказать
         </a>
     </div>
