@@ -137,8 +137,8 @@ $(document).ready(function () {
 
     $('.catalog__ribbon-box .catalog__add-ribbon-btn').click(function (e) {
         e.preventDefault();
-        let href = $(this).attr('href');
-        $(href).addClass('catalog__ribbon-box_visible');
+        let val = $(this).val();
+        $(this).parents('.catalog__ribbon-box').siblings('.' + val).addClass('catalog__ribbon-box_visible');
     })
 
     // 8.ADD THE RIBBON END
@@ -147,8 +147,8 @@ $(document).ready(function () {
 
     $('.catalog__ribbon-box .catalog__delete-ribbon-btn').click(function (e) {
         e.preventDefault();
-        let href = $(this).attr('href');
-        $(href).removeClass('catalog__ribbon-box_visible');
+        let val = $(this).val();
+        $(this).parents('.' + val).removeClass('catalog__ribbon-box_visible');
     })
 
     // 9.DELETE THE RIBBON END
@@ -171,5 +171,13 @@ $(document).ready(function () {
     })
 
     // 10.SELECT THE RIBBON END
+
+    // 11.CATALOG CATEGORY FOR MOBILE START
+
+    $('.catalog__h2').click(function () {
+        $('.catalog__sidebar').toggleClass('catalog__sidebar_visible')
+    })
+
+    // 12.CATALOG CATEGORY FOR MOBILE END
 
 });
