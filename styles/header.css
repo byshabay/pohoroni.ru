@@ -707,7 +707,7 @@ button.popup-btn {
 
 @media(max-width: 676px) {
     
-    .common-border-button {
+    .header .common-border-button {
         position: absolute;
         right: 15px;
     }

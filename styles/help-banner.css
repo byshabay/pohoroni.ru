@@ -1,0 +1,42 @@
+/* 3.MINI HELP BANNER START */
+
+.mini-help-banner {
+    margin: 52px auto 0;
+}
+
+.mini-help-banner .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mini-help-banner__h2.common-h2 {
+    width: 50%;
+    
+    color: #fff;
+}
+
+/* 3.MINI HELP BANNER END */
+
+/* 4.SIMPLE-SERVICE PAGE MEDIA START */
+
+/* 1140px */
+@media(max-width: 1140px) { 
+    .mini-help-banner .container {
+        flex-direction: column;
+        padding: 0 15px 52px;
+
+        text-align: center;
+    }
+}
+
+/* 755px */
+@media(max-width: 755px) {
+    .mini-help-banner__h2.common-h2 {
+        width: 90%;
+
+        font-size: var(--text-20);
+    }
+}
+
+/* 4.SIMPLE-SERVICE PAGE MEDIA END */

@@ -31,15 +31,58 @@
                         <a href="#coffins">
                             Гробы
                             <div class="catalog__sidebar-item-count">
-                                76 товаров
+                                <div class="catalog__sidebar-item-count-num">
+                                    76
+                                </div>
+                                <div class="catalog__sidebar-item-count-units">
+                                    товаров
+                                </div>
                             </div>
                         </a>
+
+                        <ul class="catalog__sidebar-submenu">
+                            <li class="catalog__sidebar-submenu-item">
+                                <a href="#">
+                                    Постель в гроб
+                                </a>
+                            </li>
+                            <li class="catalog__sidebar-submenu-item">
+                                <a href="#">
+                                    Одежда
+                                </a>
+                            </li>
+                            <li class="catalog__sidebar-submenu-item">
+                                <a href="#">
+                                    Покрывало
+                                </a>
+                            </li>
+                            <li class="catalog__sidebar-submenu-item">
+                                <a href="#">
+                                    Подушка в гроб
+                                </a>
+                            </li>
+                            <li class="catalog__sidebar-submenu-item">
+                                <a href="#">
+                                    Обувь
+                                </a>
+                            </li>
+                            <li class="catalog__sidebar-submenu-item">
+                                <a href="#">
+                                    Орденские подушки
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="catalog__sidebar-item">
                         <a href="#wreath">
                             Венки
                             <div class="catalog__sidebar-item-count">
-                                76 товаров
+                                <div class="catalog__sidebar-item-count-num">
+                                    76
+                                </div>
+                                <div class="catalog__sidebar-item-count-units">
+                                    товаров
+                                </div>
                             </div>
                         </a>
                     </li>
@@ -47,7 +90,12 @@
                         <a href="#textile">
                             Текстиль
                             <div class="catalog__sidebar-item-count">
-                                76 товаров
+                                <div class="catalog__sidebar-item-count-num">
+                                    76
+                                </div>
+                                <div class="catalog__sidebar-item-count-units">
+                                    товаров
+                                </div>
                             </div>
                         </a>
                     </li>
@@ -55,21 +103,197 @@
                         <a href="#crosses">
                             Кресты
                             <div class="catalog__sidebar-item-count">
-                                76 товаров
+                                <div class="catalog__sidebar-item-count-num">
+                                    76
+                                </div>
+                                <div class="catalog__sidebar-item-count-units">
+                                    товаров
+                                </div>
                             </div>
                         </a>
                     </li>
                     <li class="catalog__sidebar-item">
                         <a href="#accessories">Аксессуары
                             <div class="catalog__sidebar-item-count">
-                                76 товаров
+                                <div class="catalog__sidebar-item-count-num">
+                                    76
+                                </div>
+                                <div class="catalog__sidebar-item-count-units">
+                                    товаров
+                                </div>
                             </div>
                         </a>
                     </li>
                 </ul>
             </div>
+
+            <!-- COFFINS -->
+
+            <ul id="coffins" class="catalog__products ">
+
+                <!-- 1 PRODUCT -->
+
+                <?php include("../parts/single-product.php") ?>
+
+                <!-- 2 PRODUCT -->
+
+                <?php include("../parts/single-product.php") ?>
+
+                <!-- 3 PRODUCT -->
+
+                <?php include("../parts/single-product.php") ?>
+
+
+                <!-- 4 PRODUCT -->
+
+                <?php include("../parts/single-product.php") ?>
+
+                <!-- 5 PRODUCT -->
+
+                <?php include("../parts/single-product.php") ?>
+
+                <!-- 6 PRODUCT -->
+
+                <?php include("../parts/single-product.php") ?>
+
+            </ul>
+
+            <!-- WREATH -->
+
+            <ul id="wreath" class="catalog__products catalog__products_active">
+                <!-- 1 WREATH -->
+
+                <?php include('../parts/single-wreath-product.php') ?>
+
+                <!-- 2 WREATH -->
+
+                <?php include('../parts/single-wreath-product.php') ?>
+
+                <!-- 3 WREATH -->
+
+                <?php include('../parts/single-wreath-product.php') ?>
+
+                <!-- 4 WREATH -->
+
+                <?php include('../parts/single-wreath-product.php') ?>
+
+                <!-- 5 WREATH -->
+
+                <?php include('../parts/single-wreath-product.php') ?>
+
+                <!-- 6 WREATH -->
+
+                <?php include('../parts/single-wreath-product.php') ?>
+
+            </ul>
+
+            <!-- TEXTILE -->
+
+            <ul id="textile" class="catalog__products ">
+
+                <!-- 1 PRODUCT -->
+
+                <?php include("../parts/single-product.php") ?>
+
+                <!-- 2 PRODUCT -->
+
+                <?php include("../parts/single-product.php") ?>
+
+                <!-- 3 PRODUCT -->
+
+                <?php include("../parts/single-product.php") ?>
+
+
+                <!-- 4 PRODUCT -->
+
+                <?php include("../parts/single-product.php") ?>
+
+                <!-- 5 PRODUCT -->
+
+                <?php include("../parts/single-product.php") ?>
+
+                <!-- 6 PRODUCT -->
+
+                <?php include("../parts/single-product.php") ?>
+
+            </ul>
+
+            <!-- CROSSES -->
+
+            <ul id="crosses" class="catalog__products ">
+
+                <!-- 1 PRODUCT -->
+
+                <?php include("../parts/single-product.php") ?>
+
+                <!-- 2 PRODUCT -->
+
+                <?php include("../parts/single-product.php") ?>
+
+                <!-- 3 PRODUCT -->
+
+                <?php include("../parts/single-product.php") ?>
+
+
+                <!-- 4 PRODUCT -->
+
+                <?php include("../parts/single-product.php") ?>
+
+                <!-- 5 PRODUCT -->
+
+                <?php include("../parts/single-product.php") ?>
+
+                <!-- 6 PRODUCT -->
+
+                <?php include("../parts/single-product.php") ?>
+
+            </ul>
+
+            <!-- ACCESSORIES -->
+
+            <ul id="accessories" class="catalog__products ">
+
+                <!-- 1 PRODUCT -->
+
+                <?php include("../parts/single-product.php") ?>
+
+                <!-- 2 PRODUCT -->
+
+                <?php include("../parts/single-product.php") ?>
+
+                <!-- 3 PRODUCT -->
+
+                <?php include("../parts/single-product.php") ?>
+
+
+                <!-- 4 PRODUCT -->
+
+                <?php include("../parts/single-product.php") ?>
+
+                <!-- 5 PRODUCT -->
+
+                <?php include("../parts/single-product.php") ?>
+
+                <!-- 6 PRODUCT -->
+
+                <?php include("../parts/single-product.php") ?>
+
+            </ul>
+
+            <!-- 2.2.1.SINGLE PRODUCT POPUP START -->
+
+            <?php include('../parts/single-product-popup.php') ?>
+
+            <!-- 2.2.1.SINGLE PRODUCT POPUP END -->
+
+            <!-- 2.2.2.SINGLE PRODUCT WREATH POPUP START -->
+
+            <?php include('../parts/single-wreath-product-popup.php') ?>
+
+            <!-- 2.2.2.SINGLE PRODUCT WREATH POPUP END -->
         </div>
     </section>
+
 
     <!-- 2.2.CATALOG END -->
 
