@@ -341,13 +341,16 @@ a.common-btn_white:visited {
 
 }
 
-/* 453px */
-
-@media(max-width: 453px){
+/* 1140px */
+@media(max-width: 1140px) {
     .page {
         padding: 52px 0 0;
     }
+}
 
+/* 453px */
+
+@media(max-width: 453px){
     .common-h2 {
         font-size: var(--text-24);
     }
@@ -2275,6 +2278,92 @@ CONTACT PAGE START
 CONTACT PAGE END
 --------------------------------------------------------------
 */
+
+/* 
+--------------------------------------------------------------
+ERROR PAGE START
+--------------------------------------------------------------
+*/
+
+/* 1.ERROR START */
+
+.error-404 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+    padding: 40px;  
+
+    text-align: center;
+}
+
+.error-404 img {
+    width: 50%;
+}
+
+.common-btn_peach.error-404__btn {
+    width: 30%;
+}
+
+.error-404-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;   
+}
+
+.error-404 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-page__footer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.error-404__p {
+    margin: 5% 0;
+
+    font-family: var(--semiBold);
+    font-size: var(--text-18);
+
+    line-height: 22px;
+}
+
+.error-404__btn {
+    margin: 2% 0;
+}
+
+/* 1.ERROR END */
+
+/* 2.ERROR PAGE MEDIA START */
+
+/* 410px */
+@media(max-width: 410px) {
+    .common-btn_peach.error-404__btn {
+        width: 50%;
+    }
+
+    .error-404 .container {
+        padding: 15px;
+    }
+}
+
+/* 2.ERROR PAGE MEDIA END */
+
+/* 
+--------------------------------------------------------------
+ERROR PAGE END
+--------------------------------------------------------------
+*/
+
 
 
 /* 

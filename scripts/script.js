@@ -190,4 +190,11 @@ $(document).ready(function () {
     }
 
     // 12.AUTO MARGIN OF PRODUCT DARD H1 END
+
+    // 13.ERROR 404 MAIN HEIGHT START
+
+    var headerHeight = $('.error-404').parent('body').addClass('error-404-page');
+
+
+    // 13.ERROR 404 MAIN HEIGHT END 
 });

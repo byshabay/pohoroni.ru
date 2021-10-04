@@ -115,7 +115,7 @@
 
                         <ul class="menu__sub-menu">
                             <li class="menu__sub-menu-item menu__sub-menu-parent">
-                                <a href="#">Подпункт 1</a>
+                                <a href="<?= $root_url ?>pages/error404.php">Ошибка 404</a>
                                 <!-- 2.1.1.SUB-SUB-MENU START -->
                                 <ul class="menu__sub-sub-menu">
                                     <li class="menu__sub-sub-menu-item"><a href="#">Подподпункт 1</a></li>
