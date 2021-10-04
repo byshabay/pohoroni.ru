@@ -63,7 +63,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="reception-control">
+            <div class="reception-control common-info-box_border">
                 <img src="../images/reception-phone.png">
                 <div class="common-h2 reception__h2">
                     Центральная диспетчерская служба

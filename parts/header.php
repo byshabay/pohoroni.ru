@@ -127,7 +127,7 @@
                                 <!-- 2.1.1.SUB-SUB-MENU START -->
                             </li>
                             <li class="menu__sub-menu-item">
-                                <a href="#">Подпункт 2</a>
+                                <a href="<?= $root_url ?>pages/delivery.php">Доставка</a>
                             </li>
                             <li class="menu__sub-menu-item">
                                 <a href="#">Подпункт 3</a>

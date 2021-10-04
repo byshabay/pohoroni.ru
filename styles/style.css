@@ -2364,6 +2364,265 @@ ERROR PAGE END
 --------------------------------------------------------------
 */
 
+/* 
+--------------------------------------------------------------
+DELIVERY PAGE START
+--------------------------------------------------------------
+*/
+
+/* 1.DELIVERY BLOCK START  */
+
+.delivery-block__info-box {
+    display: flex;
+    justify-content: space-between;
+} 
+
+.common-h1.delivery-block__h1 {
+    text-align: center;
+}
+
+.delivery-block__info-box-1 {
+    width: 48%;
+}
+
+.delivery-block__info-box-2 {
+    width: 45%;
+}
+
+.delivery-block__top-block {
+    padding: 30px 40px;
+
+    background: url('../images/employees-block-bkg.png');
+    text-align: center;
+}
+
+.delivery-block__bottom-block {
+    background-color: var(--middleDirtyWhite);
+}
+
+.common-p.delivery-block__right-p {
+    color: #fff;
+}
+
+.delivery-block__p_bold {
+    font-family: var(--bold);
+}
+
+.delivery-block__ol {
+    margin: 52px 0 0;
+}
+
+.delivery-block__ol li {
+    margin: 0 0 20px;
+
+    line-height: 23px;
+}
+
+.delivery-block__box-border {
+    padding: 20px;
+    margin: 15px 0;
+    width: 100%;
+
+    font-size: var(--text-15);
+
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.delivery-block__addresses {
+    padding: 10px 20px;
+}
+
+.delivery-block__addresses li {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px;
+}
+
+.delivery-block__addresses li img {
+    margin: 0 10px 0 0;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+/* 1.DELIVERY BLOCK END  */
+
+/* 2.PAYMENT METHODS START */
+
+.payments {
+    width: 90%;
+    max-width: 945px;
+    margin: 52px auto 0;
+    padding: 0px 60px 52px;
+
+    background-color: var(--middleDirtyWhite) ;
+}
+
+.payments__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.payments__tabs {
+    width: 30%;
+}
+
+.common-h2.payments__h2 {
+    text-align: center;
+}
+
+.payments__tab a {
+    display: block;
+    padding: 10px 0;
+
+    font-size: var(--text-18);
+
+    color: var(--lightGray);
+    text-decoration: none;
+    border-bottom: 1px solid var(--lightGray);
+}
+
+li.payments__active-tab {
+    display: flex;
+    align-items: center;
+}
+
+li.payments__active-tab a{
+    font-family: var(--semiBold);
+
+    color: var(--peach);
+    border: 0px solid transparent;
+    
+
+}
+
+li.payments__active-tab::before {
+    display: block;
+    content: " ";
+    width: 15px;
+    height: 15px;
+    margin: 0 15px 0 0;
+
+    background-color: var(--peach);
+    transition: .3s;
+}
+
+.payments__active-tab .common-mini-p.payments__mini-p {
+    color: var(--peach);
+    
+}
+
+.payments__types {
+    width: 55%;
+}
+
+.common-mini-p.payments__mini-p {
+    color: var(--lightGray);
+}
+
+.payments__type-p {
+    margin: 0 0 20px;
+}
+
+.payments__type-btn {
+    width: 50%;
+}
+
+.payments__type {
+    display: none;
+}
+
+.payments__active-tab.payments__type {
+    display: block;
+
+    transition: .3s;
+}
+
+/* 2.PAYMENT METHODS END */
+
+/* 3.DELIVERY PAGE MEDIA START */
+
+/* 1140px */
+@media(max-width: 1140px) {
+    .delivery-block__info-box {
+        flex-direction: column;
+    }
+
+    .delivery-block__info-box-1 {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .delivery-block__info-box-2  {
+        width: 90%;
+        margin: 52px auto 0;
+    }
+
+    .payments {
+        width: calc(90% - 20px);
+    }
+
+    .payments__tabs {
+        width: 40%;
+    }
+    .contacts__wrapper {
+        width: 90%;
+    }
+}
+
+/* 663px */
+
+@media(max-width: 663px) {
+    li.payments__active-tab::before {
+        width: 10px;
+        height: 10px;
+        margin: 0 10px 0 0;
+    }
+
+    .payments__wrapper {
+        flex-direction: column;
+
+    }
+
+    .payments__tabs {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .payments__types {
+        width: 90%;
+        margin: 30px auto 0;
+    }
+}
+
+/* 491px */
+@media(max-width: 491px) {
+    .delivery-block__top-block {
+        padding: 15px;
+    }
+
+    .delivery-block__addresses {
+        padding: 10px 15px;
+    }
+
+    .payments {
+        padding: 15px;
+    }
+
+    .payments__type-btn {
+        width: 70%;
+    }
+}
+
+/* 3.DELIVERY PAGE MEDIA END */
+
+
+/* 
+--------------------------------------------------------------
+DELIVERY PAGE END
+--------------------------------------------------------------
+*/
 
 
 /* 

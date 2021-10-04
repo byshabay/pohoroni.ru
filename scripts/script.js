@@ -191,10 +191,26 @@ $(document).ready(function () {
 
     // 12.AUTO MARGIN OF PRODUCT DARD H1 END
 
-    // 13.ERROR 404 MAIN HEIGHT START
+    // 13.ERROR 404 BODY CLASS START
 
-    var headerHeight = $('.error-404').parent('body').addClass('error-404-page');
+    $('.error-404').parent('body').addClass('error-404-page');
 
+    // 13.ERROR 404 BODY CLASS END 
 
-    // 13.ERROR 404 MAIN HEIGHT END 
+    // 14.PAYMENTS METHOD TABS START
+
+    $('.payments__tab a').click(function (e) {
+        e.preventDefault();
+        $('.payments__active-tab').removeClass('payments__active-tab');
+
+        let href = $(this).attr('href');
+        $(this).parent('li').addClass('payments__active-tab');
+        $(href).addClass('payments__active-tab');
+
+        return false;
+
+    })
+
+    // 14.PAYMENTS METHOD TABS END
+
 });
