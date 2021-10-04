@@ -165,6 +165,25 @@ li {
     transition: .5s;
 }
 
+.common-square-ul li::before {
+    display: block;
+    position: absolute;
+    left: 0;
+    content: " ";
+    width: 15px;
+    height: 15px;
+    top: 6px;
+
+    background-color: var(--peach);
+}
+
+.common-square-ul li {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    padding: 0 0 0 30px ;
+    margin: 0 0 15px;
+}
 
 
 a.common-border-button:visited {
@@ -361,6 +380,15 @@ a.common-btn_white:visited {
 
     .common-h1 {
         font-size: var(--text-36);
+    }
+
+    .common-square-ul li::before {
+        width: 10px;
+        height: 10px;
+    }
+
+    .common-square-ul li {
+        padding: 0 0 0 20px;
     }
 }
 
@@ -2497,6 +2525,7 @@ li.payments__active-tab a{
 
 }
 
+
 li.payments__active-tab::before {
     display: block;
     content: " ";
@@ -2621,6 +2650,75 @@ li.payments__active-tab::before {
 /* 
 --------------------------------------------------------------
 DELIVERY PAGE END
+--------------------------------------------------------------
+*/
+
+/* 
+--------------------------------------------------------------
+PRIVACY PAGE START
+--------------------------------------------------------------
+*/
+
+/* 1.TEXT CONTENT START */
+
+.privacy__wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.common-h1.privacy__h1 {
+    text-align: center;
+}
+
+.privacy__h3.common-h3 {
+    margin: 20px 0;
+
+    font-size: var(--text-15);
+
+    color: var(--horses);
+}
+
+.privacy__ul {
+    margin: 52px 0;
+}
+
+.privacy__info-box {
+    padding: 30px 43px;
+
+    background: var(--middleDirtyWhite);
+}
+
+/* 1.TEXT CONTENT END */
+
+/* 2.PRIVACY PAGE MEDIA START */
+
+/* 1140px */
+@media(max-width: 1140px) {
+    .privacy__wrapper {
+        width: 100%;
+    }
+
+    .privacy__text-block.container {
+        width: 90%;
+    }
+}
+
+/* 500px */
+@media(max-width: 1140px) { 
+    .common-h1.privacy__h1 {
+        font-size: var(--text-24);
+    }
+
+    .privacy__wrapper {
+        text-align: justify;
+    }
+}
+
+/* 2.PRIVACY PAGE MEDIA END */
+
+/* 
+--------------------------------------------------------------
+PRIVACY PAGE END
 --------------------------------------------------------------
 */
 
