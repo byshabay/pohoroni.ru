@@ -112,4 +112,82 @@ $(document).ready(function () {
     }
 
     // 6.FORM VALIDATION END
+
+    // 7.CATALOG TABS START
+
+    $('.catalog__sidebar-item a').click(function (e) {
+        e.preventDefault();
+
+        let href = $(this).attr('href');
+
+        $('.catalog__products_active').removeClass('catalog__products_active');
+
+        $(href).addClass('catalog__products_active');
+
+        /**
+         * Строка ниже нужна для того, чтобы не срабатовала якорная ссылка
+         */
+
+        return false;
+    })
+
+    // 7.CATALOG TABS END
+
+    // 8.ADD THE RIBBON START
+
+    $('.catalog__ribbon-box .catalog__add-ribbon-btn').click(function (e) {
+        e.preventDefault();
+        let val = $(this).val();
+        $(this).parents('.catalog__ribbon-box').siblings('.' + val).addClass('catalog__ribbon-box_visible');
+    })
+
+    // 8.ADD THE RIBBON END
+
+    // 9.DELETE THE RIBBON START
+
+    $('.catalog__ribbon-box .catalog__delete-ribbon-btn').click(function (e) {
+        e.preventDefault();
+        let val = $(this).val();
+        $(this).parents('.' + val).removeClass('catalog__ribbon-box_visible');
+    })
+
+    // 9.DELETE THE RIBBON END
+
+    // 10.SELECT THE RIBBON START
+
+    $('.catalog__product-option-ribbon').change(function () {
+
+        $(this).siblings('.catalog_type-ribbon-visible').removeClass('catalog_type-ribbon-visible');
+
+        if (
+            $(this).val() == "1"
+        ) {
+            $(this).siblings('.insctiption').addClass('catalog_type-ribbon-visible');
+        } else if (
+            $(this).val() == "2"
+        ) {
+            $(this).siblings('.yourInscription').addClass('catalog_type-ribbon-visible')
+        }
+    })
+
+    // 10.SELECT THE RIBBON END
+
+    // 11.CATALOG CATEGORY FOR MOBILE START
+
+    $('.catalog__h2').click(function () {
+        $('.catalog__sidebar').toggleClass('catalog__sidebar_visible')
+    })
+
+    // 11.CATALOG CATEGORY FOR MOBILE END
+
+    // 12.AUTO HMARGIN OF PRODUCT DARD H1 START 
+
+    if (
+        $(document).width() < 1140
+    ) {
+        let height = $('.card__top-block').height() + 20;
+        $('.card img').css('margin-top', height);
+    }
+
+    // 12.AUTO HMARGIN OF PRODUCT DARD H1 END
 });

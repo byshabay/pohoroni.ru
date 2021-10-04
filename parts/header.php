@@ -156,9 +156,9 @@
 
                         <!-- 2.1.SUBMENU END  -->
                     </li>
-                    <li class="menu__item"><a href="#">Ритуальные товары</a></li>
-                    <li class="menu__item"><a href="#">Стоимость похорон</a></li>
-                    <li class="menu__item"><a href="#">Контакты</a></li>
+                    <li class="menu__item"><a href="<?= $root_url ?>pages/products.php">Ритуальные товары</a></li>
+                    <li class="menu__item"><a href="<?= $root_url ?>pages/prices.php">Стоимость похорон</a></li>
+                    <li class="menu__item"><a href="<?= $root_url ?>pages/contact.php">Контакты</a></li>
                 </ul>
 
                 <form class="search">
