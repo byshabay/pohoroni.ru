@@ -6,6 +6,9 @@ $(document).ready(function () {
         $(window).scrollTop() > 0 ? $('.header__top-nav').addClass("header_scroll") : $('.header__top-nav').toggleClass("header_scroll")
     })
 
+    $(window).scrollTop() > 0 ? $('.header__top-nav').addClass("header_scroll") : $('.header__top-nav').toggleClass("header_scroll")
+
+
     // 1.HEADER SCROLL END
 
     // 2.TARIFFS TABS START
@@ -212,5 +215,7 @@ $(document).ready(function () {
     })
 
     // 14.PAYMENTS METHOD TABS END
+
+    // 15.PAYMENTS METHOD TABS START
 
 });

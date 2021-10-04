@@ -46,7 +46,11 @@
     }
 
     .have-a-question__btn.common-btn_white {
-        margin: 52px 0 ;
+        margin: 20px 0 ;
+    }
+
+    .have-a-question {
+        margin: 30px 0 0;
     }
 
 }

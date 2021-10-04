@@ -56,24 +56,24 @@
 
 @media(max-width: 1140px) {
      .services__items {
-        align-items: center;
-        flex-direction: column;
-    }
+        display: grid;
+        width: 90%;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+    } 
 
     .services__item {
-        width: 50%;
-        margin: 0 auto 30px;
-    }
-    .services__item:last-child {
-        margin: 0 auto;
+        width: 100%;
     }
 }
 
 /* 927px */
 @media(max-width: 927px) {
-    .services__item {
-        width: 70%;
-    } 
+
+    .services__img {
+        height: auto;
+    }
 }
 
 /* 2.MEDIA END */

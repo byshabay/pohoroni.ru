@@ -55,12 +55,10 @@
     width: 100%;
 
     background-color: transparent;
-    transition: 0.5s;
 }
 
 .header_scroll {
     background-color: #fff;
-    transition: 0.4s;
 }
 
 .header__top-nav .container {

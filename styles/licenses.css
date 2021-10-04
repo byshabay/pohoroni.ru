@@ -32,6 +32,10 @@
         width: 30%;
         margin: 0 0 35px;
     }
+
+    .licenses__items :last-child {
+        margin: 0;
+    }
 }
 
 /* 453px */

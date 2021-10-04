@@ -84,6 +84,26 @@
     }
 }
 
+/* 930px */
+@media(max-width: 930px) {
+    .contacts.container {
+        margin: 30px auto 0;
+    }
+
+    .contacts__item {
+        margin: 20px 0 0;
+    }
+
+    .contacts__p,
+    .contacts__btn.common-btn_peach {
+        margin: 30px 0 0;
+    }
+
+    .contacts__wrapper {
+        margin: 0 auto 30px;
+    }
+}
+
 /* 453px */
 @media(max-width: 453px) {
     .contacts__wrapper {
@@ -97,6 +117,8 @@
     .contacts__map {
         width: 100%;
     }
+
+    
 }
 
 /* 2.MEDIA END */

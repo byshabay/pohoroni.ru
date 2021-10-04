@@ -53,7 +53,13 @@
     .benefits__items :last-child {
         margin: 0 auto;
     }
+}
 
+/* 700px */
+@media(max-width: 700px){  
+    .benefits__item {
+        width: 90%;
+    }
 }
 
 /* 6.ABOUT PAGE MEDIA START */
