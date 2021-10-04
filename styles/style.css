@@ -2225,6 +2225,50 @@ CONTACT PAGE START
  
 /* 2.WHY END */
 
+/* 3.CONTACT PAGE MEDIA START */
+
+/* 1140px */
+@media(max-width: 1140px){
+    .reception__info-box {
+        flex-direction: column-reverse;
+    }
+
+    .reception-control {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .reception__text-block {
+        width: 70%;
+        margin: 48px auto 0;
+    }
+}
+
+/* 453px */
+
+@media(max-width: 453px){
+.reception-control {
+        width: 90%;
+        margin: 0 auto;
+        padding: 15px;
+    }
+
+    .reception__text-block {
+        width: 90%;
+        margin: 20px auto 0;
+    }
+
+    .common-h2.reception__h2 {
+        font-size: var(--text-20);
+    }
+
+    .reception__phone-block {
+        padding: 18px;
+    }
+}
+
+/* 3.CONTACT PAGE MEDIA END */
+
 
 /* 
 --------------------------------------------------------------
