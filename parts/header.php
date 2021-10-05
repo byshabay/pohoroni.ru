@@ -34,7 +34,10 @@
     <!-- JQUERY  -->
     <script src="<?= $root_url ?>scripts/jquery.js"></script>
 
-    <!-- SLICK -->
+    <!-- MAP -->
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="<?= $root_url ?>scripts/ymaps.js"></script>
+    <!-- SLICK  -->
     <!-- эти скрипты подлючаются к главной, контакты -->
     <script src="<?= $root_url ?>scripts/slick.min.js"></script>
     <script src="<?= $root_url ?>scripts/slider.js"></script>

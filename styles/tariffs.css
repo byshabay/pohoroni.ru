@@ -61,6 +61,7 @@ hr.prices__active-tab {
     min-width: 0;
     opacity: 0;
     visibility: hidden;
+    width: calc(100% - 28px);
     display: flex;
     justify-content: space-between;
     margin: 52px 0 0;
@@ -70,6 +71,7 @@ hr.prices__active-tab {
     position: relative;
     opacity: 1;
     visibility: visible;
+    width: 100%;
 }
 
 .prices__tariff {
@@ -155,7 +157,6 @@ hr.prices__active-tab {
 
 @media(max-width: 1140px) { 
       .prices__tariffs {
-        width: 70%;
         margin: 52px auto;
     } 
     .prices__tariff {
@@ -187,9 +188,6 @@ hr.prices__active-tab {
 @media(max-width: 673px) { 
     .prices__tariff-h2 {
         padding: 20px 0 102px;
-    }
-    .prices__tariffs {
-        width: 90%;
     }
 }
 
