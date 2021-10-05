@@ -3178,6 +3178,147 @@ PLACE PAGE END
 --------------------------------------------------------------
 */
 
+/* 
+--------------------------------------------------------------
+MORGUES PAGE START
+--------------------------------------------------------------
+*/
+
+/* 1.MORGUES TEXT BLOCK START */
+
+.common-h1.morgues__h1 {
+    text-align: center;
+}
+
+.morgues__info-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.morgues__text-block {
+    width: 50%;
+}
+
+.common-p.morgues__p {
+    margin: 0 0 20px;
+}
+
+.morgues .reception-control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 1.MORGUES TEXT BLOCK END */
+
+/* 2.LIST OF MORGUES START */
+
+.morgue__tyles-list {
+    margin: 52px auto 0;
+    padding: 52px 5%;
+
+    background-color: var(--dirtyWhite) ;
+}
+
+.morgue__ol {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 2.LIST OF MORGUES END */
+
+/* 3.MORGUES PRICES START */
+
+.common-h2.morgues__prices-h2 {
+    text-align: center;
+}
+
+.morgues__prices-info-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.morgues__prices-text-box {
+    width: 48%;
+}
+
+.common-p.morgues__prices-bold-p {
+    margin: 20px 0;
+
+    font-family: var(--bold);
+
+    color: var(--horses);
+}
+
+/* 3.MORGUES PRICES END */
+
+/* 4.MORGUES PAGE MEDIA START */
+
+/* 1140px */
+@media(max-width: 1140px){
+    .morgues__info-box,
+    .morgues__prices-info-box {
+        flex-direction: column;
+    }
+
+    .morgues__text-block,
+    .morgues__prices-info-box {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .morgues .reception-control {
+        width: 90%;
+        margin: 52px auto 0;
+        padding: 20px;
+    }
+
+    .morgue__tyles-list {
+        width: calc(90% - 26px);
+    }
+
+    .morgues__prices-text-box {
+        width: 100%;
+    }
+
+    .morgues-page .have-a-question {
+        margin: 52px auto 0;
+    }
+
+    .have-a-question__h2.common-h2 {
+        padding: 20px 0;
+    }
+} 
+
+/* 930px */
+@media(max-width: 930px) {
+    .morgues__text-block,
+    .morgues__prices-info-box {
+        text-align: justify;
+    }
+
+    .morgues .reception-control,
+    .morgues-page .have-a-question {
+        margin: 30px auto 0;
+    }
+
+    .morgue__tyles-list {
+        margin: 30px auto 0;
+        padding: 30px 3%;
+    }
+}
+
+
+
+/* 4.MORGUES PAGE MEDIA END */
+
+/* 
+--------------------------------------------------------------
+MORGUES PAGE END
+--------------------------------------------------------------
+*/
+
 
 /* 
 --------------------------------------------------------------

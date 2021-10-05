@@ -133,6 +133,9 @@
                                 <a href="<?= $root_url ?>pages/delivery.php">Доставка</a>
                             </li>
                             <li class="menu__sub-menu-item">
+                                <a href="<?= $root_url ?>pages/morgues.php">Морги Москвы</a>
+                            </li>
+                            <li class="menu__sub-menu-item">
                                 <a href="<?= $root_url ?>pages/place.php">Место на кладбище</a>
                             </li>
                         </ul>
