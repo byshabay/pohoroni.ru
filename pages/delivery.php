@@ -101,11 +101,11 @@
                 </li>
             </ul>
 
-            <div class="payments__types">
+            <div class="payments__types common-square-content-blocks">
 
                 <!-- 1  TYPE -->
 
-                <div id="legal-entities" class="payments__type common-square-tab__active-tab">
+                <div id="legal-entities" class="payments__type common-square-content-block common-square-tab__active-tab">
                     <p class="common-p payments__type-p">
                         После формирования заказа (через сайт, либо через менеджеров) на Ваш электронный адрес будут направлены реквизиты для перевода денежных средств.
                     </p>
@@ -118,19 +118,19 @@
 
                 <!-- 2  TYPE -->
 
-                <div id="cash" class="payments__type">
+                <div id="cash" class="payments__type common-square-content-block">
                     1
                 </div>
 
                 <!-- 3  TYPE -->
 
-                <div id="bankCard" class="payments__type">
+                <div id="bankCard" class="payments__type common-square-content-block">
                     2
                 </div>
 
                 <!-- 4 TYPE -->
 
-                <div id="electronic" class="payments__type">
+                <div id="electronic" class="payments__type common-square-content-block">
                     3
                 </div>
 
