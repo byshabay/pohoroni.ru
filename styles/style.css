@@ -84,6 +84,12 @@ COMMON STYLES START
 
 /* 1.13.WHY BLOCK END */
 
+/* 1.14.FUNERAL ACCOMPANYNG START */
+
+@import url('funeralAccompanyng.css');
+
+/* 1.14.FUNERAL ACCOMPANYNG END */
+
 /* 1.IMPORTS END */
 
 :root  {
@@ -2175,33 +2181,6 @@ PRICES PAGE START
     width: 45%;
 }
 
-.prices-block__img-box {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-    width: 45%;
-    background: url('../images/employees-block-bkg.png') center /cover no-repeat;
-}
-
-.prices-block__img-box div {
-    width: 75%;
-
-    font-size: var(--text-20);
-    font-family: var(--bold);
-
-    color: #fff;
-    text-align: center;
-    line-height: 28px;
-}
-
-.prices-block__img-box img {
-    width: 72px;
-    height: 74px;
-    margin: 0 0 30px;
-}
-
 .common-p.prices-block__p {
     margin: 0 0 20px;
 }
@@ -2233,11 +2212,6 @@ PRICES PAGE START
         flex-direction: column;
     }
 
-    .prices-block__img-box {
-        width: 90%;
-        margin: 0 auto 52px;
-    }
-
     .prices-block__info-box {
         width: 90%;
         margin: 0 auto;
@@ -2255,10 +2229,7 @@ PRICES PAGE START
     .common-p.prices-block__p {
         text-align: justify;
     }
-    
-    .prices-block__img-box div {
-        font-size: var(--text-15);
-    }
+
 }
 
 /* 3.PRICES PAGE MEDIA END */
@@ -3022,6 +2993,190 @@ ALLOWANCE PAGE END
 --------------------------------------------------------------
 */
 
+/* 
+--------------------------------------------------------------
+PLACE PAGE START
+--------------------------------------------------------------
+*/
+
+/* 1.PLACE IN THE CEMETERY START */
+
+.common-h1.place__h1 {
+    text-align: center;
+}
+
+.place__info-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.place__text-box {
+    width: 50%;
+}
+
+.common-p.place__p {
+    margin: 0 0 20px;
+}
+
+.common-btn_peach.place__btn {
+    width: 40%;
+}
+
+/* 1.PLACE IN THE CEMETERY END */
+
+/* 2.HOW A BUY START */
+
+.common-h2.how-a-buy__h2 {
+    text-align: center;
+}
+
+.how-a-buy__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.how-a-buy__p {
+    width: 48%;
+}
+
+/* 2.HOW A BUY END */
+
+/* 3.WHAT IS THE PRICE START */
+
+.common-h2.what-price__h2 {
+    text-align: center;
+}
+
+.what-price__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.what-price__p {
+    margin: 0 0 20px;
+}
+
+.what-price__calculate {
+    width: 45%;
+    padding: 40px 20px;
+
+    text-align: center;
+    background: url('../images/employees-block-bkg.png') center/cover no-repeat;
+}
+
+.what-price__calculate .common-h3 {
+    margin: 20px auto;
+    
+    font-family: var(--regular);
+    color: #fff;
+}
+
+.what-price__calculate-img {
+    width: 60px;
+    height: 60px;
+}
+
+.what-price__btn::before {
+    display: block;
+    content: ' ';
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 0 0;
+
+    background: url('../images/calculator_mini.png') center/100% no-repeat;    
+}
+
+.common-btn_white.what-price__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.what-price__text-box {
+    width: 50%;
+}
+
+/* 3.WHAT IS THE PRICE END */
+
+/* 4.PLACE PAGE MEDIA START */
+
+/* 1140px */
+@media(max-width: 1140px) {
+    .place__info-box {
+        flex-direction: column;
+    }
+
+    .place__text-box {
+        width: 90%;
+        margin: 0 auto 52px;
+    }
+    
+    .how-a-buy__wrapper {
+        flex-direction: column;
+    }
+
+    .how-a-buy__p,
+    .what-price__text-box {
+        width: 90%;
+        margin: 0 auto 20px;
+    }
+
+    .place-page .common-h2.have-a-question__h2 {
+        padding: 20px 0;
+    }
+
+    .what-price__wrapper {
+        flex-direction: column;
+    }
+
+    .what-price__calculate {
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .common-h2.how-a-buy__h2,
+    .common-h2.what-price__h2 {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .common-btn_white.what-price__btn {
+        width: 30%;
+    }
+}
+
+/* 840px */
+@media(max-width: 840px) {
+    .common-p.place__p,
+    .common-p.how-a-buy__p,
+    .common-p.what-price__p {
+        text-align: justify;
+    }
+
+    .common-btn_peach.place__btn,
+    .common-btn_white.what-price__btn {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+/* 410px */
+@media(max-width: 410px) { 
+    .common-btn_white.what-price__btn {
+        width: 100%;
+    }
+}
+
+/* 4.PLACE PAGE MEDIA END */
+
+/* 
+--------------------------------------------------------------
+PLACE PAGE END
+--------------------------------------------------------------
+*/
 
 
 /* 

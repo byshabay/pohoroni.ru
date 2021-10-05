@@ -130,7 +130,7 @@
                                 <a href="<?= $root_url ?>pages/delivery.php">Доставка</a>
                             </li>
                             <li class="menu__sub-menu-item">
-                                <a href="#">Подпункт 3</a>
+                                <a href="<?= $root_url ?>pages/place.php">Место на кладбище</a>
                             </li>
                         </ul>
 

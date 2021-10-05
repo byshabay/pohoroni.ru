@@ -1,0 +1,43 @@
+.prices-block__img-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    width: 45%;
+    background: url('../images/employees-block-bkg.png') center /cover no-repeat;
+}
+
+.prices-block__img-box div {
+    width: 75%;
+
+    font-size: var(--text-20);
+    font-family: var(--bold);
+
+    color: #fff;
+    text-align: center;
+    line-height: 28px;
+}
+
+.prices-block__img-box img {
+    width: 72px;
+    height: 74px;
+    margin: 0 0 30px;
+}
+
+/* 3.PRICES PAGE MEDIA START */
+
+/* 1140px */
+@media(max-width: 1140px) {
+    .prices-block__img-box {
+        width: 90%;
+        margin: 0 auto 52px;
+    }
+}
+
+/* 470px */
+@media(max-width: 470px) {
+    .prices-block__img-box div {
+        font-size: var(--text-15);
+    }
+}

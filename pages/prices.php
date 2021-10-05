@@ -21,12 +21,7 @@
         </h1>
 
         <div class="prices-block__wrapper">
-            <div class="prices-block__img-box">
-                <img src="../images/hands.png">
-                <div>
-                    СОПРОВОЖДЕНИЕ НА ВСЕХ ЭТАПАХ ПОДГОТОВКИ ПОХОРОН
-                </div>
-            </div>
+            <?php include('../parts/funeralAccompanyng.php') ?>
             <div class="prices-block__info-box">
                 <p class="common-p prices-block__p">
                     Агенты ритуальной службы подробно расскажут вам о перечне предоставляемых нами услуг. Среди них, помимо прочего, есть похороны эконом-класса, позволяющие проводить ритуальные церемонии на подобающем уровне, не выходя за рамки скромного бюджета.
