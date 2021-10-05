@@ -78,21 +78,21 @@
         <div class="common-h2 payments__h2">
             Способы оплаты заказа
         </div>
-        <div class="payments__wrapper">
-            <ul class="payments__tabs">
-                <li class="payments__tab">
+        <div class="payments__wrapper common-square-wrapper">
+            <ul class="payments__tabs common-square-tabs">
+                <li class="payments__tab common-square-tab">
                     <a href="#cash">Наличный расчет</a>
                 </li>
 
-                <li class="payments__tab">
+                <li class="payments__tab common-square-tab">
                     <a href="#bankCard">Банковская карта</a>
                 </li>
 
-                <li class="payments__tab">
+                <li class="payments__tab common-square-tab">
                     <a href="#electronic">Электронные платежи</a>
                 </li>
 
-                <li class="payments__tab payments__active-tab">
+                <li class="payments__tab common-square-tab common-square-tab__active-tab">
                     <a href="#legal-entities">Безналичный расчет
                         <div class="common-mini-p payments__mini-p">
                             (для юридических лиц).
@@ -105,7 +105,7 @@
 
                 <!-- 1  TYPE -->
 
-                <div id="legal-entities" class="payments__type payments__active-tab">
+                <div id="legal-entities" class="payments__type common-square-tab__active-tab">
                     <p class="common-p payments__type-p">
                         После формирования заказа (через сайт, либо через менеджеров) на Ваш электронный адрес будут направлены реквизиты для перевода денежных средств.
                     </p>

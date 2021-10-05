@@ -202,20 +202,30 @@ $(document).ready(function () {
 
     // 14.PAYMENTS METHOD TABS START
 
-    $('.payments__tab a').click(function (e) {
+    // $('.payments__tab a').click(function (e) {
+    //     e.preventDefault();
+    //     $('.payments__active-tab').removeClass('payments__active-tab');
+
+    //     let href = $(this).attr('href');
+    //     $(this).parent('li').addClass('payments__active-tab');
+    //     $(href).addClass('payments__active-tab');
+
+    //     return false;
+
+    // })
+
+    $('.common-square-tab a').click(function (e) {
         e.preventDefault();
-        $('.payments__active-tab').removeClass('payments__active-tab');
+        $('.common-square-tab__active-tab').removeClass('common-square-tab__active-tab');
 
         let href = $(this).attr('href');
-        $(this).parent('li').addClass('payments__active-tab');
-        $(href).addClass('payments__active-tab');
+        $(this).parent('li').addClass('common-square-tab__active-tab');
+        $(href).addClass('common-square-tab__active-tab');
 
         return false;
 
     })
 
     // 14.PAYMENTS METHOD TABS END
-
-    // 15.PAYMENTS METHOD TABS START
 
 });

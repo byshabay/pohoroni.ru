@@ -150,13 +150,14 @@
                                 <a href="<?= $root_url ?>pages/privacy.php">Политика конфиденциальности </a>
                             </li>
                             <li class="menu__sub-menu-item">
-                                <a href="#">Подпункт 3</a>
+                                <a href="<?= $root_url ?>pages/allowance.php">Пособие за погребение</a>
                             </li>
                         </ul>
 
                         <!-- 2.1.SUBMENU END  -->
                     </li>
-                    <li class="menu__item"><a href="<?= $root_url ?>pages/products.php">Ритуальные товары</a></li>
+                    <li class=" menu__item"><a href="<?= $root_url ?>pages/products.php">Ритуальные товары</a>
+                    </li>
                     <li class="menu__item"><a href="<?= $root_url ?>pages/prices.php">Стоимость похорон</a></li>
                     <li class="menu__item"><a href="<?= $root_url ?>pages/contact.php">Контакты</a></li>
                 </ul>

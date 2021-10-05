@@ -326,6 +326,10 @@ a.common-btn_white:visited {
     color: var(--horses);
 }
 
+.common-ol li:first-child {
+    margin: 0 0 15px;
+}
+
 .common-ol li::before {  
     content: counter(custom, decimal-leading-zero);  
     margin: 0 10px 0 0;
@@ -336,6 +340,71 @@ a.common-btn_white:visited {
 
     background-color: var(--peach);
     color: #fff;
+}
+
+.common-square-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.common-square-tabs {
+    position: relative;
+    width: 30%;
+}
+
+li.common-square-tab__active-tab{
+    display: flex;
+    align-items: center;
+}
+
+li.common-square-tab__active-tab a{
+    font-family: var(--semiBold);
+
+    color: var(--peach);
+    border: 0px solid transparent;
+
+}
+
+
+li.common-square-tab__active-tab::before {
+    position: absolute;
+    display: block;
+    content: " ";
+    width: 15px;
+    height: 15px;
+    left: 0;
+
+    background-color: var(--peach);
+    transition: .3s;
+}
+
+.common-square-content-blocks {
+    width: 55%;
+}
+
+.common-square-content-block {
+    display: none;
+}
+
+.common-square-tab__active-tab.common-square-content-block {
+    display: block;
+
+    transition: .3s;
+}
+
+.common-square-tab {
+    padding: 0 0 0 30px;
+}
+
+.common-square-tab a {
+    display: block;
+    padding: 10px 0;
+
+    font-size: var(--text-18);
+
+    color: var(--lightGray);
+    text-decoration: none;
+    border-bottom: 1px solid var(--lightGray);
 }
 
 /* 2.COMMON MEDIA START */
@@ -373,6 +442,24 @@ a.common-btn_white:visited {
     .common-h2 {
         padding: 30px 0;
     }
+
+    .common-square-wrapper {
+        flex-direction: column;
+    }
+
+    .common-square-tabs {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .common-square-content-blocks {
+        width: 90%;
+        margin: 30px auto 0;
+    }
+
+    .common-square-tab a {
+        font-size: var(--text-15);
+    }
 }
 
 /* 453px */
@@ -400,6 +487,15 @@ a.common-btn_white:visited {
     }
 
     .common-square-ul li {
+        padding: 0 0 0 20px;
+    }
+
+    li.common-square-tab__active-tab::before {
+        width: 10px;
+        height: 10px;
+    }
+
+    .common-square-tab {
         padding: 0 0 0 20px;
     }
 }
@@ -2332,6 +2428,7 @@ CONTACT PAGE START
     .reception__phone-block {
         padding: 18px;
     }
+
 }
 
 /* 3.CONTACT PAGE MEDIA END */
@@ -2523,63 +2620,15 @@ DELIVERY PAGE START
     background-color: var(--middleDirtyWhite) ;
 }
 
-.payments__wrapper {
-    display: flex;
-    justify-content: space-between;
-}
-
-.payments__tabs {
-    width: 30%;
-}
 
 .common-h2.payments__h2 {
     text-align: center;
 }
 
-.payments__tab a {
-    display: block;
-    padding: 10px 0;
 
-    font-size: var(--text-18);
-
-    color: var(--lightGray);
-    text-decoration: none;
-    border-bottom: 1px solid var(--lightGray);
-}
-
-li.payments__active-tab {
-    display: flex;
-    align-items: center;
-}
-
-li.payments__active-tab a{
-    font-family: var(--semiBold);
-
-    color: var(--peach);
-    border: 0px solid transparent;
-    
-
-}
-
-
-li.payments__active-tab::before {
-    display: block;
-    content: " ";
-    width: 15px;
-    height: 15px;
-    margin: 0 15px 0 0;
-
-    background-color: var(--peach);
-    transition: .3s;
-}
-
-.payments__active-tab .common-mini-p.payments__mini-p {
+.common-square-tab__active-tab .common-mini-p.payments__mini-p {
     color: var(--peach);
     
-}
-
-.payments__types {
-    width: 55%;
 }
 
 .common-mini-p.payments__mini-p {
@@ -2592,16 +2641,6 @@ li.payments__active-tab::before {
 
 .payments__type-btn {
     width: 50%;
-}
-
-.payments__type {
-    display: none;
-}
-
-.payments__active-tab.payments__type {
-    display: block;
-
-    transition: .3s;
 }
 
 /* 2.PAYMENT METHODS END */
@@ -2639,12 +2678,7 @@ li.payments__active-tab::before {
 /* 663px */
 
 @media(max-width: 663px) {
-    li.payments__active-tab::before {
-        width: 10px;
-        height: 10px;
-        margin: 0 10px 0 0;
-    }
-
+    
     .payments__wrapper {
         flex-direction: column;
 
@@ -2757,6 +2791,237 @@ PRIVACY PAGE START
 PRIVACY PAGE END
 --------------------------------------------------------------
 */
+
+/* 
+--------------------------------------------------------------
+ALLOWANCE PAGE START
+--------------------------------------------------------------
+*/
+
+/* 1.ALLOWANCE BLOCK START */
+
+.common-h1.allowance__h1 {
+    text-align: center;
+}
+
+/* 1.1.TEXT BLOCK START */
+
+.allowance__text-box-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.allowance__text-box {
+    width: 50%;
+}
+
+.common-p.allowance__p {
+    margin: 0 0 20px;
+}
+
+.common-ol.allowance__ol {
+    width: 40%;
+}
+
+/* 1.1.TEXT BLOCK END */
+
+
+/* 1.2.TABLE BLOCK START */
+
+.allowance__table thead {
+    font-size: var(--text-18);
+    font-family: var(--semiBold);
+    line-height: 23px;
+
+    text-align: center;
+}
+
+.allowance__table thead th{
+    padding: 20px 30px;
+}
+
+.allowance__table thead tr:first-child {
+    background-color: var(--peach);
+    color: #fff;
+}
+
+.allowance__table thead tr:first-child th {
+    padding: 20px 23%;
+}
+
+.allowance__table thead tr:last-child {
+    background-color: var(--middleDirtyWhite);
+    color: var(--peach);
+}
+
+.allowance__table thead tr th:first-child,
+.allowance__table thead tr th:nth-child(3) {
+    width: 30%;
+}
+
+.allowance__table thead tr:last-child th {
+    border-bottom: 1px solid var(--pastelGray);
+    border-right: 1px solid var(--pastelGray);
+}
+
+.allowance__table thead tr:last-child th:last-child {
+    border-right: 0px solid transparent;
+}
+
+.allowance__table tbody td {
+    padding: 20px;
+
+    font-size: var(--text-15);
+
+    background-color: var(--middleDirtyWhite);
+    color: var(--horses);
+    text-align: center;
+    border-bottom: 1px solid var(--pastelGray);
+    border-right: 1px solid var(--pastelGray);
+    transition: .3s;
+}
+
+.allowance__table tbody td:last-child {
+    border-right: 0px solid transparent;
+}
+
+
+.allowance__table {
+    margin: 52px 0 0;
+
+    border-spacing: 0px;
+}
+
+.allowance__table tbody tr:hover > td {
+    background-color: #e3d0cc;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: .3s;
+}
+
+.allowance__table img{
+    width: 47px;
+    height: 47px;
+}
+
+/* 1.2.TABLE BLOCK END */
+
+/* 1.ALLOWANCE BLOCK END */
+
+/* 2.MAIN QUESTIONS START */
+
+.common-h2.main-questions__h2 {
+    text-align: center;
+}
+
+.main-question .common-p {
+    margin: 0 0 20px;
+}
+
+.common-ol.main-question__ol li {
+    align-items: flex-start;
+
+    font-family: var(--regular);
+    line-height: 22px;
+}
+
+
+/* 2.MAIN QUESTIONS END */
+
+/* 3.ALLOWANCE PAGE MEDIA START */
+
+/* 1140px */
+@media(max-width: 1140px) {
+    .allowance__text-box-wrapper {
+        flex-direction: column;
+    }
+
+    .allowance__text-box {
+        width: 90%;
+        margin:  0 auto;
+    }
+
+    .common-ol.allowance__ol{
+        width: 90%;
+        margin:  52px auto 0;
+    }
+
+    .allowance__table thead tr:first-child th {
+        padding: 20px;
+    }
+}
+
+/* 930px */
+@media(max-width: 930px) {
+    .common-ol.allowance__ol{
+        margin:  30px auto 0;
+    }
+
+    .allowance__table {
+        margin: 30px 0 0;
+    }
+}
+
+/* 660px */
+@media(max-width: 660px) {
+    .allowance__table thead {
+        display: none;
+    }
+
+    .allowance__table tr {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 30px;
+    }
+
+    .allowance__table tr td::before {
+        display: block;
+        margin: 0 0 10px;
+
+        font-family: var(--semiBold);
+    }
+
+    .allowance__table tr td:first-child::before {
+        content: 'Категория граждан: ';
+    }
+
+    .allowance__table tr td:nth-child(2)::before {
+        content: 'Льготы на погребение: ';
+    }
+
+    .allowance__table tr td:nth-child(3)::before {
+        content: 'Льготы на изготовление и установку надгробия: ';
+    }
+
+    .allowance__table tr td:nth-child(4)::before {
+        content: 'Место получения: ';
+    }
+
+    .allowance__table tr td {
+        border: 0px solid transparent;
+    }
+
+    .allowance__table {
+        width: 90%;
+        margin: 30px auto 0;
+    }
+}
+
+/* 490px */
+
+@media(max-width: 490px) {
+    .common-p.allowance__p {
+        text-align: justify;
+    }
+}
+
+/* 3.ALLOWANCE PAGE MEDIA END */
+
+/* 
+--------------------------------------------------------------
+ALLOWANCE PAGE END
+--------------------------------------------------------------
+*/
+
 
 
 /* 
