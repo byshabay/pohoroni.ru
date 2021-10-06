@@ -90,6 +90,12 @@ COMMON STYLES START
 
 /* 1.14.FUNERAL ACCOMPANYNG END */
 
+/* 1.15.AGENT CALL START */
+
+@import url('agent-call-block.css');
+
+/* 1.15.AGENT CALL END */
+
 /* 1.IMPORTS END */
 
 :root  {
@@ -113,6 +119,7 @@ COMMON STYLES START
     --gray: #BEBEBE;
     --lightGray: #929292;
     --pastelGray: #D2C4C2;
+    --table-hover: #e3d0cc;
     --dirtyWhite: #EFEFEF;
     --middleDirtyWhite: #F2EFEE;
     --middleLightGray: #BEB4B3;
@@ -131,6 +138,15 @@ COMMON STYLES START
     outline: none;
 }
 
+table::-webkit-scrollbar {
+    width: 6px;
+
+    background-color: var(--pastelGray);
+}
+
+table::-webkit-scrollbar-thumb {
+    background-color: var(--peach);
+}
 
 button {
     cursor: pointer;
@@ -2259,13 +2275,7 @@ CONTACT PAGE START
     align-items: flex-start;
 }
 
-.reception-control {
-    width: 45%;
-    padding: 48px;
 
-    background: url('../images/employees-block-bkg.png') center /cover no-repeat;
-    text-align: center;
-}
 
 .reception__text-block {
     width: 50%;
@@ -2303,36 +2313,6 @@ CONTACT PAGE START
     margin: 0 10px 0 0;
 }
 
-.common-p.reception__control-p {
-    color: #fff;
-}
-
-.reception__p_bold {
-    font-family: var(--bold);
-}
-
-.reception-control img {
-    width: 60px;
-    height: 60px;
-}
-
-.reception__phone-block {
-    margin: 20px 0 0;
-    padding: 18px 70px;
-    border: 1px solid #fff;
-}
-
-.reception__phone {
-    display: block;
-    margin: 5px 0;
-
-    font-family: var(--bold);
-    font-size: var(--text-20);
-
-    color: #fff;
-    text-decoration: none;
-}
-
 /* 1.RECEPTION END */
 
 /* 2.WHY START */
@@ -2368,11 +2348,6 @@ CONTACT PAGE START
         flex-direction: column-reverse;
     }
 
-    .reception-control {
-        width: 70%;
-        margin: 0 auto;
-    }
-
     .reception__text-block {
         width: 70%;
         margin: 48px auto 0;
@@ -2382,12 +2357,6 @@ CONTACT PAGE START
 /* 453px */
 
 @media(max-width: 453px){
-.reception-control {
-        width: 90%;
-        margin: 0 auto;
-        padding: 15px;
-    }
-
     .reception__text-block {
         width: 90%;
         margin: 20px auto 0;
@@ -2395,10 +2364,6 @@ CONTACT PAGE START
 
     .common-h2.reception__h2 {
         font-size: var(--text-20);
-    }
-
-    .reception__phone-block {
-        padding: 18px;
     }
 
 }
@@ -2865,7 +2830,7 @@ ALLOWANCE PAGE START
 }
 
 .allowance__table tbody tr:hover > td {
-    background-color: #e3d0cc;
+    background-color: var(--table-hover);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     transition: .3s;
 }
@@ -3461,6 +3426,222 @@ CREMATORIUM PAGE START
 CREMATORIUM PAGE END
 --------------------------------------------------------------
 */
+
+/* 
+--------------------------------------------------------------
+MFC PAGE START
+--------------------------------------------------------------
+*/
+
+/* 1.HOW BLOCK MFC START */
+
+.common-h1.how-mfc__h1 {
+    text-align: center;
+}
+
+.how-mfc__info-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.how-mfc__text-box {
+    width: 48%;
+}
+
+.common-p.how-mfc__bold-p {
+    margin: 0 0 20px;
+
+    font-family: var(--bold);
+
+    color: var(--horses);
+}
+
+.common-p.how-mfc__p {
+    margin: 0 0 20px;
+}
+
+/* 1.HOW BLOCK MFC END */
+
+/* 2.WHO BLOCK MFC START */
+
+.common-h2.who-mfc__h2 {
+    text-align: center;
+}
+
+.who-mfc__info-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.common-p.who-mfc__p {
+    margin: 0 0 20px;
+}
+
+.who-mfc__text-box {
+    width: 45%;
+}
+
+.who-mfc .reception-control {
+    width: 48%;
+}
+
+/* 2.WHO BLOCK MFC END */
+
+/* 3.LIST BLOCK MFC START  */
+
+.common-h2.list-mfc__h2 {
+    text-align: center;
+}
+
+.list-mfc__table {
+    display: block;
+    width: 100%;
+    padding: 52px;
+    max-height: 520px;
+    overflow-y: scroll;
+
+    background-color: var(--middleDirtyWhite);
+    text-align: left;
+    border-spacing: 0;
+}
+
+.list-mfc__table th {
+    width: 100%;
+    padding: 20px;
+
+    font-family: var(--semiBold);
+    font-size: var(--text-18);
+
+    color: var(--peach);
+    border-bottom: 1px solid var(--pastelGray);
+}
+
+.list-mfc__table td {
+    padding: 20px;
+
+    font-size: var(--text-15);
+
+    color: var(--deepTaupe);
+    border-bottom: 1px solid var(--pastelGray);
+    line-height: 150%;
+}
+
+.list-mfc__table td:last-child {
+    font-family: var(--bold);
+}
+
+.list-mfc__table tr:hover {
+    background-color: var(--table-hover);
+}
+
+.list-mfc__table tr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 70px;
+    width: 100%;
+}
+
+
+/* 3.LIST BLOCK MFC END  */
+
+/* 4.MFC PAGE MEDIA END */
+
+/* 1140px */
+@media(max-width: 1140px) {
+    .how-mfc__info-box,
+    .who-mfc__info-box {
+        flex-direction: column;
+    }
+
+    .how-mfc__text-box,
+    .common-h1.how-mfc__h1,
+    .common-h2.who-mfc__h2,
+    .who-mfc__text-box,
+    .who-mfc .reception-control {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .how-mfc__text-box:last-child,
+    .who-mfc .reception-control {
+        margin: 52px auto 0;
+    }
+
+    .who-mfc .reception-control {
+        padding: 30px;
+    }
+}
+
+/* 930px */
+@media(max-width: 930px) { 
+    .how-mfc__text-box,
+    .who-mfc__text-box {
+        text-align: justify;
+    }
+
+    .how-mfc__text-box:last-child,
+    .who-mfc .reception-control {
+        margin: 30px auto 0;
+    }
+
+    .list-mfc__table {
+        padding: 30px 15px;
+    }
+}
+
+/* 770px */
+@media(max-width: 770px) { 
+    .list-mfc__table tr{
+        grid-template-columns: 1fr;
+        grid-gap: 0px;
+        margin: 20px 0;
+        padding: 10px;
+
+        border: 1px solid var(--pastelGray);
+    }
+
+    .list-mfc__table td {
+        padding: 20px 0;
+        
+        border: 0px solid transparent;
+    }
+
+    .list-mfc__table td:first-child::before {
+        display: block;
+        content: 'Наименование:';
+
+        font-family: var(--semiBold);
+
+        color: var(--peach)
+    }
+
+    .list-mfc__table td:last-child::before {
+        display: block;
+        content: 'Адрес:';
+
+        font-family: var(--semiBold);
+
+        color: var(--peach)
+    }
+
+    .list-mfc__table {
+        padding: 0 15px;
+    }
+
+    .list-mfc__table thead {
+        display: none;
+    }
+}
+
+/* 4.MFC PAGE MEDIA END */
+
+/* 
+--------------------------------------------------------------
+MFC PAGE END
+--------------------------------------------------------------
+*/
+
+
 
 /* 
 --------------------------------------------------------------

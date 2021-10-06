@@ -141,6 +141,9 @@
                             <li class="menu__sub-menu-item">
                                 <a href="<?= $root_url ?>pages/crematorium.php">Крематории</a>
                             </li>
+                            <li class="menu__sub-menu-item">
+                                <a href="<?= $root_url ?>pages/mfc.php">МФЦ</a>
+                            </li>
                         </ul>
 
                         <!-- 2.1.SUBMENU END  -->

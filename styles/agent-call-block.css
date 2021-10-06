@@ -1,0 +1,61 @@
+.reception-control {
+    width: 45%;
+    padding: 48px;
+
+    background: url('../images/employees-block-bkg.png') center /cover no-repeat;
+    text-align: center;
+}
+
+.reception-control img {
+    width: 60px;
+    height: 60px;
+}
+
+.common-p.reception__control-p {
+    color: #fff;
+}
+
+.reception__p_bold {
+    font-family: var(--bold);
+}
+
+.reception__phone-block {
+    margin: 20px 0 0;
+    padding: 18px 70px;
+    border: 1px solid #fff;
+}
+
+.reception__phone {
+    display: block;
+    margin: 5px 0;
+
+    font-family: var(--bold);
+    font-size: var(--text-20);
+
+    color: #fff;
+    text-decoration: none;
+}
+
+/* 3.CONTACT PAGE MEDIA START */
+
+/* 1140px */
+@media(max-width: 1140px){
+    .reception-control {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+/* 453px */
+
+@media(max-width: 453px){ 
+    .reception-control {
+        width: 90%;
+        margin: 0 auto;
+        padding: 15px;
+    }
+
+    .reception__phone-block {
+        padding: 18px;
+    }
+}
