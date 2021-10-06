@@ -24,30 +24,30 @@
     <!-- FAVICON END -->
 
     <!-- SELF-WRITTEN STYLES -->
-    <link rel="stylesheet" href="<?= $root_url ?>styles/style.css">
+    <link defer rel="stylesheet" href="<?= $root_url ?>styles/style.css">
 
     <!-- FANCYBOX -->
     <!-- эти стили подлючаются к главной, контакты -->
-    <link rel="stylesheet" href="<?= $root_url ?>styles/fancybox.css">
+    <link defer rel="stylesheet" href="<?= $root_url ?>styles/fancybox.css">
 
 
     <!-- JQUERY  -->
-    <script src="<?= $root_url ?>scripts/jquery.js"></script>
+    <script defer src="<?= $root_url ?>scripts/jquery.js"></script>
 
     <!-- MAP -->
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-    <script src="<?= $root_url ?>scripts/ymaps.js"></script>
+    <script defer src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script defer src="<?= $root_url ?>scripts/ymaps.js"></script>
     <!-- SLICK  -->
     <!-- эти скрипты подлючаются к главной, контакты -->
-    <script src="<?= $root_url ?>scripts/slick.min.js"></script>
-    <script src="<?= $root_url ?>scripts/slider.js"></script>
+    <script defer src="<?= $root_url ?>scripts/slick.min.js"></script>
+    <script defer src="<?= $root_url ?>scripts/slider.js"></script>
 
     <!-- FANCY BOX -->
     <!-- эти скрипты подлючаются к главной, контакты -->
-    <script src="<?= $root_url ?>scripts/fancybox.umd.js"></script>
+    <script defer src="<?= $root_url ?>scripts/fancybox.umd.js"></script>
 
     <!-- SELF-WRITTEN SCRIPTS -->
-    <script src="<?= $root_url ?>scripts/script.js"></script>
+    <script defer src="<?= $root_url ?>scripts/script.js"></script>
 
 </head>
 
@@ -143,6 +143,9 @@
                             </li>
                             <li class="menu__sub-menu-item">
                                 <a href="<?= $root_url ?>pages/mfc.php">МФЦ</a>
+                            </li>
+                            <li class="menu__sub-menu-item">
+                                <a href="<?= $root_url ?>pages/reviews-page.php">Отзывы</a>
                             </li>
                         </ul>
 

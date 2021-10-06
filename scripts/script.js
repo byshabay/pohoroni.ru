@@ -202,18 +202,6 @@ $(document).ready(function () {
 
     // 14.PAYMENTS METHOD TABS START
 
-    // $('.payments__tab a').click(function (e) {
-    //     e.preventDefault();
-    //     $('.payments__active-tab').removeClass('payments__active-tab');
-
-    //     let href = $(this).attr('href');
-    //     $(this).parent('li').addClass('payments__active-tab');
-    //     $(href).addClass('payments__active-tab');
-
-    //     return false;
-
-    // })
-
     $('.common-square-tab a').click(function (e) {
         e.preventDefault();
         $('.common-square-tab__active-tab').removeClass('common-square-tab__active-tab');
@@ -227,5 +215,53 @@ $(document).ready(function () {
     })
 
     // 14.PAYMENTS METHOD TABS END
+
+    // 15.REVIEWS CATALOG SHOW MORE START
+
+    var reviewsAmount = $('.reviews-catalog__list').find('li').length;
+
+    if (
+        $(document).width() < 980 &&
+        $(document).width() > 770
+
+    ) {
+        var difference = 4;
+    } else if (
+        $(document).width() < 770
+    ) {
+        var difference = 2;
+
+    } else {
+        var difference = 6;
+    }
+
+    var currentReviewsCount = difference;
+
+    $('.reviews-catalog__btn').click(function () {
+        let reviewsRemainder = reviewsAmount - currentReviewsCount;
+        if (
+            reviewsRemainder > currentReviewsCount
+        ) {
+            currentReviewsCount += difference;
+        } else {
+            currentReviewsCount += reviewsRemainder;
+        }
+
+        reviewsCatalogItemsShow(currentReviewsCount, reviewsAmount)
+        return false;
+    })
+
+    function reviewsCatalogItemsShow(count, amount) {
+        $('.reviews-catalog__p').text(count + ' из ' + amount);
+        $('.reviews-catalog__list li').hide();
+        $('.reviews-catalog__list li:lt(' + count + ')').show();
+    }
+
+    reviewsCatalogItemsShow(currentReviewsCount, reviewsAmount)
+
+
+
+
+    // 15.REVIEWS CATALOG SHOW MORE END
 
 });

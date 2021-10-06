@@ -3641,6 +3641,86 @@ MFC PAGE END
 --------------------------------------------------------------
 */
 
+/* 
+--------------------------------------------------------------
+REVIEWS PAGE END
+--------------------------------------------------------------
+*/
+
+/* 1.REVIEWS CATALOG START */
+
+.reviews-catalog__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.reviews-catalog__list .reviews__slider-item{
+    margin: 0;
+    background-color: var(--middleDirtyWhite);
+}
+
+.reviews-catalog__list {
+    margin: 52px 0 30px;
+}
+
+.common-h1.reviews-page__h1 {
+    margin: 52px auto;
+    padding: 0 14px;
+
+    text-align: center;
+}
+
+.reviews-page .have-a-question__p.common-p {
+    width: 35%;
+}
+
+.common-p.reviews-catalog__p {
+    text-align: center;
+    color: var(--pastelGray);
+}
+
+.common-btn_peach.reviews-catalog__btn {
+    width: 20%;
+    margin: 30px auto 0;
+}
+
+
+/* 1.REVIEWS CATALOG END */
+
+/* 4.REVIEWS PAGE MEDIA END */
+
+/* 930px */
+@media(max-width: 930px) { 
+    .common-h1.reviews-page__h1,
+    .reviews-catalog__list {
+        margin: 30px auto;
+    }
+    
+    .reviews-catalog__list {
+        grid-gap: 15px;
+    }
+}
+
+/* 770px */
+@media(max-width: 770px) { 
+    .common-btn_peach.reviews-catalog__btn {
+        width: 50%;
+    }
+
+    .reviews-catalog__list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 4.REVIEWS PAGE MEDIA END */
+
+/* 
+--------------------------------------------------------------
+REVIEWS PAGE END
+--------------------------------------------------------------
+*/
+
 
 
 /* 
