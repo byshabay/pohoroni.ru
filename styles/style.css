@@ -427,7 +427,7 @@ li.common-square-tab__active-tab::before {
 
     color: var(--lightGray);
     text-decoration: none;
-    border-bottom: 1px solid var(--lightGray);
+    border-bottom: 1px solid var(--middleDirtyWhite);
 }
 
 /* 2.COMMON MEDIA START */
@@ -3794,6 +3794,52 @@ LICENSES PAGE END
 /* 
 --------------------------------------------------------------
 LICENSES PAGE END
+--------------------------------------------------------------
+*/
+
+/* 
+--------------------------------------------------------------
+QA PAGE START
+--------------------------------------------------------------
+*/
+
+/* 1.QA BLOCK START */
+
+.qa__h1.container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.qa-page .common-square-tabs {
+    width: 41%;
+}
+
+.qa-page .common-square-content-blocks {
+    width: 49%;
+}
+
+.qa-page .common-square-content-block .common-p {
+    margin: 0 0 20px;
+}
+
+
+/* 1.QA BLOCK END */
+
+/* 2.QA PAGE MEDIA START */
+
+/* 930px */
+@media(max-width: 930px) {
+    .qa-page .common-square-tabs,
+    .qa-page .common-square-content-blocks {
+        width: 90%;
+    }
+}
+
+/* 2.QA PAGE MEDIA END */
+
+/* 
+--------------------------------------------------------------
+QA PAGE END
 --------------------------------------------------------------
 */
 

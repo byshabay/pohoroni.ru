@@ -150,6 +150,9 @@
                             <li class="menu__sub-menu-item">
                                 <a href="<?= $root_url ?>pages/licenses.php">Лицензии</a>
                             </li>
+                            <li class="menu__sub-menu-item">
+                                <a href="<?= $root_url ?>pages/qa.php">Вопросы и ответы</a>
+                            </li>
                         </ul>
 
                         <!-- 2.1.SUBMENU END  -->
