@@ -3721,7 +3721,81 @@ REVIEWS PAGE END
 --------------------------------------------------------------
 */
 
+/* 
+--------------------------------------------------------------
+LICENSES PAGE END
+--------------------------------------------------------------
+*/
 
+/* 1.INFO BLOCK START */
+
+.licenses-block__info-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.licenses-block__text-box {
+    width: 48%;
+}
+
+.common-h1.licenses-block__h1 {
+    text-align: center;
+}
+
+.common-p.licenses-block__p {
+    margin: 0 0 20px;
+}
+
+.licenses-block__info-box .what-price__calculate {
+    padding: 40px 6%;
+}
+
+/* 1.INFO BLOCK END */
+
+/* 2.LICENSES SLIDER START */
+
+.licenses-page .common-h2.licenses__h2 {
+    display: none;
+}
+
+.licenses-page .licenses__items {
+    margin: 52px 0 0;
+}
+
+/* 2.LICENSES SLIDER END */
+
+/* 3.LICENSES PAGE MEDIA START */
+
+/* 1140px */
+@media(max-width: 1140px) {
+    .licenses-block__info-box {
+        flex-direction: column;
+    }
+
+    .licenses-block__text-box {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .licenses-block__info-box .what-price__calculate {
+        margin: 30px auto 0;
+    }
+}
+
+/* 724px */
+@media(max-width: 724px) {
+    .licenses-block__text-box {
+        text-align: justify;
+    }
+}
+
+/* 3.LICENSES PAGE MEDIA END */
+
+/* 
+--------------------------------------------------------------
+LICENSES PAGE END
+--------------------------------------------------------------
+*/
 
 /* 
 --------------------------------------------------------------
