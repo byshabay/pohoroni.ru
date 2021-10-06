@@ -138,6 +138,9 @@
                             <li class="menu__sub-menu-item">
                                 <a href="<?= $root_url ?>pages/place.php">Место на кладбище</a>
                             </li>
+                            <li class="menu__sub-menu-item">
+                                <a href="<?= $root_url ?>pages/crematorium.php">Крематории</a>
+                            </li>
                         </ul>
 
                         <!-- 2.1.SUBMENU END  -->

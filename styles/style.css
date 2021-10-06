@@ -330,6 +330,7 @@ a.common-btn_white:visited {
     font-size: var(--text-15);
 
     color: var(--horses);
+    line-height: 23px;
 }
 
 .common-ol li:first-child {
@@ -3319,6 +3320,147 @@ MORGUES PAGE END
 --------------------------------------------------------------
 */
 
+/* 
+--------------------------------------------------------------
+CREMATORIUM PAGE START
+--------------------------------------------------------------
+*/
+
+/* 1.CREMATORIUM BLOCK START  */
+
+/* 1.1.TOP INFO BLOCK START */
+
+.common-h1.crematorium__h1 {
+    text-align: center;
+}
+
+.crematorium__info-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.crematorium__text-block {
+    width: 48%;
+}
+
+.crematorium__ul {
+    width: 48%;
+}
+
+.common-p.crematorium__bold-p {
+    margin: 20px 0;
+
+    font-family: var(--bold);
+
+    color: var(--horses);
+}
+
+.common-ol.crematorium__ol {
+    font-family: var(--regular);
+}
+
+.common-ol.crematorium__ol li {
+    margin: 0 0 20px;
+    align-items: flex-start;
+}
+
+.common-ol.crematorium__ol li:last-child {
+    margin: 0;
+}
+
+.crematorium__ul li {
+    margin: 0 0 20px;
+
+    padding: 20px 40px;
+
+    background-color: var(--middleDirtyWhite);
+}
+
+.crematorium__ul li:last-child {
+    margin: 0;
+}
+
+/* 1.1.TOP INFO BLOCK END */
+
+/* 1.2.BOTTOM INFO BLOCK START */
+
+.crematorium__types {
+    margin: 52px auto 0;
+    padding: 0 5% 52px;
+
+    background-color: var(--dirtyWhite);
+}
+
+.common-h2.crematorium__h2 {
+    text-align: center;
+}
+
+.common-ol.crematorium__type-ol li {
+    align-items: flex-start;
+}
+
+/* 1.2.BOTTOM INFO BLOCK END */
+
+/* 1.CREMATORIUM BLOCK END  */
+
+/* 4.CREMATORIUM PAGE MEDIA START */
+
+/* 1140px */
+@media(max-width: 1140px) {
+    .crematorium__info-box {
+        flex-direction: column;
+    }
+
+    .crematorium__text-block {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .crematorium__ul {
+        width: 90%;
+        margin: 52px auto 0;
+    }
+
+    .crematorium__types.container {
+        width: 90%;
+    }
+}
+
+/* 930px */
+@media(max-width: 930px) {
+    .crematorium__info-box {
+        text-align: justify;
+    }
+
+    .crematorium__ul {
+        margin: 30px auto 0;
+    }
+
+    .crematorium__types {
+        margin: 30px auto 0;
+    }
+
+    .common-ol.crematorium__type-ol li {
+        margin: 0 0 20px;
+    }
+}
+
+/* 430px */
+
+@media(max-width: 430px) { 
+    .crematorium__ul li {
+        padding: 20px;
+    }
+}
+
+/* 4.CREMATORIUM PAGE MEDIA END */
+
+
+/* 
+--------------------------------------------------------------
+CREMATORIUM PAGE END
+--------------------------------------------------------------
+*/
 
 /* 
 --------------------------------------------------------------
