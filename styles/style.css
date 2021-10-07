@@ -430,6 +430,49 @@ li.common-square-tab__active-tab::before {
     border-bottom: 1px solid var(--middleDirtyWhite);
 }
 
+.common-popup-form.fancybox__content.common-succes-popup-form{
+    background: url('../images/employees-block-bkg.png') center / cover no-repeat;
+    text-align: center; 
+}
+
+.fancybox__content.common-succes-popup-form .common-h2 {
+    padding: 30px 0 0;
+
+    font-size: var(--text-24);
+
+    color: #fff;
+}
+
+.fancybox__content.common-succes-popup-form .common-popup-p  {
+    margin: 20px auto 40px;
+
+    color: #fff;
+}
+
+.fancybox__content.common-succes-popup-form .common-popup-inputs {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.common-btn__white.order-popup-succes-a {
+    display: none;
+}
+
+.fancybox__content.common-succes-popup-form  .common-btn__white.order-popup-succes-a {
+    display: block;
+    width: 60%;
+    margin: 10px auto 0;
+}
+
+.fancybox__content.common-succes-popup-form>button.carousel__button.is-close {
+    color: #fff;
+}
+
+.common-succes-popup-form.common-popup-form.fancybox__content {
+    width: 50%;
+}
+
 /* 2.COMMON MEDIA START */
 
 /* > 1140px */

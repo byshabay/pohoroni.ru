@@ -92,6 +92,12 @@ $(document).ready(function () {
 
         if (validationForm()) {
             e.preventDefault();
+        } else {
+            e.preventDefault();
+            $('.common-popup-form .common-h2').text('Спасибо за вашу заявку!');
+            $('.common-popup-form .order-popup-p').text('Наш менеджер свяжется с вами в течении двух чаcов');
+            $('.common-popup-form').addClass('common-succes-popup-form');
+            $('.common-popup-error, .common-popup-input, .common-popup-mini-text, .popup-btn').hide();
         }
     })
 
@@ -109,6 +115,7 @@ $(document).ready(function () {
         ) {
             var error = true;
         }
+
 
         $('#order-call').toggleClass('form-error', error);
         return error;
