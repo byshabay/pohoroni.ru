@@ -89,7 +89,7 @@
                 <p class="employees__h3">
                     Одно из преимуществ сотрудничества с нами – индивидуальный подход к каждому клиенту.
                 </p>
-                <a href="#" class="common-btn_white employees__btn">Вызов ритуального агента</a>
+                <a data-fancybox data-src="#order-call" class=" common-btn_white employees__btn">Вызов ритуального агента</a>
             </div>
         </div>
     </section>
