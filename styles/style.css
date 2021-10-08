@@ -1630,12 +1630,12 @@ SERVICES PAGE START
     .services-info__info-boxs {
         flex-direction: column;
         align-items: center;
-        padding: 100px 0 0;
+        /* padding: 100px 0 0; */
     }
 
     .services-info__info-box-1,
     .services-info__info-box-2 {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
 
         text-align: justify;
@@ -1650,7 +1650,7 @@ SERVICES PAGE START
     }
 
     .services-prices__table {
-        width: 90%;
+        width: 100%;
         margin: 0 auto 52px;
     }
 
@@ -1659,14 +1659,14 @@ SERVICES PAGE START
     }
 
     .types-of-burial__items {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
     }
 }
 
-/* 923px */
+/* 930px */
 
-@media(max-width: 923px) {
+@media(max-width: 930px) {
     .types-of-burial__items {
         grid-template-columns: 1fr 1fr;
     }
@@ -1677,6 +1677,11 @@ SERVICES PAGE START
 
     .types-of-burial__item a {
         padding: 30px 10px;
+    }
+
+    .services-prices__table thead tr th {
+        font-size: var(--text-18);
+
     }
 }
 
@@ -1705,6 +1710,11 @@ SERVICES PAGE START
 
         text-align: justify;
     }
+
+    .services-prices__table tbody tr td {
+        width: 30%;
+    }
+
 }
 
 /* 424px */
