@@ -161,10 +161,10 @@ a.slider_active-tab,
 
 }
 
-/* 927px */
-@media(max-width: 927px) { 
+/* 930px */
+@media(max-width: 939px) { 
     .slider__wrapper {
-        margin: 110px auto 75px;
+        margin: 72px auto 22px;
     }
 }
 
