@@ -252,7 +252,7 @@ a.common-btn_white:visited {
 
 .common-h1 {
     margin: 0;
-    padding: 52px 0;
+    padding: 0 0 52px;
 
     font-family: var(--bold);
     font-size: var(--text-48);
@@ -313,7 +313,7 @@ a.common-btn_white:visited {
     display: flex;
     flex-wrap: wrap;
 
-    margin: 61px auto 0;
+    margin: 40px auto 0;
 }
 
 .bread-crumbs__item a {
@@ -520,6 +520,10 @@ li.common-square-tab__active-tab::before {
     .container {
         padding: 0 34px;
     }
+
+    .bread-crumbs {
+        margin: 60px 0 0;
+    }
 }
 
 /* 930px */ 
@@ -668,7 +672,7 @@ MAIN PAGE START
 }
 
 .how-we-work__text-box p {
-    margin: 25px 10px 0 0px
+    margin: 20px 10px 0 0px
 }
 
 .how-we-work__video {
@@ -849,7 +853,7 @@ MAIN PAGE START
     }
 
     .how-we-work__text-box p {
-        margin: 25px 0 0;
+        margin: 15px 0 0;
 
         text-align: justify;
     }
@@ -1090,8 +1094,13 @@ ABOUT PAGE START
     }
 
     .about-company__text-box {
-        width: 90%;
+        width: 100%;
         margin: 0 auto 52px;
+        padding: 0px;
+    }
+    
+    .about-company__text-box .common-p {
+        margin: 0 0 20px;
     }
 
     .about-company__info-box img {
@@ -1103,16 +1112,17 @@ ABOUT PAGE START
         flex-direction: column;
     }
 
-    .why-our-company__h2 {
-        width: 90%;
+    .why-our-company__h2.common-h2 {
+        width: 100%;
         margin: 0 auto;
+        padding: 30px 0;
 
         text-align: center;
     }
 
     .why-our-company__p {
-        width: 90%;
-        margin: 0 auto 52px;
+        width: 100%;
+        margin: 0 auto 30px;
 
         text-align: center;
     }
@@ -1122,21 +1132,33 @@ ABOUT PAGE START
     }
 
     .employees__text-box {
-        width: 90%;
+        width: 100%;
     }
 
     .employees__order-box {
-        width: 90%;
-
+        width: 100%;
         margin: 0 0 30px;
+        padding: 20px;
+    }
+
+    .employees__h3 {
+        margin: 17px;
+    }
+
+    .employees__btn {
+        width: 60%;
     }
 
 }
 
-/* 926px */
+/* 930px */
 @media (max-width: 930px) {
+    .about-company h1.common-h1 {
+        padding: 0 0 30px;
+    }
+
     .about-company__text-box {
-        margin: 0 auto 30px;
+        margin: 0 auto;
         padding: 0;
 
         text-align: justify;
@@ -1148,18 +1170,28 @@ ABOUT PAGE START
 
     .why-our-company__p {
         margin: 0 0 30px;
-
-        text-align: justify;
     }
 
     .employees__p:last-child {
         margin: 0;
     }
 
+    .about-company__text-box .common-p {
+        margin: 0 0 15px;
+    }
+
+    .why-our-company__h2.common-h2 {
+        font-size: var(--text-24);
+
+        padding: 30px 0 15px;
+    }
+
+    .employees__p {
+        margin: 0 0 15px;
+    }
     
 }
 /* 625px */
-
 @media(max-width: 625px) {
     .about-company__info-box img {
         width: 70%;
@@ -1169,7 +1201,23 @@ ABOUT PAGE START
     .employees__btn {
         width: 100%;
     }
+
+    .about-company h1.common-h1 {
+        padding: 20px 0;
+    }
+
+    .services {
+        padding-top: 30px;
+    }
 }
+
+/* 460px */
+@media(max-width: 460px) {
+    .services {
+        padding-top: 40px;
+    }
+}
+
 
 /* 6.ABOUT PAGE MEDIA END */
 

@@ -89,7 +89,7 @@
                 <p class="employees__h3">
                     Одно из преимуществ сотрудничества с нами – индивидуальный подход к каждому клиенту.
                 </p>
-                <a href="#" class="common-btn_white employees__btn">Вызов ретуального агента</a>
+                <a href="#" class="common-btn_white employees__btn">Вызов ритуального агента</a>
             </div>
         </div>
     </section>
@@ -107,66 +107,6 @@
     <?php include('../parts/contact-part.php') ?>
 
     <!-- 2.9.CONTSCT END -->
-
-    <!-- 2.5.LICENSES START -->
-
-    <?php include("../parts/licenses.php") ?>
-
-    <!-- 2.5.LICENSES END -->
-
-    <!-- 2.6.SERVICES START -->
-
-    <?php include('../parts/services.php') ?>
-
-    <!-- 2.6.SERVICES END -->
-
-    <!-- 2.7.OUR EMPLOYEES START -->
-
-    <section class="employees container">
-        <div class="common-h2 employees__h2">
-            Наши сотрудники
-        </div>
-        <div class="employees__info-box">
-            <div class="employees__text-box">
-                <p class="common-p employees__p">
-                    Каждый работник со всей ответственностью относится к возложенным на него обязательствам, понимая и осознавая всю серьезность мероприятия. Профессиональные менеджеры грамотно и деликатно работают с клиентами, пытаясь в самые сложные моменты их жизни в индивидуальном порядке выполнить все пожелания и требования.
-                </p>
-
-                <p class="common-p employees__p">
-                    Каждый работник со всей ответственностью относится к возложенным на него обязательствам, понимая и осознавая всю серьезность мероприятия. Профессиональные менеджеры грамотно и деликатно работают с клиентами, пытаясь в самые сложные моменты их жизни в индивидуальном порядке выполнить все пожелания и требования.
-                </p>
-            </div>
-
-            <div class="employees__order-box">
-                <img src="../images/businesswoman.png">
-                <p class="employees__h3">
-                    Одно из преимуществ сотрудничества с нами – индивидуальный подход к каждому клиенту.
-                </p>
-                <a href="#" class="common-btn_white employees__btn">Вызов ретуального агента</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- 2.7.OUR EMPLOYEES END -->
-
-    <!-- 2.8.HAVE A QUESTION START -->
-
-    <section class="have-a-question common-mini-banner">
-        <div class="container">
-            <div class="common-h2 have-a-question__h2">
-                Остались вопросы?
-            </div>
-            <p class="common-p have-a-question__p">
-                Закажите обратный звонок и мы ответим на все интересующие вас вопросы.
-            </p>
-            <a href="#" class="common-btn_white have-a-question__btn">
-                Получить консультацию
-            </a>
-
-        </div>
-    </section>
-
-    <!-- 2.8.HAVE A QUESTION END -->
 
 </main>
 
