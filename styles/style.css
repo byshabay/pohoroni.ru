@@ -2601,6 +2601,7 @@ CONTACT PAGE START
 
 .reception__h1.common-h2 {
     text-align: center;
+    margin: 0;
 }
 
 .reception__info-box {
@@ -2683,16 +2684,48 @@ CONTACT PAGE START
     }
 
     .reception__text-block {
-        width: 70%;
-        margin: 48px auto 0;
+        width: 100%;
+        margin: 30px auto 0;
+    }
+
+    .contacts.container {
+        margin-top: 0px;
+    }
+
+    .reception-control {
+        width: 100%;
+    }
+
+    .contact-page .contacts__btn.common-btn_peach {
+        margin: 30px auto 0;
     }
 }
+
+/* 930px */
+@media(max-width: 930px){  
+    .contact-page .contacts__p {
+        text-align: justify;
+    }
+
+    .reception__p {
+        margin: 0 0 15px;
+
+        text-align: justify;
+    }
+}
+
+/* 625px */
+@media(max-width: 625px){ 
+    .contact-page .contacts__h2.common-h2 {
+        padding: 20px 0 ;
+    }
+}
+
 
 /* 453px */
 
 @media(max-width: 453px){
     .reception__text-block {
-        width: 90%;
         margin: 20px auto 0;
     }
 
