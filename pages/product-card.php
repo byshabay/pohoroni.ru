@@ -8,9 +8,9 @@
     <!-- 2.1.BREAD CRUMBS START -->
 
     <ul class="bread-crumbs container">
-        <li class="bread-crumbs__item"><a href="<?= $root__url ?>">Главная</a></li>
-        <li class="bread-crumbs__item "><a href="<?= $root__url ?>pages/products.php">Ритуальные товары</a></li>
-        <li class="bread-crumbs__item bread-crumbs__item_active"><a href="<?= $root__url ?>pages/products.php">Венок из искусственных цветов №47</a></li>
+        <li class="bread-crumbs__item"><a href="<?= $root_url ?>">Главная</a></li>
+        <li class="bread-crumbs__item "><a href="<?= $root_url ?>pages/products.php">Ритуальные товары</a></li>
+        <li class="bread-crumbs__item bread-crumbs__item_active"><a href="<?= $root_url ?>pages/product-card.php">Венок из искусственных цветов №47</a></li>
     </ul>
 
     <!-- 2.1.BREAD CRUMBS END -->

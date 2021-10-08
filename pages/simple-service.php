@@ -9,9 +9,9 @@
     <!-- 2.1.BREAD CRUMBS START -->
 
     <ul class="bread-crumbs container">
-        <li class="bread-crumbs__item"><a href="<?= $root__url ?>">Главная</a></li>
-        <li class="bread-crumbs__item"><a href="<?= $root__url ?>pages/about.php">О компании</a></li>
-        <li class="bread-crumbs__item bread-crumbs__item_active"><a href="<?= $root__url ?>pages/simple-service.php">Оформление документов</a></li>
+        <li class="bread-crumbs__item"><a href="<?= $root_url ?>">Главная</a></li>
+        <li class="bread-crumbs__item"><a href="<?= $root_url ?>pages/about.php">О компании</a></li>
+        <li class="bread-crumbs__item bread-crumbs__item_active"><a href="<?= $root_url ?>pages/simple-service.php">Оформление документов</a></li>
     </ul>
 
     <!-- 2.1.BREAD CRUMBS END -->

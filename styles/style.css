@@ -2549,10 +2549,25 @@ PRICES PAGE START
     }
 
     .prices-block__info-box {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
     }
 
+    .common-btn_peach.prices-block__btn {
+        margin: 30px auto 0;
+    }
+
+    .prices-page .prices__tariffs {
+        margin: 52px 0 70px;
+    }
+
+}
+
+/* 930px */
+@media(max-width: 930px) {
+    .prices-page .procedure {
+        margin: 30px auto 0;
+    }    
 }
 
 /* 470px */
