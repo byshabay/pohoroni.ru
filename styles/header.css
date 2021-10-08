@@ -15,6 +15,7 @@
     display: none;
     width: 30px;
     height: 20px;
+    z-index: 1;
 
     cursor: pointer;
 }
@@ -133,7 +134,10 @@ a.header__phone {
 .logo {
     display: flex;
     align-items: center;
-    margin: 0 0 0 15px;
+}
+
+.logo a {
+    text-align: right;
 }
 
 .logo img {
@@ -146,7 +150,8 @@ a.header__phone {
     text-transform: uppercase;
     font-family: var(--bold);
     font-size:var(--text-14);
-    line-height: 21px;
+    line-height: 150%;
+    color: var(--horses);
 }
 
 /* 1.TOP NAVIGATION END */
@@ -334,7 +339,7 @@ a.header__phone {
 
 /* 3.BLACKOUT END */
 
-/* 4.ORDER CALL POPUP START */
+/* 4.POPUPS START */
 #order-call {
     display: none;
 }
@@ -352,7 +357,7 @@ a.header__phone {
     font-size: var(--text-18);
 
     color: var(--deepTaupe);
-    line-height: 24px;
+    line-height: 150%;
 }
 
 .order-popup-p {
@@ -361,20 +366,45 @@ a.header__phone {
 
 .common-popup-error {
     opacity: 0;
-    width: 80%;
-    padding: 15px;
+    width: 100%;
     margin: 20px auto;
 
-    border: 1px solid var(--peach);
-    border-radius: 7px;
-    background-color: var(--dirtyRosyBrown);
-    color: #fff;
+    font-family: var(--bold);
+
+    color: var(--peach);
     transition: .3s;
+    }
+
+@keyframes tremor{
+   0%, 50%, 100% {
+     transform: rotate(0deg);
+     -webkit-transform: rotate(0deg);
+     -moz-transform: rotate(0deg);
+     -o-transform: rotate(0deg);
+     -ms-transform: rotate(0deg);
+   }
+   10%, 30% {
+     transform: rotate(-10deg);
+     -webkit-transform: rotate(-10deg);
+     -moz-transform: rotate(-10deg);
+     -o-transform: rotate(-10deg);
+     -ms-transform: rotate(-10deg);
+   }
+   20%, 40% {
+     transform: rotate(10deg);
+     -webkit-transform: rotate(10deg);
+     -moz-transform: rotate(10deg);
+     -o-transform: rotate(10deg);
+     -ms-transform: rotate(10deg);
+   }
 }
 
 .form-error .common-popup-error {
     opacity: 1;
-    transition: .3s;
+    transition: .5s;
+
+    -webkit-animation: 0.1s tremor ease-in-out ;  
+    animation: 0.3s tremor ease-in-out ;   
 }
 
 .order-popup {
@@ -428,13 +458,21 @@ button.popup-btn {
     color: var(--peach);
 }
 
-/* 4.ORDER CALL POPUP END */
+#review-popup {
+    display: none;
+}
+
+/* 4.POPUPS END */
 
 /* 5.HEADER MEDIA START */
 
 /* 1140px */
 
 @media(max-width: 1140px) {
+    .header__top-nav .container {
+        padding: 11px 34px;
+    }
+
     .menu__item {
         min-width: 164px;
     }
@@ -674,9 +712,15 @@ button.popup-btn {
     
     .logo div {
         position: absolute;
-        width: 30%;
-        left: 30%;
+        margin: 0;
+        width: calc(100% - 68px);
+        z-index: 0;
+
         text-align: center;
+    }
+
+    .logo a {
+        z-index: 1;
     }
 
     .logo img {
@@ -688,7 +732,7 @@ button.popup-btn {
     }
 
     .blackout {
-        top: 69px;
+        top: 72px;
     }
     
     .header .menu-wrapper {
@@ -735,20 +779,22 @@ button.popup-btn {
         height: 100vh;
     }
 
-    .logo div {
-        width: 40%;
-        left: 26%
+    .blackout {
+        top: 84px  ;
     }
-    
+   
 }
 
-/* 355px */
+/* 453px */
+@media(max-width: 453px){
+    .header__top-nav .container {
+       padding: 11px 20px; 
+    }
 
-@media(max-width: 355px) { 
     .logo div {
-        width: 45%;
-        left: 21%
+        width: calc(100% - 40px);
     }
 }
+
 
 /* 5.HEADER MEDIA END */

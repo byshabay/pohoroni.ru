@@ -37,6 +37,7 @@
     <!-- MAP -->
     <script defer src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script defer src="<?= $root_url ?>scripts/ymaps.js"></script>
+
     <!-- SLICK  -->
     <!-- эти скрипты подлючаются к главной, контакты -->
     <script defer src="<?= $root_url ?>scripts/slick.min.js"></script>
@@ -64,10 +65,11 @@
                 </div>
 
                 <!-- 1.2.BURGER END -->
-                <a class="logo" href="<?= $root_url ?>">
-                    <img src="<?= $root_url ?>images/logo.png" alt="Логотип pohoroni.ru">
+                <div class="logo">
+                    <a href="<?= $root_url ?>"><img src="<?= $root_url ?>images/logo.png" alt="Логотип pohoroni.ru"></a>
                     <div>Ритуальные <br class="mobile-br"> Услуги <br> Москвы</div>
-                </a>
+                </div>
+
 
                 <div class="header__tagline">Более 1200 людей в год доверяют нам самый сложный день</div>
                 <img class="header__gost" src="<?= $root_url ?>images/gost.png" alt="Сертификат соответсвия ГОСТ Р">
@@ -190,9 +192,17 @@
             </nav>
         </section>
         <!-- 2.MAIN MENU END -->
+
         <!-- 3.ORDER CALL POPUP START-->
-        <?php include('../parts/agent-call-popup.php') ?>
+        <?php
+        include('../parts/agent-call-popup.php');
+        include('parts/agent-call-popup.php');
+        ?>
         <!-- 3.ORDER CALL POPUP END-->
+
+        <!-- 3.REVIEW POPUP START-->
+        <?php include('../parts/review-popup.php') ?>
+        <!-- 3.REVIEW POPUP END-->
 
     </header>
     <!-- 4.BLACKOUT START -->

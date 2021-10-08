@@ -4,7 +4,10 @@
         <!-- 1.CONTACT COLUMN -->
 
         <ul class="footer__contacts footer__column">
-            <li class="footer__contacts-item"><img class="footer__logo" src="<?= $root_url ?>images/logo-footer.png"></li>
+            <li class="footer__contacts-item footer__logo">
+                <img src="<?= $root_url ?>images/logo.png">
+                <div>Ритуальные <br> услуги <br> Москвы</div>
+            </li>
             <li class="footer__contacts-item">
                 <a href="tel:+74957953080">
                     <img src="<?= $root_url ?>images/tel-light.png">

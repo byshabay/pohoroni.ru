@@ -28,7 +28,7 @@
             <p class="common-p have-a-question__p">
                 Мы буде рады если вы поделитесь опытом работы с нами, для наших будущих клиентов.
             </p>
-            <a href="#" class="common-btn_white have-a-question__btn">
+            <a data-fancybox data-src="#review-popup" class="common-btn_white have-a-question__btn">
                 Оставить отзыв
             </a>
 

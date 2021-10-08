@@ -1,7 +1,7 @@
    <section class="prices container">
 
        <div class="prices__h2 common-h2">
-           ЦЕНЫ НА РИТУАЛЬНЫЕ УСЛУГИ
+           Цены на ритуальные услуги
        </div>
 
        <!-- 2.5.1.TABS OF PRICES START -->

@@ -36,6 +36,10 @@
     text-decoration: none;
 }
 
+.common-popup-form .common-h2 {
+    padding: 0;
+}
+
 /* 3.CONTACT PAGE MEDIA START */
 
 /* 1140px */
@@ -43,6 +47,13 @@
     .reception-control {
         width: 70%;
         margin: 0 auto;
+    }
+}
+
+/* 700px */
+@media(max-width: 700px){ 
+    .common-popup-form .common-h2 {
+        font-size: var(--text-24);
     }
 }
 

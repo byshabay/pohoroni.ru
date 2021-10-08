@@ -38,10 +38,11 @@
 
 .slider__wrapper hr {
     position: absolute;
-    width: 99%;
+    width: calc(100% - 28px);
     height: 2px;
     z-index: 0;
     margin: 20px 0 0;
+    left: 14px;
 
     border: 0px solid transparent;
     background: url('../images/small-slider-hr.png');
@@ -153,6 +154,11 @@ a.slider_active-tab,
         width: 70%;
         margin: 65px auto 0;
     }
+
+    .prices__tariffs {
+        margin: 30px auto;
+    }
+
 }
 
 /* 927px */
@@ -162,14 +168,28 @@ a.slider_active-tab,
     }
 }
 
-/* 453px */
-@media(max-width: 453px) { 
+/* 460px */
+@media(max-width: 460px) { 
      .slider__tab a {
         width: 25px;
         height: 25px;
         padding: 4px;
 
         font-size: var(--text-18);
+    }
+
+    .slick-dots li button {
+        width: 30px;
+        height: 30px;
+        font-size: var(--text-14);
+    }
+
+    .slider__wrapper hr {
+        margin: 15px 0 0;
+    }
+
+    .slider__wrapper {
+        margin: 45px auto 80px;
     }
 
 }

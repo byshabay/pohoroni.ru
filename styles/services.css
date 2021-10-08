@@ -57,7 +57,7 @@
 @media(max-width: 1140px) {
      .services__items {
         display: grid;
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         grid-template-columns: 1fr 1fr;
         grid-gap: 30px;

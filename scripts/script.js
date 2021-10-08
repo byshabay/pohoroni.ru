@@ -92,6 +92,7 @@ $(document).ready(function () {
 
         if (validationForm()) {
             e.preventDefault();
+
         } else {
             e.preventDefault();
             $('.common-popup-form .common-h2').text('Спасибо за вашу заявку!');
@@ -116,8 +117,13 @@ $(document).ready(function () {
             var error = true;
         }
 
+        if (error) {
+            $('#order-call').addClass('form-error');
+            setTimeout(function () {
+                $('#order-call').removeClass('form-error');
+            }, 2000)
+        }
 
-        $('#order-call').toggleClass('form-error', error);
         return error;
     }
 
@@ -266,9 +272,52 @@ $(document).ready(function () {
 
     reviewsCatalogItemsShow(currentReviewsCount, reviewsAmount)
 
-
-
-
     // 15.REVIEWS CATALOG SHOW MORE END
+
+    // 16.FORM REVIEW VALIDATION START
+
+    $('#review-popup').submit(function (e) {
+
+        if (validationReviewForm()) {
+            e.preventDefault();
+
+        } else {
+            e.preventDefault();
+            $('.common-popup-form .common-h2').text('Спасибо за ваш отзыв!');
+            $('.common-popup-form').addClass('common-succes-popup-form');
+            $('.common-popup-error, .common-popup-input, .common-popup-mini-text, .popup-btn, .order-popup-p').hide();
+        }
+    })
+
+    function validationReviewForm() {
+
+        let name = $('#review-popup-name');
+        let phone = $('#review-popup-phone');
+        let email = $('#review-popup-email');
+        let textarea = $('#review-popup-text');
+        let regExp = /^\d{6}?/;
+        let emailExp = /@+/;
+
+        if (
+            name.val().length < 4 ||
+            textarea.val().length < 4 ||
+            !regExp.test(phone.val()) ||
+            !emailExp.test(email.val())
+
+        ) {
+            var error = true;
+        }
+
+        if (error) {
+            $('#review-popup').addClass('form-error');
+            setTimeout(function () {
+                $('#review-popup').removeClass('form-error');
+            }, 2000)
+        }
+
+        return error;
+    }
+
+    // 16.REVIEW VALIDATION END
 
 });

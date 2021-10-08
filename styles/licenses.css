@@ -7,6 +7,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    min-width: 0;
 }
 
 .licenses__item {
@@ -25,17 +27,46 @@
 
 @media(max-width: 1140px) {
     .licenses__items {
-        flex-direction: column;
+        /* flex-direction: column; */
     }
 
     .licenses__item {
-        width: 30%;
         margin: 0 0 35px;
     }
+}
 
-    .licenses__items :last-child {
-        margin: 0;
+/* 600px */
+@media(max-width: 600px) { 
+    .licenses.container {
+        width: 100%;
     }
+
+    .licenses__items {
+        display: block;
+        width: 100%;
+    }
+
+    .licenses__item {
+        width: 100%;
+    }
+
+    .licenses__item img {
+        width: 90%;
+    }
+
+    .licenses .slick-track {
+        display: flex;
+        align-items: center;
+    }
+
+    .licenses .slick-list {
+        overflow: hidden;
+    }
+
+    .licenses .slick-track li:nth-child(2n) {
+        text-align: right;
+    }
+
 }
 
 /* 453px */

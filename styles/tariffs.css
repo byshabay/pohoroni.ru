@@ -156,67 +156,115 @@ hr.prices__active-tab {
 /* 1140px */
 
 @media(max-width: 1140px) { 
-      .prices__tariffs {
+    .prices__tariffs {
         margin: 52px auto;
+        width: calc(100% - 68px);
     } 
+
     .prices__tariff {
-        margin: 0 auto 30px;
+        margin: 0 0 30px;
     }
 
-    .prices__tariff-h2 {
-        padding: 50px 0 72px;
+    .prices__tariff:nth-child(2n) {
+        margin-left: 30px;
+    }
 
-        background-size: 40%;
+    .prices__tariff-h2,
+    .prices__tariff:hover .prices__tariff-h2 {
+        padding: 30px 0 50px;
+
+        background-size: contain;
     }
 
     .prices__order-btn.common-btn_peach {
         width: 52%;
         left: 24%;
     }
-}
 
-/* 927px */
-@media(max-width: 927px) { 
-    .prices__tariff-h2 {
-        padding: 50px 0 102px;
+    .prices__tab a {
+        padding: 0 14px 30px;
 
-        background-size: 57%;
+        font-size: var(--text-20);
     }
 }
+
 
 /* 673px */
 @media(max-width: 673px) { 
+    .prices__tariff-h2,
+    .prices__tariff:hover .prices__tariff-h2 {
+        padding: 20px 0 30px;
+    }
+
     .prices__tariff-h2 {
-        padding: 20px 0 102px;
+        margin: -2px 0 10px;
+    }
+
+    .common-p.prices__p {
+        padding: 10px 5px;
+    }
+
+    .prices__tariff {
+        padding: 0 17px 110px;
+    }
+
+    .prices__order-btn.common-btn_peach {
+        bottom: 54px;
+        width: 80%;
+        left: 10%;
+    }
+
+    .prices__more-btn {
+        bottom: 20px;
+    }
+
+    .home .licenses {
+        margin: 40px auto 0;
+    }
+
+    .prices__tariff:nth-child(2n) {
+        margin-left: 0;
     }
 }
 
-/* 453px */
-@media(max-width: 453px) { 
-        .prices__tab a {
+/* 460px */
+@media(max-width: 460px) { 
+    .prices__tab a {
         font-size: var(--text-15);
-    }
-
-    .prices__tariff-h2 {
-        padding: 13px 0 49px;
-    }
-
-    .prices__p {
-        padding: 10px 5px;
     }
 
     .prices__order-btn.common-btn_peach {
         width: 88%;
         left: 6%;
     }
-}
 
-/* 340px */
+    .prices__tariffs {
+        margin: 30px auto;
+        width: calc(100% - 40px);
+    } 
 
-@media(max-width: 340px) {
+    .prices__tab a {
+        padding: 0 14px 20px;
+
+        font-size: var(--text-15);
+    }
+
+    hr.prices__active-tab {
+        height: 2px;
+    }
+
+    .prices__tariff-h2, .prices__tariff:hover .prices__tariff-h2 {
+        padding: 20px 0;
+    }
+
     .prices__tariff-h2 {
-        background-size: 76%;
+        font-size: var(--text-14);
+    }
+
+    .common-p.prices__p {
+        line-height: 150%;
     }
 }
+
 
 /* 11.MAIN PAGE MEDIA END */

@@ -71,7 +71,7 @@
             <p class="common-p procedure__p">
                 Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: сплочённость команды профессионалов влечет за собой процесс внедрения и модернизации глубокомысленных рассуждений.
             </p>
-            <a class="procedure__order-btn common-btn_peach" href="#">Заказать звонок</a>
+            <a class="procedure__order-btn common-btn_peach" data-fancybox data-src="#order-call">Заказать звонок</a>
         </div>
 
         <!-- 2.4.1.SLIDER START -->
