@@ -4356,6 +4356,10 @@ QA PAGE START
     text-align: center;
 }
 
+.qa__h1.container.common-h1 {
+    padding: 30px 0;
+}
+
 .qa-page .common-square-tabs {
     width: 41%;
 }
@@ -4373,11 +4377,18 @@ QA PAGE START
 
 /* 2.QA PAGE MEDIA START */
 
+/* 1140px */
+@media(max-width: 1140px) {
+    .qa-page .common-square-wrapper {
+        margin-bottom: 30px;
+    }
+}
+
 /* 930px */
 @media(max-width: 930px) {
     .qa-page .common-square-tabs,
     .qa-page .common-square-content-blocks {
-        width: 90%;
+        width: 100%;
     }
 }
 
