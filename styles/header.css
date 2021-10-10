@@ -137,11 +137,14 @@ a.header__phone {
 }
 
 .logo a {
+    width: 44px;
+    height: 53px;
+
     text-align: right;
 }
 
 .logo img {
-    width: 45%;
+    width: 100%;
 }
 
 .logo div {
@@ -721,10 +724,6 @@ button.popup-btn {
 
     .logo a {
         z-index: 1;
-    }
-
-    .logo img {
-        width: 40%;
     }
 
     .mobile-br {

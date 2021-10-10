@@ -2958,23 +2958,48 @@ DELIVERY PAGE START
     }
 
     .delivery-block__info-box-1 {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
     }
 
     .delivery-block__info-box-2  {
-        width: 90%;
-        margin: 52px auto 0;
+        width: 100%;
+        margin: 30px auto 0;
     }
 
     .payments {
-        width: calc(90% - 20px);
+        width: calc(100% - 68px);
+        max-width: 1400px;
+        margin: 52px auto;
     }
 
     .payments__tabs {
-        width: 40%;
+        width: 100%;
     }
 
+
+}
+
+/* 930px */
+@media(max-width: 930px) {
+    .delivery-block__ol,
+    .delivery-block__info-box-2 {
+        margin-top: 30px;
+    }
+
+    .payments {
+        margin: 30px auto;
+        padding: 30px 40px;
+    }
+
+    .delivery-block__ol li:last-child {
+        margin: 0;
+    }
+
+    .delivery-block__info-box-1,
+    .payments__type-p {
+        text-align: justify;
+    }
 
 }
 
@@ -2988,13 +3013,13 @@ DELIVERY PAGE START
     }
 
     .payments__tabs {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
     }
 
     .payments__types {
-        width: 90%;
-        margin: 30px auto 0;
+        width: 100%;
+        margin: 0;
     }
 }
 
@@ -3009,11 +3034,22 @@ DELIVERY PAGE START
     }
 
     .payments {
-        padding: 15px;
+        padding: 0px 15px 30px;
     }
 
     .payments__type-btn {
         width: 70%;
+    }
+}
+
+/* 460px */
+@media(max-width: 460px) {
+    .payments {
+        width: calc(100% - 40px);
+    }
+
+    .payments__type-btn {
+        margin: 0 auto;
     }
 }
 
