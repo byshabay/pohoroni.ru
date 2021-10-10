@@ -3909,6 +3909,8 @@ MFC PAGE START
 /* 1.HOW BLOCK MFC START */
 
 .common-h1.how-mfc__h1 {
+    padding: 30px 0;
+
     text-align: center;
 }
 
@@ -4031,7 +4033,7 @@ MFC PAGE START
     .common-h2.who-mfc__h2,
     .who-mfc__text-box,
     .who-mfc .reception-control {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -4042,6 +4044,10 @@ MFC PAGE START
 
     .who-mfc .reception-control {
         padding: 30px;
+    }
+
+    .list-mfc.container {
+        margin: 0 auto 52px;
     }
 }
 
@@ -4063,6 +4069,20 @@ MFC PAGE START
 
     .home .reviews {
         margin: 30px 0 0 ;
+    }
+
+    .common-p.how-mfc__p {
+        margin: 0 0 15px;
+
+        text-align: justify;
+    }
+
+    .common-p.how-mfc__p:last-child {
+        margin: 0;
+    }
+
+    .list-mfc.container {
+        margin: 0 auto 30px;
     }
 }
 
