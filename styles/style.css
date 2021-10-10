@@ -3845,17 +3845,18 @@ CREMATORIUM PAGE START
     }
 
     .crematorium__text-block {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
     }
 
     .crematorium__ul {
-        width: 90%;
+        width: 100%;
         margin: 52px auto 0;
     }
 
     .crematorium__types.container {
-        width: 90%;
+        width: 100%;
+        margin: 52px auto ;
     }
 }
 
@@ -3875,6 +3876,10 @@ CREMATORIUM PAGE START
 
     .common-ol.crematorium__type-ol li {
         margin: 0 0 20px;
+    }
+
+    .crematorium__types.container {
+        margin: 30px auto;
     }
 }
 
