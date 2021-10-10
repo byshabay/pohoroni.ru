@@ -4196,6 +4196,17 @@ REVIEWS PAGE END
 
 /* 4.REVIEWS PAGE MEDIA END */
 
+/* 1140px */ 
+@media(max-width: 1140px) {
+    .reviews-catalog.container {
+        margin-bottom: 52px;
+    }
+
+    .reviews-page .have-a-question__p.common-p {
+        width: 100%;
+    }
+}
+
 /* 930px */
 @media(max-width: 930px) { 
     .common-h1.reviews-page__h1,
@@ -4206,6 +4217,10 @@ REVIEWS PAGE END
     .reviews-catalog__list {
         grid-gap: 15px;
     }
+
+    .reviews-catalog.container {
+        margin-bottom: 30px;
+    } 
 }
 
 /* 770px */
