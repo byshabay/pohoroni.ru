@@ -4260,6 +4260,8 @@ LICENSES PAGE END
 }
 
 .common-h1.licenses-block__h1 {
+    padding: 30px 0;
+    
     text-align: center;
 }
 
@@ -4294,19 +4296,42 @@ LICENSES PAGE END
     }
 
     .licenses-block__text-box {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
     }
 
     .licenses-block__info-box .what-price__calculate {
         margin: 30px auto 0;
     }
+
+    .licenses-block__info-box .what-price__calculate .common-h3 {
+        padding: 0px;
+    }
 }
 
-/* 724px */
-@media(max-width: 724px) {
+/* 930px */
+@media(max-width: 930px) {
     .licenses-block__text-box {
         text-align: justify;
+    }
+
+    .common-p.licenses-block__p {
+        margin-bottom: 15px;
+    }
+
+    .common-p.licenses-block__p:last-child {
+        margin: 0;
+    }
+
+    .licenses-block__info-box .what-price__calculate {
+        padding: 20px;
+    }
+}
+
+/* 600px */
+@media(max-width: 600px) {
+    .licenses-page .contacts__wrapper {
+        margin-top: 52px;
     }
 }
 
