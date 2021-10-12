@@ -86,7 +86,7 @@ $(document).ready(function () {
         }
     })
 
-    // 5.SUB - SUBMENU MOBILE END
+    // 5.SUB-SUBMENU MOBILE END
 
 
     // 6.FORM VALIDATION START
