@@ -104,6 +104,25 @@ a.footer__order-btn {
         display: none;
     }
 
+    .fixed-call-btn {
+        position: fixed;
+        display: block;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+        z-index: 3;
+
+        background: #fff;
+    }
+
+    .fixed-call-btn a.footer__order-btn.common-btn_white {
+        width: 50%;
+        margin: 20px auto 0;
+
+        background-color: var(--peach);
+        color: #fff;
+    }
+
     .footer__column {
         width: 50%;
         margin: 0 auto;
@@ -115,7 +134,7 @@ a.footer__order-btn {
 
     .footer {
         margin: 50px 0 0;
-        padding: 30px 0 10px;
+        padding: 30px 0 90px;
     }
 
     a.footer__order-btn {

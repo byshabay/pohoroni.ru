@@ -1,4 +1,4 @@
-<form id="order-call" class="common-popup-form">
+<form tabindex="1" id="order-call" class="common-popup-form">
     <div class="common-h2">
         Вызов ретуального агента
     </div>
@@ -16,6 +16,6 @@
     </div>
     <a href="<?= $root_url ?>" class="common-btn_white order-popup-succes-a">На главную </a>
     <p class="common-popup-mini-text">
-        Нажимая на кнопку "Отправить", Вы соглашаетесь с правилами обработки <a href="#"> персональных данных</a>.
+        Нажимая на кнопку "Отправить", Вы соглашаетесь с правилами обработки <a href="<?= $root_url ?>pages/privacy.php"> персональных данных</a>.
     </p>
 </form>

@@ -5,7 +5,7 @@
 
         <ul class="footer__contacts footer__column">
             <li class="footer__contacts-item footer__logo">
-                <img src="<?= $root_url ?>images/logo.png">
+                <img src="<?= $root_url ?>images/logo.svg">
                 <div>Ритуальные <br> услуги <br> Москвы</div>
             </li>
             <li class="footer__contacts-item">
@@ -20,8 +20,8 @@
                     info@mfc-ritual.ru
                 </a>
             </li>
-            <li class="footer__contacts-item">
-                <a data-fancybox data-src="#order-call" href="#" class="common-btn_white footer__order-btn order-popup">
+            <li class="footer__contacts-item fixed-call-btn">
+                <a data-fancybox data-src="#order-call" href="#" class="common-btn_white footer__order-btn order-popup ">
                     Заказать звонок
                 </a>
             </li>

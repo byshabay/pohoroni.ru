@@ -13,6 +13,11 @@
 
 .licenses__item {
     width: 20%;
+    margin-left: 20px;
+}
+
+.licenses__item:first-child {
+    margin-left: 0;
 }
 
 .licenses__item img {
@@ -31,7 +36,7 @@
     }
 
     .licenses__item {
-        margin: 0 0 35px;
+        margin-bottom: 35px;
     }
 }
 

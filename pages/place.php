@@ -80,7 +80,7 @@
             </div>
 
             <div class="what-price__calculate">
-                <img class="what-price__calculate-img" src="../images/businesswoman.png">
+                <img class="what-price__calculate-img" src="../images/businesswoman.svg">
                 <div class="common-h3">
                     Свяжитесь с нами и мы поможем подсчитать стоимость похорон с покупкой места на кладбище
                 </div>

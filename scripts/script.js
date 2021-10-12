@@ -3,10 +3,10 @@ $(document).ready(function () {
     // 1.HEADER SCROLL START
 
     $(document).scroll(function () {
-        $(window).scrollTop() > 0 ? $('.header__top-nav').addClass("header_scroll") : $('.header__top-nav').toggleClass("header_scroll")
+        $(window).scrollTop() > 0 ? $('.header__top-nav').addClass("header_scroll") : $('.header__top-nav').removeClass("header_scroll")
     })
 
-    $(window).scrollTop() > 0 ? $('.header__top-nav').addClass("header_scroll") : $('.header__top-nav').toggleClass("header_scroll")
+    $(window).scrollTop() > 0 ? $('.header__top-nav').addClass("header_scroll") : $('.header__top-nav').removeClass("header_scroll")
 
 
     // 1.HEADER SCROLL END
@@ -41,7 +41,7 @@ $(document).ready(function () {
 
     $('.burger').click(function () {
         $(this).toggleClass('mobile-header_active');
-        $('.header, .main, .blackout').toggleClass('mobile-header_active');
+        $('.header, .main, .blackout, body').toggleClass('mobile-header_active');
         if (
             $(this).hasClass('submenu-mobile-active')
         ) {
@@ -61,11 +61,11 @@ $(document).ready(function () {
 
     // 4.SUBMENU MOBILE START
 
-    $('.menu__item_parent').click(function (e) {
-        if (e.offsetX > 100) {
+    $('.menu__item_parent > a').on("click touchstart", function (e) {
+        if (e.offsetX > 200) {
             e.preventDefault();
-            $(this).addClass('submenu-mobile-active');
-            $(this).children('.menu__sub-menu').addClass("submenu-mobile-active");
+            $(this).parent('.menu__item_parent').addClass('submenu-mobile-active');
+            $(this).siblings('.menu__sub-menu').addClass("submenu-mobile-active");
             $(".burger").addClass("submenu-mobile-active");
             $(".menu-wrapper").addClass("submenu-mobile-active");
         }
@@ -75,15 +75,18 @@ $(document).ready(function () {
     // 4.SUBMENU MOBILE END
 
     // 5.SUB-SUBMENU MOBILE START
-    $('.menu__sub-menu-parent').click(function (e) {
-        if (e.offsetX > 100) {
+
+    $('.menu__sub-menu-parent > a').on("click touchstart", function (e) {
+        if (e.offsetX > 200) {
             e.preventDefault();
-            $(this).addClass('sub-submenu-mobile-active');
-            $(this).parent().addClass('sub-submenu-mobile-active');
-            $(this).children('.menu__sub-sub-menu').addClass("sub-submenu-mobile-active");
+            $(this).parent('.menu__sub-menu-parent').addClass('sub-submenu-mobile-active');
+            $(".menu-wrapper").addClass("sub-submenu-mobile-active");
+            $(this).parents('.menu__item').addClass('sub-submenu-mobile-active');
+            $(this).siblings('.menu__sub-sub-menu').addClass("sub-submenu-mobile-active");
         }
     })
-    // 5.SUB-SUBMENU MOBILE END
+
+    // 5.SUB - SUBMENU MOBILE END
 
 
     // 6.FORM VALIDATION START
@@ -131,7 +134,7 @@ $(document).ready(function () {
 
     // 7.CATALOG TABS START
 
-    $('.catalog__sidebar-item a').click(function (e) {
+    $('.catalog__sidebar-item a').on('click', function (e) {
         e.preventDefault();
 
         let href = $(this).attr('href');
@@ -140,12 +143,14 @@ $(document).ready(function () {
 
         $(href).addClass('catalog__products_active');
 
+        $(this).siblings('.catalog__sidebar-submenu').toggleClass('catalog__sidebar-submenu-active');
+
         /**
          * Строка ниже нужна для того, чтобы не срабатовала якорная ссылка
          */
 
         return false;
-    })
+    });
 
     // 7.CATALOG TABS END
 
@@ -293,16 +298,13 @@ $(document).ready(function () {
 
         let name = $('#review-popup-name');
         let phone = $('#review-popup-phone');
-        let email = $('#review-popup-email');
         let textarea = $('#review-popup-text');
         let regExp = /^\d{6}?/;
-        let emailExp = /@+/;
 
         if (
             name.val().length < 4 ||
             textarea.val().length < 4 ||
-            !regExp.test(phone.val()) ||
-            !emailExp.test(email.val())
+            !regExp.test(phone.val())
 
         ) {
             var error = true;

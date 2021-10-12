@@ -33,32 +33,32 @@
                     <li>
                         <img src="../images/place.png">
                         <div class="common-p reception__addresses-p">
-                            Москва, Тарный проезд, 2, стр. 6.
                             <div class="reception__type">Магазин</div>
+                            Москва, Тарный проезд, 2, стр. 6.
                         </div>
                     </li>
 
                     <li>
                         <img src="../images/place.png">
                         <div class="common-p reception__addresses-p">
-                            Москва, Тарный проезд, 2, стр. 6.
                             <div class="reception__type">Офис</div>
+                            Москва, Тарный проезд, 2, стр. 6.
                         </div>
                     </li>
 
                     <li>
                         <img src="../images/sawmill.png">
                         <div class="common-p reception__addresses-p">
-                            Москва, Тарный проезд, 2, стр. 6.
                             <div class="reception__type">Производство</div>
+                            Москва, Тарный проезд, 2, стр. 6.
                         </div>
                     </li>
 
                     <li>
                         <img src="../images/workshop.png">
                         <div class="common-p reception__addresses-p">
-                            Солнечногорский район, поселок Майдарово
                             <div class="reception__type">Мастерская памятников</div>
+                            Солнечногорский район, поселок Майдарово
                         </div>
                     </li>
                 </ul>

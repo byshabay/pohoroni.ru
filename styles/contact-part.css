@@ -84,6 +84,10 @@
     .contacts__h2.common-h2 {
         text-align: center;
     }
+
+    .contacts.container {
+        margin: 52px auto 0;
+    }
 }
 
 /* 930px */

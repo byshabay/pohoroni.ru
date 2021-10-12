@@ -1,5 +1,7 @@
 <!-- 1.HEADER START -->
-<?php include('../parts/header.php') ?>
+<div class="product__header">
+    <?php include('../parts/header.php') ?>
+</div>
 <!-- 1.HEADER END -->
 
 <!-- 2.MAIN START -->
@@ -85,6 +87,38 @@
                                 </div>
                             </div>
                         </a>
+                        <ul class="catalog__sidebar-submenu">
+                            <li class="catalog__sidebar-submenu-item">
+                                <a href="#">
+                                    Постель в гроб
+                                </a>
+                            </li>
+                            <li class="catalog__sidebar-submenu-item">
+                                <a href="#">
+                                    Одежда
+                                </a>
+                            </li>
+                            <li class="catalog__sidebar-submenu-item">
+                                <a href="#">
+                                    Покрывало
+                                </a>
+                            </li>
+                            <li class="catalog__sidebar-submenu-item">
+                                <a href="#">
+                                    Подушка в гроб
+                                </a>
+                            </li>
+                            <li class="catalog__sidebar-submenu-item">
+                                <a href="#">
+                                    Обувь
+                                </a>
+                            </li>
+                            <li class="catalog__sidebar-submenu-item">
+                                <a href="#">
+                                    Орденские подушки
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="catalog__sidebar-item">
                         <a href="#textile">
@@ -98,6 +132,39 @@
                                 </div>
                             </div>
                         </a>
+
+                        <ul class="catalog__sidebar-submenu">
+                            <li class="catalog__sidebar-submenu-item">
+                                <a href="#">
+                                    Постель в гроб
+                                </a>
+                            </li>
+                            <li class="catalog__sidebar-submenu-item">
+                                <a href="#">
+                                    Одежда
+                                </a>
+                            </li>
+                            <li class="catalog__sidebar-submenu-item">
+                                <a href="#">
+                                    Покрывало
+                                </a>
+                            </li>
+                            <li class="catalog__sidebar-submenu-item">
+                                <a href="#">
+                                    Подушка в гроб
+                                </a>
+                            </li>
+                            <li class="catalog__sidebar-submenu-item">
+                                <a href="#">
+                                    Обувь
+                                </a>
+                            </li>
+                            <li class="catalog__sidebar-submenu-item">
+                                <a href="#">
+                                    Орденские подушки
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="catalog__sidebar-item">
                         <a href="#crosses">
@@ -111,6 +178,39 @@
                                 </div>
                             </div>
                         </a>
+
+                        <ul class="catalog__sidebar-submenu">
+                            <li class="catalog__sidebar-submenu-item">
+                                <a href="#">
+                                    Постель в гроб
+                                </a>
+                            </li>
+                            <li class="catalog__sidebar-submenu-item">
+                                <a href="#">
+                                    Одежда
+                                </a>
+                            </li>
+                            <li class="catalog__sidebar-submenu-item">
+                                <a href="#">
+                                    Покрывало
+                                </a>
+                            </li>
+                            <li class="catalog__sidebar-submenu-item">
+                                <a href="#">
+                                    Подушка в гроб
+                                </a>
+                            </li>
+                            <li class="catalog__sidebar-submenu-item">
+                                <a href="#">
+                                    Обувь
+                                </a>
+                            </li>
+                            <li class="catalog__sidebar-submenu-item">
+                                <a href="#">
+                                    Орденские подушки
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="catalog__sidebar-item">
                         <a href="#accessories">Аксессуары
@@ -123,6 +223,39 @@
                                 </div>
                             </div>
                         </a>
+
+                        <ul class="catalog__sidebar-submenu">
+                            <li class="catalog__sidebar-submenu-item">
+                                <a href="#">
+                                    Постель в гроб
+                                </a>
+                            </li>
+                            <li class="catalog__sidebar-submenu-item">
+                                <a href="#">
+                                    Одежда
+                                </a>
+                            </li>
+                            <li class="catalog__sidebar-submenu-item">
+                                <a href="#">
+                                    Покрывало
+                                </a>
+                            </li>
+                            <li class="catalog__sidebar-submenu-item">
+                                <a href="#">
+                                    Подушка в гроб
+                                </a>
+                            </li>
+                            <li class="catalog__sidebar-submenu-item">
+                                <a href="#">
+                                    Обувь
+                                </a>
+                            </li>
+                            <li class="catalog__sidebar-submenu-item">
+                                <a href="#">
+                                    Орденские подушки
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>

@@ -11,7 +11,7 @@
         <p class="catalog__price">
             1464 ₽
         </p>
-        <a data-fancybox data-src="#single-product-popup" class="common-border-button catalog__to-order-btn">
+        <a href="#" class="common-border-button catalog__to-order-btn">
             Заказать
         </a>
     </div>

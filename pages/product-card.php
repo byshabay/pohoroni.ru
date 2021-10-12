@@ -37,15 +37,15 @@
             </p>
             <ul class="single-product-popup__items card__items">
                 <li class="common-p">
-                    <span> Высота, см:</span>
+                    <span> Высота, см: </span>
                     <span>90,120,150,180 см</span>
                 </li>
                 <li class="common-p">
                     <span>Материал: </span>
-                    <span> искусственные цветы ( розы , лилии ) </span>
+                    <span> искусственные цветы (розы , лилии) </span>
                 </li>
                 <li class="common-p">
-                    <span>Страна изготовления:</span>
+                    <span>Страна изготовления: </span>
                     <span>Россия</span>
                 </li>
             </ul>

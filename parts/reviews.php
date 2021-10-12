@@ -1,5 +1,5 @@
 <section class="reviews">
-    <div class="container">
+    <div class="reviews-container">
         <div class="common-h2 reviews__h2">Отзывы наших клиентов</div>
 
         <!-- 2.9.1.SLIDER START -->

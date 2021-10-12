@@ -66,8 +66,12 @@
 
                 <!-- 1.2.BURGER END -->
                 <div class="logo">
-                    <a href="<?= $root_url ?>"><img src="<?= $root_url ?>images/logo.png" alt="Логотип pohoroni.ru"></a>
-                    <div>Ритуальные <br class="mobile-br"> Услуги <br> Москвы</div>
+                    <a href="<?= $root_url ?>"><img src="<?= $root_url ?>images/logo.svg" alt="Логотип pohoroni.ru"></a>
+                    <div>
+                        <a href="<?= $root_url ?>">
+                            Ритуальные <br class="mobile-br"> Услуги <br> Москвы
+                        </a>
+                    </div>
                 </div>
 
 
@@ -98,9 +102,6 @@
         <!-- 2.MAIN MENU START -->
         <section class="menu-wrapper">
             <nav class="container">
-                <a data-fancybox data-src="#order-call" class="common-btn_white header__button order-popup">
-                    Заказать звонок
-                </a>
                 <div class="header__phone-box">
                     <span class="header__phone-top-text">
                         круглосуточная линия

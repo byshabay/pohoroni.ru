@@ -112,13 +112,13 @@ a.slider_active-tab,
 }
 
 .slick-prev.slick-disabled{
-    background: url("../images/prev-arrow.png") center no-repeat;
+    background: url("../images/prev-arrow.svg") center no-repeat;
     background-size: 30%;
     background-color: var(--middleDirtyWhite);
 }
 
 .slick-next.slick-disabled{
-    background: url("../images/next-arrow.png") center no-repeat;
+    background: url("../images/next-arrow.svg") center no-repeat;
     background-size: 30%;
     background-color: var(--middleDirtyWhite);
 }

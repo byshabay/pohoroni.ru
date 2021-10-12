@@ -39,6 +39,15 @@
     transition: 0.3s;
 } 
 
+.services__item:hover .services__img.services__agent svg path:last-child {
+    stroke: #fff;
+    fill: transparent;
+}
+
+.services__item:hover .services__img.services__agent svg path:nth-child(2) {
+    fill: transparent;
+}
+
 .services__name {
     padding: 15px 25px;
 }
