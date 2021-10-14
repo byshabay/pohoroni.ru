@@ -1,6 +1,6 @@
 <form tabindex="1" id="order-call" class="common-popup-form">
     <div class="common-h2">
-        Вызов ретуального агента
+        Вызов ритуального агента
     </div>
     <p class="common-popup-p order-popup-p">
         С помощью данного сервиса после заполнения всех полей к Вам на указанный адрес приедет ритуальный наш агент.

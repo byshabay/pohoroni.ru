@@ -69,6 +69,7 @@ $(document).ready(function () {
             ) {
                 $('.mobile-header_active').removeClass('mobile-header_active');
                 $('.submenu-mobile-active').removeClass('submenu-mobile-active');
+                $('.sub-submenu-mobile-active').removeClass('sub-submenu-mobile-active')
             }
 
         });
@@ -243,7 +244,7 @@ $(document).ready(function () {
     if (
         $(document).width() < 1140
     ) {
-        let height = $('.card__top-block').height() + 20;
+        let height = $('.common-h2.card__h1').height() + 20;
         $('.card img').css('margin-top', height);
     }
 
@@ -358,5 +359,46 @@ $(document).ready(function () {
     }
 
     // 16.REVIEW VALIDATION END
+
+    // 17.FORM CALCULATE VALIDATION START
+
+    $('#calculate-the-cost').submit(function (e) {
+
+        if (validationReviewForm()) {
+            e.preventDefault();
+
+        } else {
+            e.preventDefault();
+            $('.common-popup-form .common-h2').text('Наш специалист свяжется с вами!');
+            $('.common-popup-form').addClass('common-succes-popup-form');
+            $('.common-popup-error, .common-popup-input, .common-popup-mini-text, .popup-btn, .order-popup-p, .calculate-popup__how, .transporation, .calculate-popup__help').hide();
+        }
+    })
+
+    function validationReviewForm() {
+
+        let name = $('#calculate-popup-name');
+        let phone = $('#calculate-popup-phone');
+        let regExp = /^\d{6}?/;
+
+        if (
+            name.val().length < 4 ||
+            !regExp.test(phone.val())
+
+        ) {
+            var error = true;
+        }
+
+        if (error) {
+            $('#calculate-the-cost').addClass('form-error');
+            setTimeout(function () {
+                $('#calculate-the-cost').removeClass('form-error');
+            }, 2000)
+        }
+
+        return error;
+    }
+
+    // 17.FORM CALCULATE VALIDATION END
 
 });

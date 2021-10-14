@@ -19,7 +19,7 @@
 
     <section class="card container">
 
-        <img src="../images/wreath.png">
+        <img data-fancybox="gallery" src="../images/wreath.png">
         <div class="card__info-box">
             <div class="card__top-block">
                 <h1 class="common-h2 card__h1">

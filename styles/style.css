@@ -1478,6 +1478,106 @@ SERVICES PAGE START
 --------------------------------------------------------------
 */
 
+/* 1.1.POPUP START */
+
+#calculate-the-cost {
+    display: none;
+}
+
+.calculate-popup__how input + label {
+    position: relative;
+    padding: 10px;
+    display: block;
+    flex: 1;
+
+    color: var(--pastelGray);
+    border-bottom: 2px solid var(--pastelGray);
+    cursor: pointer;
+}
+
+.calculate-popup__how input:checked + label {
+    font-family: var(--bold);
+
+    color: var(--peach);
+    border-bottom: 2px solid var(--peach);
+}
+
+.transporation input + label,
+.calculate-popup__help input + label {
+    position: relative;
+    padding: 10px;
+    padding-left: 30px;
+    display: block;
+
+    color: var(--deepTaupe);
+    text-align: left;
+}
+
+.calculate-popup__how input,
+.transporation input,
+.calculate-popup__help input {
+    position: absolute;
+    z-index: -1;
+	opacity: 0;
+	margin: 10px 0 0 20px;
+}
+
+.transporation input + label::before,
+.calculate-popup__help input + label::before {
+    content: '';
+    position: absolute;
+	width: 20px;
+	height: 20px;
+    left: 0;
+	border: 1px solid var(--deepTaupe);
+	transition: .3s;
+}
+
+.transporation input + label:after,
+.calculate-popup__help input + label:after {
+	content: '';
+	position: absolute;
+    left: 0;
+    top: 10px;
+    background: url('../images/tick.png') center / 0% no-repeat;
+	width: 20px;
+	height: 20px;
+	transition: .3s;
+}
+
+.transporation input:checked + label:after,
+.calculate-popup__help input:checked + label:after {
+	background: url('../images/tick.png') center / 70% no-repeat;
+    left: 0;
+    transition: .3s;
+}
+
+.transporation input:focus + label:before,
+.calculate-popup__help input:focus + label:before {
+	box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+}
+
+.transporation {
+    margin-bottom: 30px;
+}
+
+.calculate-popup__how {
+    display: flex;
+    width: 100%;
+}
+
+#calculate-the-cost .common-popup-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.calculate-popup__h2.common-h3 {
+    margin: 20px 0 10px;
+    text-align: left;
+}
+
+/* 1.1.POPUP END */
+
 /* 1.SERVICES INFO START */
 
 .services-info__info-boxs {
@@ -4583,6 +4683,7 @@ FONTS START
 
 
 /* 4.OPEN SANS SEMI BOLD END */
+
 
 /*
 --------------------------------------------------------------

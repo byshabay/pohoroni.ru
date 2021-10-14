@@ -2,6 +2,10 @@
 <?php include('../parts/header.php') ?>
 <!-- 1.HEADER END -->
 
+<!-- 1.1.CALCULATE THE COST POPUP START-->
+<?php include('../parts/calculate-the-cost.php') ?>
+<!-- 1.1.CALCULATE THE COST POPUP END-->
+
 <!-- 2.MAIN START -->
 <main class="prices-page main page">
     <!-- 2.1.BREAD CRUMBS START -->
@@ -29,7 +33,7 @@
                 <p class="common-p prices-block__p">
                     Для нас нет «дешёвых» и «дорогих» похорон. Каждый план похорон — полный набор ритуальных товаров и услуг, необходимый для достойного погребения — будет выполнен качественно, с трепетным вниманием к усопшему и близким.
                 </p>
-                <a href="#" class="common-btn_peach prices-block__btn">
+                <a data-fancybox data-src="#calculate-the-cost" class="common-btn_peach prices-block__btn">
                     Расчитать стоимость
                 </a>
 

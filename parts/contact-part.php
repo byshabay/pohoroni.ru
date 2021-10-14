@@ -6,15 +6,15 @@
             Наши контакты
         </div>
         <a class="contacts__item" href="tel:+74957953080">
-            <img src="<?= $root_url ?>images/phone-call.png">
+            <img src="<?= $root_url ?>images/phone-call.svg">
             +7 495 795 30-80
         </a>
         <a class="contacts__item" href="mailto:info@mfc-ritual.ru">
-            <img src="<?= $root_url ?>images/email.png">
+            <img src="<?= $root_url ?>images/email.svg">
             info@mfc-ritual.ru
         </a>
         <div class="contacts__item" class="contacts__address">
-            <img src="<?= $root_url ?>images/place.png">
+            <img src="<?= $root_url ?>images/place.svg">
             Москва, м. Бульвар Дмитрия Донского, ул. 2-я Мелитопольская, 4
         </div>
         <p class="common-p contacts__p">
