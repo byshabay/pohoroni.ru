@@ -644,7 +644,17 @@ button.popup-btn {
         left: 0;
         padding: 60px 30px 15px 20px;
         min-height: calc(100vh - 84px);
+        opacity: 1;
+        visibility: visible;
         z-index: 6;
+    }
+
+    .sub-submenu-mobile-active .menu__sub-menu-item {
+        display: none;
+    }
+
+    .sub-submenu-mobile-active  .menu__sub-menu-item.sub-submenu-mobile-active  {
+        display: block;
     }
 
     .menu__sub-menu.submenu-mobile-active {
@@ -722,6 +732,7 @@ button.popup-btn {
 
     .submenu-mobile-active .menu .submenu-mobile-active {
         display: block;
+        padding-bottom: 30px;
     }
 
     body.mobile-header_active {
@@ -851,7 +862,7 @@ button.popup-btn {
     }
 
     .menu__sub-menu.submenu-mobile-active {
-        height: 100vh;
+        /* height: 100vh; */
     }
 
     .blackout {
