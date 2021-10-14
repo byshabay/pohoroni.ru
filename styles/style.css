@@ -1098,12 +1098,12 @@ ABOUT PAGE START
 /* 1140px */
 @media(max-width: 1140px){
     .about-company__info-box {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .about-company__text-box {
         width: 100%;
-        margin: 0 auto 52px;
+        margin: 52px auto 0px;
         padding: 0px;
     }
     
@@ -1166,7 +1166,7 @@ ABOUT PAGE START
     }
 
     .about-company__text-box {
-        margin: 0 auto;
+        margin: 30px auto 0;
         padding: 0;
 
         text-align: justify;
@@ -1729,6 +1729,10 @@ SERVICES PAGE START
 
     .services-prices__table tbody tr td {
         width: 30%;
+    }
+
+    .services-prices__btn-ask-tr td a {
+        padding-bottom: 40px;
     }
 
 }

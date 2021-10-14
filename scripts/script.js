@@ -40,22 +40,46 @@ $(document).ready(function () {
 
 
     $('.burger').click(function () {
-        $(this).toggleClass('mobile-header_active');
-        $('.header, .main, .blackout, body').toggleClass('mobile-header_active');
+        // $(this).toggleClass('mobile-header_active');
+        // $('.header, .main, .blackout, body').toggleClass('mobile-header_active');
+
+        // $(this).addClass('mobile-header_active');
+        // $('.header, .main, .blackout, body').addClass('mobile-header_active');
         if (
-            $(this).hasClass('submenu-mobile-active')
+            $(this).hasClass('sub-submenu-mobile-active')
+        ) {
+            $('.sub-submenu-mobile-active').removeClass('sub-submenu-mobile-active');
+        } else if (
+            $(this).hasClass('submenu-mobile-active') &&
+            !$(this).hasClass('sub-submenu-mobile-active')
         ) {
             $('.submenu-mobile-active').removeClass('submenu-mobile-active');
-            $('.sub-submenu-mobile-active').removeClass('sub-submenu-mobile-active');
-            $('.header, .main, .blackout').toggleClass('mobile-header_active');
+        } else {
+            $('.header, .main, .blackout, body').toggleClass('mobile-header_active');
             $(this).toggleClass('mobile-header_active');
         }
     });
 
-    $(".blackout").click(function () {
-        $('.mobile-header_active').removeClass('mobile-header_active');
-        $('.submenu-mobile-active').removeClass('submenu-mobile-active');
-    })
+    // 3.1.CLOSE WHEN PRESSED OUT START
+
+    if (
+        $('.mobile-header_active')
+    ) {
+        $(document).mouseup(function (e) {
+
+            if (
+                !$(".menu-wrapper").is(e.target) &&
+                !$(".burger").is(e.target) &&
+                $(".menu-wrapper").has(e.target).length === 0
+            ) {
+                $('.mobile-header_active').removeClass('mobile-header_active');
+                $('.submenu-mobile-active').removeClass('submenu-mobile-active');
+            }
+
+        });
+    }
+
+    // 3.1.CLOSE WHEN PRESSED OUT END
 
     // 3.BURGER END
 
@@ -80,7 +104,7 @@ $(document).ready(function () {
         if (e.offsetX > 200) {
             e.preventDefault();
             $(this).parent('.menu__sub-menu-parent').addClass('sub-submenu-mobile-active');
-            $(".menu-wrapper").addClass("sub-submenu-mobile-active");
+            $(".menu-wrapper, .burger").addClass("sub-submenu-mobile-active");
             $(this).parents('.menu__item').addClass('sub-submenu-mobile-active');
             $(this).siblings('.menu__sub-sub-menu').addClass("sub-submenu-mobile-active");
         }

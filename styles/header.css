@@ -43,7 +43,7 @@
 
 /* 1.2.BURGER END */
 .header__tagline {
-    width: 12%;
+    width: 15%;
 
     font-family: var(--semiBold);
     font-size: var(--text-12);
@@ -732,6 +732,10 @@ button.popup-btn {
         padding-top: 19px;
     }
 
+    .blackout {
+        top: 82px;
+    }
+
 }
 
 /* 918px */
@@ -773,6 +777,7 @@ button.popup-btn {
 
     .header__top-nav .container {
         justify-content: space-between;
+        height: 72px;
     }
 
     .logo {
