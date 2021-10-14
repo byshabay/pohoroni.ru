@@ -178,15 +178,6 @@ hr.prices__active-tab {
         max-width: 100vw;
     }
 
-
-    /* .prices__tariff.slick-active:nth-child(2) {
-        margin-left: 15px;
-    }
-
-    .prices__tariff.slick-active:nth-child(1) {
-        margin-right: 15px;
-    } */
-
     .prices__tariff-h2,
     .prices__tariff:hover .prices__tariff-h2 {
         padding: 30px 0 50px;
@@ -228,8 +219,8 @@ hr.prices__active-tab {
 
     .prices__order-btn.common-btn_peach {
         bottom: 54px;
-        width: 80%;
-        left: 10%;
+        width: 40%;
+        left: 30%;
     }
 
     .prices__more-btn {
@@ -239,30 +230,12 @@ hr.prices__active-tab {
     .home .licenses {
         margin: 40px auto 0;
     }
-
-    .prices__tariff:nth-child(2n) {
-        margin-left: 0;
-    }
-
-    .prices__tariff,
-    .prices__tariff:first-child {
-        margin: 0 0 30px;
-    }
-
-   .prices  .slick-list {
-        margin: 0;
-    }
 }
 
 /* 460px */
 @media(max-width: 460px) { 
     .prices__tab a {
         font-size: var(--text-15);
-    }
-
-    .prices__order-btn.common-btn_peach {
-        width: 88%;
-        left: 6%;
     }
 
     .prices__tariffs {
@@ -296,6 +269,22 @@ hr.prices__active-tab {
 
     .common-p.prices__p {
         line-height: 150%;
+    }
+
+    .prices .slick-list {
+        margin: 0;
+    }
+
+    .prices__tariff, .prices__tariff:first-child {
+        margin: 0 0 30px;
+    }
+}
+
+/* 380px */
+@media(max-width: 380px) {
+    .prices__order-btn.common-btn_peach {
+        width: 48%;
+        left: 27%;
     }
 }
 

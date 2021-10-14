@@ -30,7 +30,7 @@
                 </div>
                 <ul class="catalog__sidebar-items">
                     <li class="catalog__sidebar-item">
-                        <a href="#coffins">
+                        <a href="#" class="coffins">
                             Гробы
                             <div class="catalog__sidebar-item-count">
                                 <div class="catalog__sidebar-item-count-num">
@@ -76,7 +76,7 @@
                         </ul>
                     </li>
                     <li class="catalog__sidebar-item">
-                        <a href="#wreath">
+                        <a href="#" class="wreath">
                             Венки
                             <div class="catalog__sidebar-item-count">
                                 <div class="catalog__sidebar-item-count-num">
@@ -121,7 +121,7 @@
                         </ul>
                     </li>
                     <li class="catalog__sidebar-item">
-                        <a href="#textile">
+                        <a href="#" class="textile">
                             Текстиль
                             <div class="catalog__sidebar-item-count">
                                 <div class="catalog__sidebar-item-count-num">
@@ -167,7 +167,7 @@
                         </ul>
                     </li>
                     <li class="catalog__sidebar-item">
-                        <a href="#crosses">
+                        <a href="#" class="crosses">
                             Кресты
                             <div class="catalog__sidebar-item-count">
                                 <div class="catalog__sidebar-item-count-num">
@@ -213,7 +213,7 @@
                         </ul>
                     </li>
                     <li class="catalog__sidebar-item">
-                        <a href="#accessories">Аксессуары
+                        <a href="#" class="accessories">Аксессуары
                             <div class="catalog__sidebar-item-count">
                                 <div class="catalog__sidebar-item-count-num">
                                     76

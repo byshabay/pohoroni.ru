@@ -341,7 +341,7 @@ a.common-btn_white:visited {
 
 .common-ol li {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin: 15px 0;
     counter-increment: custom;
 
@@ -358,7 +358,7 @@ a.common-btn_white:visited {
 
 .common-ol li::before {  
     content: counter(custom, decimal-leading-zero);  
-    margin: 0 10px 0 0;
+    margin: 4px 10px 0 0;
     padding: 5px;
 
     font-family: var(--bold);
@@ -803,8 +803,8 @@ MAIN PAGE START
         bottom: 0;
         display: block;
         margin: 52px auto 0;
-        width: 50%;
-        left: 25%;
+        width: 25%;
+        left: 38%;
     }
    
     .slider__wrapper {
@@ -837,8 +837,6 @@ MAIN PAGE START
     }
 
     .banner__calc {
-        width: 60%;
-
         margin: 30px auto 0;
     }
 
@@ -921,6 +919,15 @@ MAIN PAGE START
         height: 300px;
         margin: 30px auto 0;
     }
+
+    .banner__calc {
+        width: 40%;
+    }
+
+    .procedure__order-btn {
+        width: 40%;
+        left: 30%;
+    }
 }
 
 /* 453px */
@@ -932,8 +939,9 @@ MAIN PAGE START
     }
     
     .banner__calc {
-        width: 70%;
+        width: 50%;
         margin: 10px auto 0;
+        padding: 15px 10px;
     }
 
     .how-we-work__video {
@@ -972,6 +980,11 @@ MAIN PAGE START
 @media(max-width: 348px) {
     .banner__box {
         margin-top: 30px ;
+    }
+
+    .procedure__order-btn {
+        width: 45%;
+        left: 28%;
     }
 }
 
@@ -1154,7 +1167,7 @@ ABOUT PAGE START
     }
 
     .employees__btn {
-        width: 60%;
+        width: fit-content;
     }
 
 }
@@ -1196,6 +1209,8 @@ ABOUT PAGE START
 
     .employees__p {
         margin: 0 0 15px;
+
+        text-align: justify;
     }
     
 }
@@ -1204,10 +1219,6 @@ ABOUT PAGE START
     .about-company__info-box img {
         width: 70%;
         margin: 0 0 0 11%;
-    }
-
-    .employees__btn {
-        width: 100%;
     }
 
     .about-company h1.common-h1 {
@@ -1364,6 +1375,10 @@ SIMPLE-SERVICE PAGE START
         font-size: var(--text-24);
     }
 
+    .short-info__btn {
+        width: fit-content;
+    }
+
 }
 
 /* 930px */
@@ -1398,7 +1413,7 @@ SIMPLE-SERVICE PAGE START
     }
     
     .short-info__btn {
-        width: 70%;
+        padding: 15px 20px;
     }
 
     .short-info.container {
@@ -1678,6 +1693,11 @@ SERVICES PAGE START
         width: 100%;
         margin: 0 auto;
     }
+
+    .services-prices__table tr .common-btn_peach.services-prices__btn {
+        width: fit-content;
+        padding: 15px 20px;
+    }
 }
 
 /* 930px */
@@ -1727,6 +1747,10 @@ SERVICES PAGE START
         text-align: justify;
     }
 
+   .services-prices__table tbody tr.services-prices__btn-ask-tr td{
+        padding-bottom: 30px;
+    }
+
     .services-prices__table tbody tr td {
         width: 30%;
     }
@@ -1764,9 +1788,6 @@ SERVICES PAGE START
         padding: 25px 25px 10px 10px;
     }
 
-    .services-prices__table tr .common-btn_peach.services-prices__btn {
-        width: 90%;
-    }
 }
 
 /* 4.SERVICES PAGE MEDIA END */
@@ -1797,11 +1818,13 @@ PRODUCTS PAGE START
     color: var(--peach);
     
 }
+
 .catalog__sidebar-item a {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+    padding-left: 0;
 
     font-family: var(--bold);
     font-size: var(--text-15);
@@ -2126,7 +2149,7 @@ select.catalog__product-option  {
 
 .single-product-popup__items li {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin: 0 0 10px;
 }
 
@@ -2139,7 +2162,7 @@ select.catalog__product-option  {
     content: ' ';
     width: 8px;
     height: 8px;
-    margin: 0 7px 0 0;
+    margin: 5px 7px 0 0;
 
     background-color: var(--peach);
 }
@@ -2151,6 +2174,17 @@ select.catalog__product-option  {
 
 /* 2.PRODUCTS PAGE MEDIA START */
 
+/* 1140px */
+@media(max-width: 1140px) {
+    .catalog__sidebar {
+        display: none;
+    }
+
+    .catalog__products {
+        width: 100%;
+    }
+}
+
 /* 1010px */
 @media(max-width: 1010px) {
     .catalog__products_active {
@@ -2159,6 +2193,12 @@ select.catalog__product-option  {
 
     .catalog__sidebar-item-count {
         width: 48%;
+    }
+
+    .common-border-button.catalog__to-order-btn {
+        padding: 15px 50px;
+        width: fit-content;
+        margin: 0 auto;
     }
 }
 
@@ -2222,8 +2262,7 @@ select.catalog__product-option  {
 /* 682px */
 @media(max-width: 682px) { 
     .catalog__products_active {
-        grid-template-columns: 1fr;
-        width: 60%;
+        width: 100%;
     }
 
     .catalog__sidebar {
@@ -2256,10 +2295,6 @@ select.catalog__product-option  {
     #wreath .catalog__product-option {
         padding: 5px;
     }
-
-    .common-border-button.catalog__to-order-btn {
-        padding: 10px 15px;
-    } 
 
     .single-wreath-product-popup .catalog__product-options {
         width: 90%;
@@ -2383,6 +2418,10 @@ select.catalog__product-option  {
         padding: 170px 15px 10px;
     }
 
+    .common-border-button.catalog__to-order-btn {
+        padding: 15px 30px;
+    }
+
 }
 
 /* 460px */
@@ -2391,6 +2430,10 @@ select.catalog__product-option  {
     .catalog__sidebar_visible .catalog__sidebar-items,
     .common-h2.catalog__h2 {
         padding: 0 20px;
+    }
+
+    .common-border-button.catalog__to-order-btn {
+        padding: 10px 20px;
     }
 }
 
@@ -2501,12 +2544,13 @@ CARD PAGE START
         margin: 0 auto;
     }
 
-    .card__top-block {
+    .common-h2.card__h1 {
         flex-direction: column;
         position: absolute;
         width: 100%;
         top: 0;
         left: 0;
+        padding: 0 34px;
 
         text-align: center;
     }
@@ -2537,6 +2581,15 @@ CARD PAGE START
         position: absolute;
         bottom: 0;
         width: 100%;
+    }
+
+    .common-h2.card__h1 {
+        padding: 0 20px;
+    }
+
+    .card .single-product-popup__btn {
+        width: 50%;
+        margin: 20px auto 0;
     }
 }
 
@@ -2608,6 +2661,7 @@ PRICES PAGE START
 
     .common-btn_peach.prices-block__btn {
         margin: 30px auto 0;
+        width: fit-content;
     }
 
     .prices-page .prices__tariffs {
@@ -2626,7 +2680,6 @@ PRICES PAGE START
 /* 470px */
 @media(max-width: 470px) {
     .common-btn_peach.prices-block__btn {
-        width: 90%;
         margin: 20px auto 0;
     }
 
@@ -3026,6 +3079,11 @@ DELIVERY PAGE START
         width: 100%;
     }
 
+    .payments__type-btn {
+        width: fit-content;
+        padding: 15px 20px;
+    }
+
 
 }
 
@@ -3086,9 +3144,6 @@ DELIVERY PAGE START
         padding: 0px 15px 30px;
     }
 
-    .payments__type-btn {
-        width: 70%;
-    }
 }
 
 /* 460px */
@@ -3622,8 +3677,9 @@ PLACE PAGE START
 
     .common-btn_peach.place__btn,
     .common-btn_white.what-price__btn {
-        width: 70%;
+        width: fit-content;
         margin: 0 auto;
+        padding: 15px 20px;
     }
 
     .common-p.place__p:last-child {
@@ -3635,12 +3691,6 @@ PLACE PAGE START
     }
 }
 
-/* 410px */
-@media(max-width: 410px) { 
-    .common-btn_white.what-price__btn {
-        width: 100%;
-    }
-}
 
 /* 4.PLACE PAGE MEDIA END */
 
@@ -4262,6 +4312,11 @@ REVIEWS PAGE END
     .reviews-page .have-a-question__p.common-p {
         width: 100%;
     }
+
+    .common-btn_peach.reviews-catalog__btn {
+        width: fit-content;
+        padding: 15px 20px;
+    }
 }
 
 /* 930px */
@@ -4282,10 +4337,6 @@ REVIEWS PAGE END
 
 /* 770px */
 @media(max-width: 770px) { 
-    .common-btn_peach.reviews-catalog__btn {
-        width: 50%;
-    }
-
     .reviews-catalog__list {
         grid-template-columns: 1fr;
     }
@@ -4387,9 +4438,10 @@ LICENSES PAGE END
 
 /* 600px */
 @media(max-width: 600px) {
-    .licenses-page .contacts__wrapper {
+    .licenses-page .contacts.container {
         margin-top: 52px;
     }
+
 }
 
 /* 3.LICENSES PAGE MEDIA END */

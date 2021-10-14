@@ -180,7 +180,79 @@
 
                         <!-- 2.1.SUBMENU END  -->
                     </li>
-                    <li class=" menu__item"><a href="<?= $root_url ?>pages/products.php">Ритуальные товары</a>
+                    <li class="menu__item menu__item_parent catalog"><a href="<?= $root_url ?>pages/products.php">Ритуальные товары</a>
+                        <!-- 2.1.SUBMENU START -->
+
+                        <ul class="menu__sub-menu">
+                            <li class="menu__sub-menu-item  menu__sub-menu-parent">
+                                <a class="coffins" href="<?= $root_url ?>pages/products.php">Гробы</a>
+
+                                <!-- 2.1.1.SUB-SUB-MENU START -->
+                                <ul class="menu__sub-sub-menu">
+                                    <li class="menu__sub-sub-menu-item"><a href="#">Подподпункт 1</a></li>
+                                    <li class="menu__sub-sub-menu-item"><a href="#">Подподпункт 2</a></li>
+                                    <li class="menu__sub-sub-menu-item"><a href="#">Подподпункт 3</a></li>
+                                    <li class="menu__sub-sub-menu-item"><a href="#">Подподпункт 4</a></li>
+                                    <li class="menu__sub-sub-menu-item"><a href="#">Подподпункт 5</a></li>
+                                </ul>
+                                <!-- 2.1.1.SUB-SUB-MENU START -->
+                            </li>
+                            <li class="menu__sub-menu-item  menu__sub-menu-parent">
+                                <a class="wreath" href="<?= $root_url ?>pages/products.php">Венки</a>
+
+                                <!-- 2.1.1.SUB-SUB-MENU START -->
+                                <ul class="menu__sub-sub-menu">
+                                    <li class="menu__sub-sub-menu-item"><a href="#">Подподпункт 1</a></li>
+                                    <li class="menu__sub-sub-menu-item"><a href="#">Подподпункт 2</a></li>
+                                    <li class="menu__sub-sub-menu-item"><a href="#">Подподпункт 3</a></li>
+                                    <li class="menu__sub-sub-menu-item"><a href="#">Подподпункт 4</a></li>
+                                    <li class="menu__sub-sub-menu-item"><a href="#">Подподпункт 5</a></li>
+                                </ul>
+                                <!-- 2.1.1.SUB-SUB-MENU START -->
+                            </li>
+                            <li class="menu__sub-menu-item  menu__sub-menu-parent">
+                                <a class="textile" href="<?= $root_url ?>pages/products.php">Текстиль</a>
+
+                                <!-- 2.1.1.SUB-SUB-MENU START -->
+                                <ul class="menu__sub-sub-menu">
+                                    <li class="menu__sub-sub-menu-item"><a href="#">Подподпункт 1</a></li>
+                                    <li class="menu__sub-sub-menu-item"><a href="#">Подподпункт 2</a></li>
+                                    <li class="menu__sub-sub-menu-item"><a href="#">Подподпункт 3</a></li>
+                                    <li class="menu__sub-sub-menu-item"><a href="#">Подподпункт 4</a></li>
+                                    <li class="menu__sub-sub-menu-item"><a href="#">Подподпункт 5</a></li>
+                                </ul>
+                                <!-- 2.1.1.SUB-SUB-MENU START -->
+                            </li>
+
+                            <li class="menu__sub-menu-item  menu__sub-menu-parent">
+                                <a class="crosses" href="<?= $root_url ?>pages/products.php">Кресты</a>
+
+                                <!-- 2.1.1.SUB-SUB-MENU START -->
+                                <ul class="menu__sub-sub-menu">
+                                    <li class="menu__sub-sub-menu-item"><a href="#">Подподпункт 1</a></li>
+                                    <li class="menu__sub-sub-menu-item"><a href="#">Подподпункт 2</a></li>
+                                    <li class="menu__sub-sub-menu-item"><a href="#">Подподпункт 3</a></li>
+                                    <li class="menu__sub-sub-menu-item"><a href="#">Подподпункт 4</a></li>
+                                    <li class="menu__sub-sub-menu-item"><a href="#">Подподпункт 5</a></li>
+                                </ul>
+                                <!-- 2.1.1.SUB-SUB-MENU START -->
+                            </li>
+                            <li class="menu__sub-menu-item  menu__sub-menu-parent">
+                                <a class="accessories" href="<?= $root_url ?>pages/products.php">Аксессуары</a>
+
+                                <!-- 2.1.1.SUB-SUB-MENU START -->
+                                <ul class="menu__sub-sub-menu">
+                                    <li class="menu__sub-sub-menu-item"><a href="#">Подподпункт 1</a></li>
+                                    <li class="menu__sub-sub-menu-item"><a href="#">Подподпункт 2</a></li>
+                                    <li class="menu__sub-sub-menu-item"><a href="#">Подподпункт 3</a></li>
+                                    <li class="menu__sub-sub-menu-item"><a href="#">Подподпункт 4</a></li>
+                                    <li class="menu__sub-sub-menu-item"><a href="#">Подподпункт 5</a></li>
+                                </ul>
+                                <!-- 2.1.1.SUB-SUB-MENU START -->
+                            </li>
+                        </ul>
+
+                        <!-- 2.1.SUBMENU END  -->
                     </li>
                     <li class="menu__item"><a href="<?= $root_url ?>pages/prices.php">Стоимость похорон</a></li>
                     <li class="menu__item"><a href="<?= $root_url ?>pages/contact.php">Контакты</a></li>
