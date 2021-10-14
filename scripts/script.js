@@ -402,7 +402,6 @@ $(document).ready(function () {
     // 17.FORM CALCULATE VALIDATION END
 
     // 18.CALL REQUEST VALIDATION START
-
     $('#call-request-popup').submit(function (e) {
 
         if (validationReviewForm()) {

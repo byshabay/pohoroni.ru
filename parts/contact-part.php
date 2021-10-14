@@ -22,7 +22,7 @@
             <br>
             Попросите список документов, которы нужно собрать для подачи заявки.
         </p>
-        <a data-fancybox data-src="#order-call" class="common-btn_peach contacts__btn">
+        <a data-fancybox data-src="#call-request-popup" class="common-btn_peach contacts__btn">
             Заказать звонок
         </a>
 

@@ -2,9 +2,7 @@
 <?php include('../parts/header.php') ?>
 <!-- 1.HEADER END -->
 
-<!-- 1.1.CALCULATE THE COST POPUP START-->
-<?php include('../parts/calculate-the-cost.php') ?>
-<!-- 1.1.CALCULATE THE COST POPUP END-->
+
 
 <!-- 2.MAIN START -->
 <main class="prices-page main page">

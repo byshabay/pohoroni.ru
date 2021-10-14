@@ -49,7 +49,7 @@
                 </tr>
             </table>
 
-            <a href="#" class="short-info__btn common-btn_peach">
+            <a data-fancybox data-src="#calculate-the-cost" href="#calculate-the-cost" class="short-info__btn common-btn_peach">
                 Рассчитать стоимость
             </a>
         </div>

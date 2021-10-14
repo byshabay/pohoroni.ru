@@ -6,7 +6,7 @@
          <p class="common-p have-a-question__p">
              Закажите обратный звонок и мы ответим на все интересующие вас вопросы.
          </p>
-         <a data-fancybox data-src="#order-call" class="common-btn_white have-a-question__btn">
+         <a data-fancybox data-src="#call-request-popup" class="common-btn_white have-a-question__btn">
              Получить консультацию
          </a>
 

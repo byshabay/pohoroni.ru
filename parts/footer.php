@@ -21,7 +21,7 @@
                 </a>
             </li>
             <li class="footer__contacts-item fixed-call-btn">
-                <a data-fancybox data-src="#order-call" href="#" class="common-btn_white footer__order-btn order-popup ">
+                <a data-fancybox data-src="#call-request-popup" href="#" class="common-btn_white footer__order-btn order-popup ">
                     Заказать звонок
                 </a>
             </li>
