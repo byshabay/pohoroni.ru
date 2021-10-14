@@ -108,7 +108,8 @@
         </form>
 
         <p class="catalog__price">
-            1464 ₽
+            1464
+            <span class='ruble'>₽</span>
         </p>
         <a href="#" class="common-border-button catalog__to-order-btn">
             Заказать

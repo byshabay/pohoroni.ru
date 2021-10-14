@@ -100,10 +100,10 @@ COMMON STYLES START
 
 :root  {
     /*  Arial, Helvetica, sans-serif; */
-    --regular: 'OpenSans';
-    --light: 'OpenSansLight';
-    --bold: 'OpenSansBold';
-    --semiBold: 'OpenSansSemiBold';
+    --regular: 'OpenSans', 'Open Sans', Helvetica, sans-serif;
+    --light: 'OpenSansLight', 'Open Sans', Helvetica, sans-serif;
+    --bold: 'OpenSansBold',  'Open Sans', Helvetica, sans-serif;
+    --semiBold: 'OpenSansSemiBold',  'Open Sans', Helvetica, sans-serif;
     --max-width: 1140px;
     --text-48: calc( (100vw - 300px)/(1140 - 300) * (48 - 40) + 40px);
     --text-36: calc( (100vw - 300px)/(1140 - 300) * (36 - 30) + 30px);
@@ -136,6 +136,10 @@ COMMON STYLES START
 
     font-family: var(--regular);
     outline: none;
+}
+
+.ruble {
+    font-family: 'Open Sans', sans-serif;
 }
 
 table::-webkit-scrollbar {
@@ -1669,32 +1673,14 @@ SERVICES PAGE START
     vertical-align: top;
 }
 
-.services-prices__table tr :last-child::after {
-    display: inline-block;
-    position: absolute;
-    top: 14px;
-    right: 11px;
-    content: '';
-
-    background: url('../images/ruble_peach.png') center no-repeat;
-    background-size: 70%;
-
-    width: 15px;
-    height: 15px;
-}
-
+.services-prices__table tr :last-child::after,
 .services-prices__table thead tr :last-child::after {
     display: inline-block;
-    position: absolute;
-    top: 30px;
-    content: '';
-
-    background: url('../images/ruble_white.png') center no-repeat;
-
-    background-size: 100%;
-
-    width: 15px;
+    content: '₽';
+    width: 6px;
     height: 15px;
+
+    font-weight: 600;
 }
 
 
@@ -2090,7 +2076,10 @@ PRODUCTS PAGE START
 .catalog__price {
     margin: 0 0 15px;
     font-family: var(--semiBold);
+    font-weight: 500;
     font-size: var(--text-18);
+
+    color: var(--horses);
 }
 
 .catalog__in-stock {
