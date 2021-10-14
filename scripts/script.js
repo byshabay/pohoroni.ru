@@ -441,4 +441,10 @@ $(document).ready(function () {
 
     // 18.CALL REQUEST VALIDATION END
 
+    // 19.MASKS SRART
+
+    $("#call-request-phone, #popup-phone, #calculate-popup-phone").mask("8(999) 999-9999");
+
+    // 19.MASKS END
+
 });

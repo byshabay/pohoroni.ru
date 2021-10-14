@@ -274,6 +274,10 @@ a.header__phone {
     color: var(--peach);
 }
 
+.menu__item:first-child .menu__sub-menu {
+    left: 0;
+}
+
 /* 2.1.1.SUB-SUBMENU START */
 
 .menu__sub-menu-parent>a::after {

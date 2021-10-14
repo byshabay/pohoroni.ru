@@ -33,6 +33,7 @@
 
     <!-- JQUERY  -->
     <script defer src="<?= $root_url ?>scripts/jquery.js"></script>
+    <script defer src="<?= $root_url ?>scripts/jquery.maskedinput.min.js"></script>
 
     <!-- MAP -->
     <script defer src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
