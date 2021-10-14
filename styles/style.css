@@ -1480,9 +1480,34 @@ SERVICES PAGE START
 
 /* 1.1.POPUP START */
 
-#calculate-the-cost {
+
+#calculate-the-cost,
+#call-request-popup {
     display: none;
 }
+
+#call-request-popup .popup-btn {
+    width: fit-content;
+    padding: 15px 30px;
+    margin: 30px auto 0;
+}
+
+#call-request-popup .common-popup-inputs {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#call-request-popup .common-popup-error {
+    font-size: var(--text-14);
+    margin: 10px auto;
+}
+
+#call-request-popup .common-popup-mini-text {
+    margin-top: 30px;
+}
+
 
 .calculate-popup__how input + label {
     position: relative;

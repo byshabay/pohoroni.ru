@@ -10,10 +10,10 @@
     </div>
     <div class="calculate-popup__how">
         <input name="how" type="radio" id="burialAnswer" value="burialAnswer" checked="checked">
-        <label for="burialAnswer">Захоронение</label>
+        <label class="common-popup-p" for="burialAnswer">Захоронение</label>
 
         <input name="how" type="radio" id="cremationAnswer" value="cremationAnswer">
-        <label for="cremationAnswer">Кремация</label>
+        <label class="common-popup-p" for="cremationAnswer">Кремация</label>
     </div>
     <div class="transporation">
         <div class="common-h3 calculate-popup__h2">
@@ -21,20 +21,20 @@
         </div>
 
         <input type="checkbox" id="0" value="0">
-        <label for="0">Только умершего</label>
+        <label class="common-popup-p" for="0">Только умершего</label>
 
         <input type="checkbox" id="1" value="1">
-        <label for="1">Близких и родных покойного</label>
+        <label class="common-popup-p" for="1">Близких и родных покойного</label>
 
         <input type="checkbox" id="2" value="2">
-        <label for="2">В другой регион/страну</label>
+        <label class="common-popup-p" for="2">В другой регион/страну</label>
     </div>
     <div class="common-popup-inputs">
         <input class="common-popup-input" type="text" name="calculate-popup-name" id="calculate-popup-name" placeholder="Ваше имя">
         <input class="common-popup-input" type="tel" name="calculate-popup-phone" id="calculate-popup-phone" placeholder="Ваш номер телефона">
         <div class="calculate-popup__help">
             <input type="checkbox" id="3" value="3">
-            <label for="3">Необходима помощь в получении компенсации</label>
+            <label class="common-popup-p" for="3">Необходима помощь в получении компенсации</label>
         </div>
         <button class="common-btn_peach popup-btn" type="submit">Отправить</button>
     </div>

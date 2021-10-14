@@ -401,4 +401,45 @@ $(document).ready(function () {
 
     // 17.FORM CALCULATE VALIDATION END
 
+    // 18.CALL REQUEST VALIDATION START
+
+    $('#call-request-popup').submit(function (e) {
+
+        if (validationReviewForm()) {
+            e.preventDefault();
+
+        } else {
+            e.preventDefault();
+            $('.common-popup-form .common-h2').text('Наш специалист свяжется с вами!');
+            $('.common-popup-form').addClass('common-succes-popup-form');
+            $('.common-popup-error, .common-popup-input, .common-popup-mini-text, .popup-btn, .order-popup-p').hide();
+        }
+    })
+
+    function validationReviewForm() {
+
+        let name = $('#call-request-name');
+        let phone = $('#call-request-phone');
+        let regExp = /^\d{6}?/;
+
+        if (
+            name.val().length < 4 ||
+            !regExp.test(phone.val())
+
+        ) {
+            var error = true;
+        }
+
+        if (error) {
+            $('#call-request-popup').addClass('form-error');
+            setTimeout(function () {
+                $('#call-request-popup').removeClass('form-error');
+            }, 2000)
+        }
+
+        return error;
+    }
+
+    // 18.CALL REQUEST VALIDATION END
+
 });

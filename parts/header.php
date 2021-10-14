@@ -89,7 +89,7 @@
 
                 <a class="header__phone header__phone_second" href=" tel:+74951520545">8 (495) 152-05-45</a>
 
-                <a data-fancybox data-src="#order-call" class="common-border-button header__button order-popup">
+                <a data-fancybox data-src="#call-request-popup" class="common-border-button header__button order-popup">
                     Заказать звонок
                 </a>
 
@@ -270,6 +270,11 @@
         <?php
         include('../parts/agent-call-popup.php');
         include('parts/agent-call-popup.php');
+
+        // 3.1.REQUEST CALL POPUP START
+        include('../parts/call-requerst-popup.php');
+        include('parts/call-requerst-popup.php');
+        // 3.1.REQUEST CALL POPUP END
         ?>
         <!-- 3.ORDER CALL POPUP END-->
 
