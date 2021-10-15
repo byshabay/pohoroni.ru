@@ -64,6 +64,27 @@
         </div>
     </div>
 </footer>
+
+<!-- JQUERY  -->
+<script src="<?= $root_url ?>scripts/jquery.js"></script>
+<script src="<?= $root_url ?>scripts/jquery.maskedinput.min.js"></script>
+
+
+<!-- SLICK  -->
+<!-- эти скрипты подлючаются к главной, контакты -->
+<script src="<?= $root_url ?>scripts/slick.min.js"></script>
+<script src="<?= $root_url ?>scripts/slider.js"></script>
+
+<!-- FANCY BOX -->
+<!-- эти скрипты подлючаются к главной, контакты -->
+<script src="<?= $root_url ?>scripts/fancybox.umd.js"></script>
+
+<!-- MAP -->
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="<?= $root_url ?>scripts/ymaps.js"></script>
+
+<!-- SELF-WRITTEN SCRIPTS -->
+<script src="<?= $root_url ?>scripts/script.js"></script>
 </body>
 
 </html>

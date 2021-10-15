@@ -24,33 +24,11 @@
     <!-- FAVICON END -->
 
     <!-- SELF-WRITTEN STYLES -->
-    <link defer rel="stylesheet" href="<?= $root_url ?>styles/style.css">
+    <link rel="stylesheet" href="<?= $root_url ?>styles/style.css">
 
     <!-- FANCYBOX -->
     <!-- эти стили подлючаются к главной, контакты -->
-    <link defer rel="stylesheet" href="<?= $root_url ?>styles/fancybox.css">
-
-
-    <!-- JQUERY  -->
-    <script defer src="<?= $root_url ?>scripts/jquery.js"></script>
-    <script defer src="<?= $root_url ?>scripts/jquery.maskedinput.min.js"></script>
-
-    <!-- MAP -->
-    <script defer src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-    <script defer src="<?= $root_url ?>scripts/ymaps.js"></script>
-
-    <!-- SLICK  -->
-    <!-- эти скрипты подлючаются к главной, контакты -->
-    <script defer src="<?= $root_url ?>scripts/slick.min.js"></script>
-    <script defer src="<?= $root_url ?>scripts/slider.js"></script>
-
-    <!-- FANCY BOX -->
-    <!-- эти скрипты подлючаются к главной, контакты -->
-    <script defer src="<?= $root_url ?>scripts/fancybox.umd.js"></script>
-
-    <!-- SELF-WRITTEN SCRIPTS -->
-    <script defer src="<?= $root_url ?>scripts/script.js"></script>
-
+    <link rel="stylesheet" href="<?= $root_url ?>styles/fancybox.css">
 </head>
 
 <body>

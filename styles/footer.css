@@ -116,8 +116,9 @@ a.footer__order-btn {
     }
 
     .fixed-call-btn a.footer__order-btn.common-btn_white {
-        width: 50%;
+        width: fit-content;
         margin: 20px auto 0;
+        padding: 15px 25px;
 
         background-color: var(--peach);
         color: #fff;

@@ -174,8 +174,7 @@ $(document).ready(function () {
 
     // 7.1.CATALOG MENU TABS START
 
-    $('.catalog .menu__sub-menu-item a').on("click", function (e) {
-        e.preventDefault();
+    $('.catalog .menu__sub-menu-item a').on("click", function () {
         let active_tax = $(this).attr('class');
 
         $('.catalog__products_active').removeClass('catalog__products_active');
@@ -185,6 +184,7 @@ $(document).ready(function () {
         $('.catalog__sidebar-submenu-active').removeClass('catalog__sidebar-submenu-active');
 
         $('.catalog__sidebar-items .' + active_tax).siblings('.catalog__sidebar-submenu').addClass('catalog__sidebar-submenu-active');
+
     })
 
     // 7.1.CATALOG MENU TABS END
